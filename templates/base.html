@@ -31,14 +31,17 @@
                     <li><a href="#"><i class="fas fa-th navbar-icon"></i> Categories</a></li>
                     <li><a href="#"><i class="fas fa-key navbar-icon"></i> Log In</a></li>
                     <li><a href="#"><i class="fas fa-power-off navbar-icon"></i> Log Out</a></li>
-                    <li><a href="{{ url_for('register') }}"><i class="fas fa-door-open navbar-icon"></i> Register</a></li>
+                    <li><a href="{{ url_for('register') }}"><i class="fas fa-door-open navbar-icon"></i> Register</a>
+                    </li>
                 </ul>
             </div>
         </nav>
 
         <!-- mobile sidenav -->
         <ul class="sidenav" id="mobile-demo">
-            <li><h4 class="center-align indigo-text text-accent-3">Produck</h4></li>
+            <li>
+                <h4 class="center-align indigo-text text-accent-3">Produck</h4>
+            </li>
             <li><a href="{{ url_for('get_resources') }}">Home</a></li>
             <li><a href="#">Profile</a></li>
             <li><a href="#">Resources</a></li>
@@ -49,8 +52,23 @@
         </ul>
     </header>
 
-    {% block content %}
-    {% endblock %}
+    <section>
+        <!-- Flash Messages -->
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                {% for message in messages %}
+                    <div class="row flashes">
+                        <h4 class="teal darken-3 center-align white-text">{{ message }}</h4>
+                    </div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+    </section>
+
+    <main class="container">
+        {% block content %}
+        {% endblock %}
+    </main>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
