@@ -1,16 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resources Manager</title>
-</head>
-<body>
+{% extends "base.html" %}
+{% block content %}
 
-    {% for resource in resources %}
+   <h2>I'm extending the base template!</h2>
+
+   {% for resource in resources %}
         {{ resource.category_name }}<br>
         {{ resource.resource_type }}<br>
         {{ resource.resource_name }}<br>
+        {{ resource.resource_title }}<br>
         {{ resource.resource_topic }}<br>
         {{ resource.resource_author }}<br>
         {{ resource.resource_rating }}<br>
@@ -18,5 +15,5 @@
         {{ resource.due_date }}<br>
         {{ resource.resource_url }}<br>
     {% endfor %}
-</body>
-</html>
+
+{% endblock %}
