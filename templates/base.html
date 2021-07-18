@@ -29,7 +29,7 @@
                     <li><a href="#"><i class="fas fa-user-circle navbar-icon"></i> Profile</a></li>
                     <li><a href="#"><i class="fas fa-book-reader navbar-icon"></i> Resources</a></li>
                     <li><a href="#"><i class="fas fa-th navbar-icon"></i> Categories</a></li>
-                    <li><a href="#"><i class="fas fa-key navbar-icon"></i> Log In</a></li>
+                    <li><a href="{{ url_for('login') }}"><i class="fas fa-key navbar-icon"></i> Log In</a></li>
                     <li><a href="#"><i class="fas fa-power-off navbar-icon"></i> Log Out</a></li>
                     <li><a href="{{ url_for('register') }}"><i class="fas fa-door-open navbar-icon"></i> Register</a>
                     </li>
@@ -46,8 +46,8 @@
             <li><a href="#">Profile</a></li>
             <li><a href="#">Resources</a></li>
             <li><a href="#">Categories</a></li>
+            <li><a href="{{ url_for('login') }}">Log In</a></li>
             <li><a href="#">Log Out</a></li>
-            <li><a href="#">Log In</a></li>
             <li><a href="{{ url_for('register') }}">Register</a></li>
         </ul>
     </header>
