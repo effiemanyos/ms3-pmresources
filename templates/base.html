@@ -26,7 +26,7 @@
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars"></i></a>
                 <ul class="right hide-on-med-and-down">
                     <li><a href="{{ url_for('get_resources') }}"><i class="fas fa-home navbar-icon"></i> Home</a></li>
-                    <li><a href="#"><i class="fas fa-user-circle navbar-icon"></i> Profile</a></li>
+                    <li><a href="{{ url_for('profile', username=session['user']) }}"><i class="fas fa-user-circle navbar-icon"></i> Profile</a></li>
                     <li><a href="#"><i class="fas fa-book-reader navbar-icon"></i> Resources</a></li>
                     <li><a href="#"><i class="fas fa-th navbar-icon"></i> Categories</a></li>
                     <li><a href="{{ url_for('login') }}"><i class="fas fa-key navbar-icon"></i> Log In</a></li>
@@ -43,7 +43,7 @@
                 <h4 class="center-align indigo-text text-accent-3">Produck</h4>
             </li>
             <li><a href="{{ url_for('get_resources') }}">Home</a></li>
-            <li><a href="#">Profile</a></li>
+            <li><a href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
             <li><a href="#">Resources</a></li>
             <li><a href="#">Categories</a></li>
             <li><a href="{{ url_for('login') }}">Log In</a></li>
