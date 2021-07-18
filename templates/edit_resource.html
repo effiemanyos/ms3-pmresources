@@ -11,9 +11,13 @@
             <div class="input-field col s12">
                 <i class="fas fa-th prefix indigo-text text-accent-3"></i>
                 <select id="category_name" name="category_name" class="validate" required>
-                    <option value="" disabled selected>Select Category</option>
+                    <option value="" disabled>Select Category</option>
                     {% for category in categories %}
-                        <option value="{{ category.category_name }}">{{ category.category_name }}</option>
+                        {% if category.category_name == resource.category_name %}
+                            <option value="{{ category.category_name }}" selected>{{ category.category_name }}</option>
+                        {% else %}
+                            <option value="{{ category.category_name }}">{{ category.category_name }}</option>
+                        {% endif %}
                     {% endfor %}
                 </select>
                 <label for="category_name">Resource Category</label>
@@ -24,7 +28,7 @@
             <div class="input-field col s12">
                 <i class="fas fa-pencil-alt prefix indigo-text text-accent-3"></i>
                 <input id="resource_title" name="resource_title" minlength="5" maxlength="50" type="text"
-                    class="validate" required>
+                    value="{{ resource.resource_title }}" class="validate" required>
                 <label for="resource_title">Title <em>(e.g. how to build a product roadmap)</em></label>
             </div>
         </div>
@@ -33,7 +37,7 @@
             <div class="input-field col s12">
                 <i class="fas fa-user-alt prefix indigo-text text-accent-3"></i>
                 <input id="resource_author" name="resource_author" minlength="5" maxlength="35" type="text"
-                    class="validate" required>
+                    value="{{ resource.resource_author }}" class="validate" required>
                 <label for="resource_author">Author <em>(e.g. carlos gonzalez, mirela mus)</em></label>
             </div>
         </div>
@@ -41,8 +45,8 @@
         <div class="row">
             <div class="input-field col s12">
                 <i class="fas fa-globe prefix indigo-text text-accent-3"></i>
-                <input id="source_name" name="source_name" minlength="5" maxlength="35" type="text" class="validate"
-                    required>
+                <input id="source_name" name="source_name" minlength="5" maxlength="35" type="text" 
+                    value="{{ resource.source_name }}" class="validate" required>
                 <label for="source_name">Source <em>(e.g. product school, product buds)</em></label>
             </div>
         </div>
@@ -51,7 +55,7 @@
             <div class="input-field col s12">
                 <i class="fas fa-comment-dots prefix indigo-text text-accent-3"></i>
                 <input id="resource_topic" name="resource_topic" minlength="5" maxlength="35" type="text"
-                    class="validate" required>
+                    value="{{ resource.resource_topic }}" class="validate" required>
                 <label for="resource_topic">Topic <em>(e.g. prioritization, roadmapping)</em></label>
             </div>
         </div>
@@ -59,8 +63,8 @@
         <div class="row">
             <div class="input-field col s12">
                 <i class="fas fa-folder-open prefix indigo-text text-accent-3"></i>
-                <input id="resource_type" name="resource_type" minlength="5" maxlength="35" type="text" class="validate"
-                    required>
+                <input id="resource_type" name="resource_type" minlength="5" maxlength="35" type="text"
+                    value="{{ resource.resource_type }}" class="validate" required>
                 <label for="resource_type">Type <em>(e.g. video, book, podcast, blog)</em></label>
             </div>
         </div>
@@ -69,7 +73,7 @@
             <div class="input-field col s12">
                 <i class="fas fa-star prefix indigo-text text-accent-3"></i>
                 <input id="resource_rating" name="resource_rating" minlength="3" maxlength="3" type="text"
-                    class="validate" required>
+                    value="{{ resource.resource_rating }}" class="validate" required>
                 <label for="resource_rating">Rating <em>(e.g. 3/5)</em></label>
             </div>
         </div>
@@ -77,7 +81,8 @@
         <div class="row">
             <div class="input-field col s12">
                 <i class="fas fa-link prefix indigo-text text-accent-3"></i>
-                <input id="resource_url" name="resource_url" type="text" class="validate" required>
+                <input id="resource_url" name="resource_url" type="text" class="validate"
+                    value="{{ resource.resource_url }}" required>
                 <label for="resource_url">Direct Link <em>(e.g. www.youtube.com)</em></label>
             </div>
         </div>
@@ -86,7 +91,8 @@
             <div class="input-field col s12">
                 <i class="fas fa-graduation-cap prefix indigo-text text-accent-3"></i>
                 <textarea id="resource_takeaway" name="resource_takeaway" minlength="5" maxlength="385"
-                    class="materialize-textarea"></textarea>
+                    class="materialize-textarea validate">
+                    {{- resource.resource_takeaway -}}</textarea>
                 <label for="resource_takeaway">Key Takeaway</label>
             </div>
         </div>
@@ -94,7 +100,8 @@
         <div class="row">
             <div class="input-field col s12">
                 <i class="fas fa-calendar-alt prefix indigo-text text-accent-3"></i>
-                <input id="creation_date" name="creation_date" type="text" class="datepicker validate" required>
+                <input id="creation_date" name="creation_date" type="text" 
+                    value="{{ resource.creation_date }}" class="datepicker validate" required>
                 <label for="creation_date">Creation Date</label>
             </div>
         </div>
@@ -104,7 +111,11 @@
                 <div class="switch">
                     <i class="fas fa-check-circle prefix indigo-text text-accent-3"></i>
                     <label for="is_done">
-                        <input type="checkbox" id="is_done" name="is_done">
+                        {% if resource.is_done == "on" %}
+                            <input type="checkbox" id="is_done" name="is_done" checked>
+                        {% else %}
+                            <input type="checkbox" id="is_done" name="is_done">
+                        {% endif %}
                         <span class="lever"></span>
                         Is Done
                     </label>
@@ -114,6 +125,11 @@
         <!-- Submit Button -->
         <div class="row">
             <div class="col s12 center-align">
+                <!-- Cancel Edits Button -->
+                <a href="{{ url_for('get_resources') }}" class="btn-large red text-shadow">
+                    Cancel <i class="fas fa-times-circle left"></i>
+                </a>
+                <!-- Save Edits Button -->
                 <button type="submit" class="btn-large white-text indigo accent-3 text-shadow">
                     Save Edits <i class="fas fa-edit left"></i>
                 </button>
