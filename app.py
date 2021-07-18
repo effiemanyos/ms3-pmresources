@@ -126,6 +126,26 @@ def add_resource():
 
 @app.route("/edit_resource/<resource_id>", methods=["GET", "POST"])
 def edit_resource(resource_id):
+    if request.method == "POST":
+        is_done = "on" if request.form.get("is_done") else "off"
+        submit = {
+            "resource_title": request.form.get("resource_title"),
+            "resource_author": request.form.get("resource_author"),
+            "creation_date": request.form.get("creation_date"),
+            "is_done": is_done,
+            "category_name": request.form.get("category_name"),
+            "source_name": request.form.get("source_name"),
+            "resource_topic": request.form.get("resource_topic"),
+            "resource_type": request.form.get("resource_type"),
+            "resource_rating": request.form.get("resource_rating"),
+            "resource_url": request.form.get("resource_url"),
+            "resource_takeaway": request.form.get("resource_takeaway"),
+            "created_by": session["user"]
+        }
+        mongo.db.resources.update({"_id": ObjectId(resource_id)}, submit)
+        flash("Resource Successfully Updated")
+        return redirect(url_for("get_resources"))
+
     resource = mongo.db.resources.find_one({"_id": ObjectId(resource_id)})
     categories = mongo.db.categories.find().sort("category_name", 1)
     return render_template("edit_resource.html", resource=resource, categories=categories)
