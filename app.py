@@ -98,8 +98,28 @@ def logout():
     return redirect(url_for("login"))
 
 
-@app.route("/add_resource")
+@app.route("/add_resource", methods=["GET", "POST"])
 def add_resource():
+    if request.method == "POST":
+        is_done = "on" if request.form.get("is_done") else "off"
+        resource = {
+            "resource_title": request.form.get("resource_title"),
+            "resource_author": request.form.get("resource_author"),
+            "creation_date": request.form.get("creation_date"),
+            "is_done": is_done,
+            "category_name": request.form.get("category_name"),
+            "source_name": request.form.get("source_name"),
+            "resource_topic": request.form.get("resource_topic"),
+            "resource_type": request.form.get("resource_type"),
+            "resource_rating": request.form.get("resource_rating"),
+            "resource_url": request.form.get("resource_url"),
+            "resource_takeaway": request.form.get("resource_takeaway"),
+            "created_by": session["user"]
+        }
+        mongo.db.resources.insert_one(resource)
+        flash("Resource Successfully Added")
+        return redirect(url_for("get_resources"))
+
     categories = mongo.db.categories.find().sort("category_name", 1)
     return render_template("add_resource.html", categories=categories)
 
@@ -110,4 +130,3 @@ if __name__ == "__main__":
             debug=True) # During development, we want to see the actual 
                         # errors that may appear, instead of a generic server warning
                         # Update to debug=False prior to actual deployment or project submission!
-                        

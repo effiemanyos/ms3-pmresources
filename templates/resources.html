@@ -1,6 +1,8 @@
 {% extends "base.html" %}
 {% block content %}
     <br>
+    <h3 class="center-align indigo-text text-accent-3">All Resources</h3>
+    <br>
     <ul class="collapsible">
         {% for resource in resources %}
         <li>
@@ -20,6 +22,7 @@
               <p><strong><i class="fas fa-star"></i> Rating:</strong> {{ resource.resource_rating }}</p>
               <a href="{{ resource.resource_url }}"><i class="fas fa-link"></i> Direct Link</i></a>
               <p><strong><i class="fas fa-graduation-cap"></i> Takeaway:</strong> {{ resource.resource_takeaway }}</p>
+              <p><em>by: {{ resource.created_by }}</em></p>
           </div>
         </li>
         {% endfor %}
