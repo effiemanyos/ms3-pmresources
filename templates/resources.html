@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
-
+    <br>
     <ul class="collapsible">
         {% for resource in resources %}
         <li>
@@ -13,12 +13,13 @@
               {% endif %}
             </div>
           <div class="collapsible-body">
-              <p><strong>Category:</strong> {{ resource.category_name }}</p>
-              <p><strong>Source:</strong> {{ resource.source_name }}</p>
-              <p><strong>Topic:</strong> {{ resource.resource_topic }}</p>
-              <p><strong>Format:</strong> {{ resource.resource_type }}</p>
-              <p><strong>Rating:</strong> {{ resource.resource_rating }}</p>
-              <a href="{{ resource.resource_url }}">Direct Link <i class="fas fa-external-link-alt"></i></a>
+              <p><strong><i class="fas fa-th"></i> Category:</strong> {{ resource.category_name }}</p>
+              <p><strong><i class="fas fa-globe"></i> Source:</strong> {{ resource.source_name }}</p>
+              <p><strong><i class="fas fa-comment-dots"></i> Topic:</strong> {{ resource.resource_topic }}</p>
+              <p><strong><i class="fas fa-folder-open"></i> Type:</strong> {{ resource.resource_type }}</p>
+              <p><strong><i class="fas fa-star"></i> Rating:</strong> {{ resource.resource_rating }}</p>
+              <a href="{{ resource.resource_url }}"><i class="fas fa-link"></i> Direct Link</i></a>
+              <p><strong><i class="fas fa-graduation-cap"></i> Takeaway:</strong> {{ resource.resource_takeaway }}</p>
           </div>
         </li>
         {% endfor %}
