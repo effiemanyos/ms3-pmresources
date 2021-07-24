@@ -103,6 +103,7 @@ def add_resource():
     if request.method == "POST":
         is_done = "on" if request.form.get("is_done") else "off"
         resource = {
+            "resource_icon": request.form.get("resource_icon"),
             "resource_title": request.form.get("resource_title"),
             "resource_author": request.form.get("resource_author"),
             "creation_date": request.form.get("creation_date"),
@@ -129,6 +130,7 @@ def edit_resource(resource_id):
     if request.method == "POST":
         is_done = "on" if request.form.get("is_done") else "off"
         submit = {
+            "resource_icon": request.form.get("resource_icon"),
             "resource_title": request.form.get("resource_title"),
             "resource_author": request.form.get("resource_author"),
             "creation_date": request.form.get("creation_date"),

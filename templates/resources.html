@@ -17,8 +17,8 @@
                   {% endif %}
               </div>
               <div class="col s9">
-                &nbsp;<strong>{{ resource.resource_title }}</strong>&nbsp;by&nbsp;
-                    <em>{{ resource.resource_author }}</em>&nbsp;({{ resource.creation_date }})
+                {{ resource.resource_icon }}&nbsp;<strong>{{ resource.resource_title }}</strong>&nbsp;by&nbsp;
+                    <em>{{ resource.resource_author }}</em>&nbsp;&nbsp;({{ resource.creation_date }})
                 {% if resource.is_done == "on" %}
                     &nbsp;<i class="fas fa-check-circle white-text tooltipped"
                         data-position="right" data-tooltip="DONE!"></i>
