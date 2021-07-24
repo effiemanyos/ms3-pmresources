@@ -19,19 +19,25 @@
 <body>
 
     <header>
-        <!-- top navbar -->
+        <!-- Top Navbar -->
         <nav class="nav-extended text-shadow indigo accent-3">
             <div class="nav-wrapper">
                 <a href="{{ url_for('get_resources') }}" class="brand-logo">&nbsp;&nbsp;Produck</a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars"></i></a>
                 <ul class="right hide-on-med-and-down">
+                    <!-- Access: All Users -->
                     <li><a href="{{ url_for('get_resources') }}"><i class="fas fa-book-reader navbar-icon"></i> Resources</a></li>
+                    <!-- Access: Only Members -->
                     {% if session.user %}
                         <li><a href="{{ url_for('profile', username=session['user']) }}"><i class="fas fa-user-circle navbar-icon"></i> Profile</a></li>
                         <li><a href="{{ url_for('add_resource') }}"><i class="fas fa-plus-circle navbar-icon"></i> Add New</a></li>
-                        <li><a href="#"><i class="fas fa-th navbar-icon"></i> Categories</a></li>
+                        <!-- Access: Only Admins -->
+                        {% if session.user|lower == "admin"|lower %}
+                            <li><a href="{{ url_for('get_categories') }}"><i class="fas fa-th navbar-icon"></i> Manage Categories</a></li>
+                        {% endif %}
                         <li><a href="{{ url_for('logout') }}"><i class="fas fa-power-off navbar-icon"></i> Log Out</a></li>
                     {% else %}
+                    <!-- Access: Register or Log In -->
                         <li><a href="{{ url_for('login') }}"><i class="fas fa-key navbar-icon"></i> Log In</a></li>
                         <li><a href="{{ url_for('register') }}"><i class="fas fa-door-open navbar-icon"></i> Register</a></li>
                     {% endif %}
@@ -39,14 +45,16 @@
             </div>
         </nav>
 
-        <!-- mobile sidenav -->
+        <!-- Mobile Sidenav -->
         <ul class="sidenav" id="mobile-demo">
             <li><h4 class="center-align indigo-text text-accent-3">Produck</h4></li>
             <li><a href="{{ url_for('get_resources') }}">Resources</a></li>
             {% if session.user %}
                 <li><a href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
                 <li><a href="{{ url_for('add_resource') }}">Add New</a></li>
-                <li><a href="#">Categories</a></li>
+                {% if session.user|lower == "admin"|lower %}
+                    <li><a href="{{ url_for('get_categories') }}">Manage Categories</a></li>
+                {% endif %}    
                 <li><a href="{{ url_for('logout') }}">Log Out</a></li>
             {% else %}
                 <li><a href="{{ url_for('login') }}">Log In</a></li>
