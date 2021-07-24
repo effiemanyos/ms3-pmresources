@@ -52,13 +52,13 @@
           <!-- Resource Collapsible Body -->
           <div class="collapsible-body">
               <p><strong><i class="fas fa-th"></i>&nbsp; Category:</strong> {{ resource.category_name }}</p>
-              <p><strong><i class="fas fa-globe"></i>&nbsp; Source:</strong> {{ resource.source_name }}</p>
               <p><strong><i class="fas fa-comment-dots"></i>&nbsp; Topic:</strong> {{ resource.resource_topic }}</p>
-              <p><strong><i class="fas fa-folder-open"></i>&nbsp; Type:</strong> {{ resource.resource_type }}</p>
+              <p><strong><i class="fas fa-globe"></i>&nbsp; Source:</strong> {{ resource.source_name }}</p>
+              <p><strong><i class="fas fa-graduation-cap"></i>&nbsp; Takeaway:</strong> {{ resource.resource_takeaway }}</p>
+              <p><strong><i class="fas fa-folder-open"></i>&nbsp; Format:</strong> {{ resource.resource_format }}</p>
               <p><strong><i class="fas fa-star"></i>&nbsp; Rating:</strong> {{ resource.resource_rating }}</p>
               <a href="{{ resource.resource_url }}" target="_blank"><i class="fas fa-link"></i>&nbsp; Direct Link</i></a>
-              <p><strong><i class="fas fa-graduation-cap"></i>&nbsp; Takeaway:</strong> {{ resource.resource_takeaway }}</p>
-              <p><em>by: {{ resource.created_by }}</em></p>
+              <p><em>by {{ resource.created_by }}</em></p>
           </div>
         </li>
         {% endfor %}
