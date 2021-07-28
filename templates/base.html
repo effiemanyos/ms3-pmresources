@@ -31,11 +31,11 @@
                     <!-- Access: Members Only -->
                     {% if session.user %}
                         <li><a href="{{ url_for('add_resource') }}"><i class="fas fa-plus-circle navbar-icon"></i> &nbsp;Add New</a></li>
-                        <li><a href="{{ url_for('profile', username=session['user']) }}"><i class="fas fa-user-circle navbar-icon"></i> &nbsp;My Profile</a></li>
                         <!-- Access: Admins Only -->
                         {% if session.user|lower == "admin"|lower %}
                             <li><a href="{{ url_for('get_categories') }}"><i class="fas fa-th navbar-icon"></i> &nbsp;Categories</a></li>
                         {% endif %}
+                        <li><a href="{{ url_for('profile', username=session['user']) }}"><i class="fas fa-user-circle navbar-icon"></i> &nbsp;My Profile</a></li>
                         <li><a href="{{ url_for('logout') }}"><i class="fas fa-power-off navbar-icon"></i> &nbsp;Log Out</a></li>
                     <!-- Access: Register or Log In -->
                     {% else %}
@@ -55,11 +55,11 @@
             <!-- Access: Members Only -->
             {% if session.user %}
                 <li><a href="{{ url_for('add_resource') }}">Add New</a></li>
-                <li><a href="{{ url_for('profile', username=session['user']) }}">My Profile</a></li>
                 <!-- Access: Admins Only -->
                 {% if session.user|lower == "admin"|lower %}
                     <li><a href="{{ url_for('get_categories') }}">Categories</a></li>
-                {% endif %}    
+                {% endif %} 
+                <li><a href="{{ url_for('profile', username=session['user']) }}">My Profile</a></li>   
                 <li><a href="{{ url_for('logout') }}">Log Out</a></li>
             <!-- Access: Register or Log In -->
             {% else %}
