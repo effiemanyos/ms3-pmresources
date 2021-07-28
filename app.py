@@ -25,6 +25,13 @@ def get_resources():
     return render_template("resources.html", resources=resources)
 
 
+@app.route("/resources/<category>")
+def resources_page_filtered(category):
+    resources = list(mongo.db.resources.find({'category_name': category}))
+    categories = mongo.db.categories.find().sort("category_name", 1)
+    return render_template("resources.html", resources=resources, categories=categories)
+
+
 @app.route("/search", methods=["GET", "POST"])
 def search():
     query = request.form.get("query")

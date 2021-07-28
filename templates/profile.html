@@ -37,7 +37,7 @@
                     <!-- Access: Admins Only -->
                     {% if session.user|lower == "admin"|lower %}
                     <a href="{{ url_for('get_categories') }}" class="btn green accent-4 white-text text-shadow">
-                        View Categories<i class="fas fa-th navbar-icon left"></i></a>
+                        Manage Categories<i class="fas fa-th navbar-icon left"></i></a>
                     {% endif %}
                 </div>
                 <br>
@@ -45,5 +45,6 @@
             </div>
         </div>
     </div>
+    <br>
 
 {% endblock %}
