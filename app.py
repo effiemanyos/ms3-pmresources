@@ -22,7 +22,8 @@ mongo = PyMongo(app)
 @app.route("/get_resources")
 def get_resources():
     resources = list(mongo.db.resources.find())
-    return render_template("resources.html", resources=resources)
+    categories = mongo.db.categories.find().sort("category_name", 1)
+    return render_template("resources.html", resources=resources, categories=categories)
 
 
 @app.route("/resources/<category>")
