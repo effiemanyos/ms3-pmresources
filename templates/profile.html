@@ -1,34 +1,46 @@
 {% extends "base.html" %}
 {% block content %}
 
+    <!-- Page Title -->
     <br>
     <h3 class="center-align indigo-text text-accent-3 uppercase">
         My Profile
     </h3>
     <br>
+    <!-- Message Card -->
     <div class="row">
         <div class="col s12 m8 offset-m2">
             <div class="card-panel grey lighten-5">
                 <br>
-                <!-- Hi <username> -->
-                <h4 class="center-align">
-                    Hi, {{ username }}!
-                </h4>
-                <!-- Welcome Message -->
-                <h5 class="center-align"><br>Welcome to Waverly's <i class="fas fa-cat"></i>
-                    <br>Product Management Resources</h5>
-                <br><br>
+                <div class="center align">
+                    <!-- Hi <username> -->
+                    <h4 class="center-align">
+                        Hi, {{ username }}!
+                    </h4>
+                    <!-- Welcome Message -->
+                    <h5 class="center-align"><br>Welcome to Waverly's <i class="fas fa-cat"></i>
+                        <br>Product Management Resources</h5>
+                    <h6>You can SAVE and SHARE your favorite product-related resources,
+                        <br> as well as DISCOVER new ones shared by like-minded professionals.</h6>
+                </div>
+                <br>
+                <br>
                 <!-- CTA Buttons -->
                 <div class="center-align">
                     <a href="{{ url_for('add_resource') }}" class="btn indigo accent-3 white-text text-shadow">
-                        Add New Resource <i class="fas fa-plus-square left"></i></a>
-                    <br><br><br>
-                    <a href="{{ url_for('get_resources') }}" class="btn green accent-4 white-text text-shadow">
-                        View Resources <i class="fas fa-book-reader left"></i></a>
-                    <a href="{{ url_for('get_categories') }}" class="btn cyan accent-4 white-text text-shadow">
-                        View Categories <i class="fas fa-th navbar-icon left"></i></a>
+                        Add New Resources<i class="fas fa-plus-square left"></i></a>
+                    <br>
+                    <br>
+                    <a href="{{ url_for('get_resources') }}" class="btn cyan accent-4 white-text text-shadow">
+                        View All Resources<i class="fas fa-book-reader left"></i></a>
+                    <!-- Access: Admins Only -->
+                    {% if session.user|lower == "admin"|lower %}
+                    <a href="{{ url_for('get_categories') }}" class="btn green accent-4 white-text text-shadow">
+                        View Categories<i class="fas fa-th navbar-icon left"></i></a>
+                    {% endif %}
                 </div>
-                <br><br>
+                <br>
+                <br>
             </div>
         </div>
     </div>
