@@ -85,16 +85,10 @@ def login():
     return render_template("login.html")
 
 
-@app.route("/home/<username>", methods=["GET", "POST"])
-def home(username):
-    # Grab the session user's username from the database
-    username = mongo.db.users.find_one(
-        {"username": session["user"]})["username"]
+@app.route("/home")
+def home():
 
-    if session["user"]:        
-        return render_template("home.html", username=username)
-    
-    return redirect(url_for("login"))
+    return render_template("home.html")
 
 
 @app.route("/profile/<username>", methods=["GET", "POST"])
