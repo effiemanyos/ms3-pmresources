@@ -1,36 +1,41 @@
 {% extends "base.html" %}
 {% block content %}
-    <br>
-    <h3 class="center-align indigo-text text-accent-3">Manage Product-Related<br>Categories</h3>
-    <br><br>
 
-    <!-- Add Category Button -->
-    <div class="row">
-        <div class="col s12 center-align">
-            <a href="{{ url_for('add_category') }}" class="btn-large indigo accent-3 text-shadow">
-                Add Category <i class="fas fa-plus-square left"></i>
-            </a>
+    <div class="container">
+        <br>
+        <h3 class="center-align indigo-text text-accent-3">Manage Product-Related<br>Categories</h3>
+        <br><br>
+
+        <!-- Add Category Button -->
+        <div class="row">
+            <div class="col s12 center-align">
+                <a href="{{ url_for('add_category') }}" class="btn-large indigo accent-3 text-shadow">
+                    Add Category <i class="fas fa-plus-square left"></i>
+                </a>
+            </div>
         </div>
-    </div>
-    <br>
+        <br>
 
-    <!-- All Categories -->
-    <br>
-    <div class="row">
-        {% for category in categories %}
+        <!-- All Categories -->
+        <br>
+        <div class="row">
+            {% for category in categories %}
             <div class="col s12 m3">
                 <div class="card white-text indigo accent-3 text-shadow center-align">
                     <div class="card-content white-text">
                         <span class="card-title">{{ category.category_name }}</span>
                     </div>
                     <div class="card-action">
-                        <a href="{{ url_for('edit_category', category_id=category._id) }}" class="btn cyan accent-4 white-text text-shadow">Edit</a>
-                        <a href="{{ url_for('delete_category', category_id=category._id) }}" class="btn green accent-4 white-text text-shadow">Delete</a>
+                        <a href="{{ url_for('edit_category', category_id=category._id) }}"
+                            class="btn cyan accent-4 white-text text-shadow">Edit</a>
+                        <a href="{{ url_for('delete_category', category_id=category._id) }}"
+                            class="btn green accent-4 white-text text-shadow">Delete</a>
                     </div>
                 </div>
             </div>
-        {% endfor %}
+            {% endfor %}
+        </div>
+        <br>
     </div>
-    <br>
 
 {% endblock %}

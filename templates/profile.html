@@ -1,20 +1,23 @@
 {% extends "base.html" %}
 {% block content %}
 
+<div class="container">
     <br>
     <h3 class="center-align indigo-text text-accent-3 uppercase">
-        My Profile 
+        My Profile
     </h3>
     <br>
     <div class="row">
         <div class="col s12 m8 offset-m2">
             <div class="card-panel grey lighten-5">
-                <h4 class="center-align indigo-text text-accent-3 uppercase">
-                    Hi {{ username }}!
+                <h4 class="center-align">
+                    Hi, {{ username }}!
                 </h4>
-                <h5 class="center-align"><br>Welcome to Waverly's <i class="fas fa-cat"></i><br>Product Management Resources</h5>
+                <h5 class="center-align"><br>Welcome to Waverly's <i class="fas fa-cat"></i><br>Product Management
+                    Resources</h5>
             </div>
         </div>
     </div>
+</div>
 
 {% endblock %}
