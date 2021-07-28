@@ -26,7 +26,7 @@
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars"></i></a>
                 <ul class="right hide-on-med-and-down">
                     <!-- Access: All Users -->
-                    <li><a href="#"><i class="fas fa-cat navbar-icon"></i> &nbsp;Home</a></li>
+                    <li><a href="{{ url_for('home', username=session['user']) }}"><i class="fas fa-cat navbar-icon"></i> &nbsp;Home</a></li>
                     <li><a href="{{ url_for('get_resources') }}"><i class="fas fa-book-reader navbar-icon"></i> &nbsp;Resources</a></li>
                     <!-- Access: Members Only -->
                     {% if session.user %}
