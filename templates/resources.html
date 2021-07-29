@@ -59,7 +59,8 @@
                     <div class="col s3">
                         <i class="fas fa-caret-down"></i>
                         {% if session.user|lower == resource.created_by|lower %}
-                        <button data-target="modal1" class="btn-small red button-styling text-shadow modal-trigger">Delete</button>
+                        <button data-target="modal1" class="btn-small red button-styling 
+                            text-shadow modal-trigger">Delete</button>
                         <a href="{{ url_for('edit_resource', resource_id=resource._id) }}"
                             class="btn-small cyan accent-4 button-styling">Edit</a>
                         {% endif %}
@@ -99,8 +100,7 @@
     <br>
     <br>
 
-    <!-- Delete Resources Modal -->
-
+    <!-- Delete Resource Modal -->
     {% for resource in resources %}
     <div id="modal1" class="modal modal-styling">
         <div class="modal-content">
