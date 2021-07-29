@@ -21,7 +21,7 @@
 .hero {
     /* Sizing */
     width: 100vw;
-    height: 93vh;
+    height: 100vh;
     
     /* Flexbox stuff */
     display: flex;
@@ -88,4 +88,105 @@
 
 .modal-heading {
     color: #3d5afe;
+}
+
+
+/* ------------------------------------[ Footer Section ]-------------------------------------- */
+
+.footer-bg {
+    padding-top: 40px;
+    background-color: #3d5afe;
+    
+}
+
+.footer-container {
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.footer-row {
+    margin-bottom: 0px;
+}
+
+.footer-heading {
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.footer-paragraph {
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    font-weight: 200;
+}
+
+.social-links li a i {
+    width: 35px;
+    height: 35px;
+    padding: 13px 0;
+    border-radius: 50%;
+    font-size: 20px;
+    line-height: 10px;
+    text-align: center;
+    color: #fff;
+    background: #00b8d4;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
+
+.social-links li a i:hover {
+    background: #fff;
+}
+.social-links li{
+    display: inline;
+}
+
+.copyright-styling{
+    padding-bottom: 20px;
+    color: #fff;
+}
+
+.footer-icon {
+    font-size: 43px;
+    color: #fff;
+}
+
+/* ----------[ Responsiveness ]---------- */
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+    .footer-heading {
+        font-size: 20px;
+    }
+
+    .footer-paragraph {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+/* Laptop */
+    .footer-heading {
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .footer-paragraph {
+        text-align: center;
+        font-size: 16px;
+    }
+}
+
+/* 4K */
+@media only screen and (min-width: 2560px) {
+    .footer-heading {
+        font-size: 24px;
+    }
+
+    .footer-paragraph {
+        text-align: left;
+        font-size: 16px;
+    }
 }
