@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <br>
+    <!-- Container & Error Message -->
+    <div class="row">
+        <div class="col s12 m8 offset-m2">
+            <div class="card-panel grey lighten-5 form-styling">
+                <!-- Error Code -->
+                <h2 class="center-align indigo-text text-accent-3 uppercase">500</h2>
+                <!-- Error Message -->
+                <div class="center align">
+                    <h4>
+                        <strong>INTERNAL SERVER ERROR</strong> <span>&#128581;&#127997;</span>
+                    </h4>
+                    <br>
+                    <h5 class="container">Sorry, the server encountered an internal error and was unable to complete your
+                        request.</h5>
+                    <br>
+                    <h6 class="container">Click on the button below to go back where the fun is!
+                        <span>&#128071;&#127997;</span></h6>
+                </div>
+                <br>
+                <br>
+                <br>
+                <!-- CTA Buttons -->
+                <div class="center-align">
+                    <a href="{{ url_for('home') }}" class="btn-large indigo accent-3 white-text text-shadow button-styling">
+                        Go Home</a>
+                </div>
+                <br>
+                <br>
+            </div>
+        </div>
+    </div>
+    <br>
+
+{% endblock %}
