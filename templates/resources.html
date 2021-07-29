@@ -31,7 +31,7 @@
             {% if request.path == url_for('get_resources') %}
             {% set category_class = "btn cyan accent-4 white-text btn-margin category-filters" %}
             {% else %}
-            {% set category_class = "btn indigo accent-4 white-text btn-margin category-filters" %}
+            {% set category_class = "btn indigo accent-3 white-text btn-margin category-filters" %}
             {% endif %}
                 <a class="{{ category_class }}" href="{{ url_for('get_resources') }}">All Resources</a>
             <!-- All Categories -->
@@ -39,7 +39,7 @@
             {% if request.path == url_for('resources_page_filtered', category=category.category_name) %}
             {% set category_class = "btn cyan accent-4 white-text btn-margin category-filters" %}
             {% else %}
-            {% set category_class = "btn indigo accent-4 white-text btn-margin category-filters" %}
+            {% set category_class = "btn indigo accent-3 white-text btn-margin category-filters" %}
             {% endif %}
                 <a class="{{ category_class }}"
                     href="{{url_for('resources_page_filtered', category=category.category_name)}}">{{ category.category_name }}</a>

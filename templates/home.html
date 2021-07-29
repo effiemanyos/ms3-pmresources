@@ -5,13 +5,22 @@
         <div class="hero-inner">
             <h1>Product Management Resources</h1>
             <br>
-            <h4 class="container">Save and share your favorite product-related resources, and discover new ones shared by like-minded professionals</h4>
+            <h4 class="container">Save and share your favorite product-related resources, and discover new ones shared by
+                like-minded professionals</h4>
             <br>
             <br>
             <br>
-            <button type="submit" class="btn-large white-text indigo accent-3 text-shadow">
-                View Resources
-            </button>
+            <a href="{{ url_for('get_resources') }}"
+                class="btn-large white-text indigo accent-3 text-shadow button-styling">View Resources</a>
+            &nbsp;&nbsp;
+            <!-- Access: Members Only -->
+            {% if session.user %}
+            <a href="{{ url_for('add_resource') }}"
+                class="btn-large white-text cyan accent-4 text-shadow button-styling">Add Resources</a>
+            {% else %}
+            <a href="{{ url_for('register') }}"
+                class="btn-large white-text cyan accent-4 text-shadow button-styling">Register Now</a>
+            {% endif %}
         </div>
     </section>
 
