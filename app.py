@@ -18,6 +18,9 @@ app.secret_key = os.environ.get("SECRET_KEY")
 mongo = PyMongo(app)
 
 
+# ------------------------------------------ Resources
+
+
 @app.route("/")
 @app.route("/get_resources")
 def get_resources():
@@ -38,6 +41,9 @@ def search():
     query = request.form.get("query")
     resources = list(mongo.db.resources.find({"$text": {"$search": query}}))
     return render_template("resources.html", resources=resources)
+
+
+# ------------------------------------------ Register
 
 
 @app.route("/register", methods=["GET", "POST"])
@@ -62,6 +68,9 @@ def register():
         flash("Registration Successfull")
         return redirect(url_for("profile", username=session["user"]))
     return render_template("register.html")
+
+
+# ------------------------------------------ Log In
 
 
 @app.route("/login", methods=["GET", "POST"])
@@ -93,10 +102,16 @@ def login():
     return render_template("login.html")
 
 
+# ------------------------------------------ Home
+
+
 @app.route("/home")
 def home():
 
     return render_template("home.html")
+
+
+# ------------------------------------------ Profile
 
 
 @app.route("/profile/<username>", methods=["GET", "POST"])
@@ -104,11 +119,17 @@ def profile(username):
     # Grab the session user's username from the database
     username = mongo.db.users.find_one(
         {"username": session["user"]})["username"]
+    resources = list(mongo.db.resources.find(
+        {"created_by": session["user"]}))
 
     if session["user"]:        
-        return render_template("profile.html", username=username)
+        return render_template(
+            "profile.html", username=username, resources=resources)
     
     return redirect(url_for("login"))
+
+
+# ------------------------------------------ Log Out
 
 
 @app.route("/logout")
@@ -117,6 +138,9 @@ def logout():
     flash("You have been logged out")
     session.pop("user")
     return redirect(url_for("login"))
+
+
+# ------------------------------------------ Add Resource
 
 
 @app.route("/add_resource", methods=["GET", "POST"])
@@ -144,6 +168,9 @@ def add_resource():
 
     categories = mongo.db.categories.find().sort("category_name", 1)
     return render_template("add_resource.html", categories=categories)
+
+
+# ------------------------------------------ Edit Resource
 
 
 @app.route("/edit_resource/<resource_id>", methods=["GET", "POST"])
@@ -174,6 +201,9 @@ def edit_resource(resource_id):
     return render_template("edit_resource.html", resource=resource, categories=categories)
 
 
+# ------------------------------------------ Delete Resource
+
+
 @app.route("/delete_resource/<resource_id>")
 def delete_resource(resource_id):
     mongo.db.resources.remove({"_id": ObjectId(resource_id)})
@@ -181,10 +211,16 @@ def delete_resource(resource_id):
     return redirect(url_for("get_resources"))
 
 
+# ------------------------------------------ Categories
+
+
 @app.route("/get_categories")
 def get_categories():
     categories = list(mongo.db.categories.find().sort("category_name", 1))
     return render_template("categories.html", categories=categories)
+
+
+# ------------------------------------------ Add Category
 
 
 @app.route("/add_category", methods=["GET", "POST"])
@@ -200,6 +236,9 @@ def add_category():
     return render_template("add_category.html")
 
 
+# ------------------------------------------ Edit Category
+
+
 @app.route("/edit_category/<category_id>", methods=["GET", "POST"])
 def edit_category(category_id):
     if request.method == "POST":
@@ -213,11 +252,17 @@ def edit_category(category_id):
     return render_template("edit_category.html", category=category)
 
 
+# ------------------------------------------ Delete Category
+
+
 @app.route("/delete_category/<category_id>")
 def delete_category(category_id):
     mongo.db.categories.remove({"_id": ObjectId(category_id)})
     flash("Category Successfully Deleted")
     return redirect(url_for("get_categories"))
+
+
+# ------------------------------------------ Run App
 
 
 if __name__ == "__main__":

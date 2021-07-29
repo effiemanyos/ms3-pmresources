@@ -48,4 +48,66 @@
     </div>
     <br>
 
+    <!-- Page Subtitle -->
+    <h4 class="center-align indigo-text text-accent-3 uppercase">
+        My Resources
+    </h4>
+    <br>
+    <br>
+    <!-- All Resources -->
+    <div class="container">
+        {% if resources|length > 0 %}
+        <ul class="collapsible collapsible-styling">
+            {% for resource in resources %}
+                <li>
+                    <div class="collapsible-header white-text indigo accent-3 text-shadow collapsible-styling">
+                        <!-- Delete & Edit Buttons -->
+                        <div class="col s3">
+                            <i class="fas fa-caret-down"></i>
+                            <a href="{{ url_for('delete_resource', resource_id=resource._id) }}"
+                                class="btn-small red button-styling">Delete</a>
+                            <a href="{{ url_for('edit_resource', resource_id=resource._id) }}"
+                                class="btn-small cyan accent-4 button-styling">Edit</a>
+                        </div>
+                        <!-- Resource Icon, Title, Author, Creation Date -->
+                        <div class="col s9">
+                            &nbsp;&nbsp;&nbsp;{{ resource.resource_icon }} &nbsp;
+                            <strong>{{ resource.resource_title }}</strong> &nbsp;by&nbsp;
+                            <em>{{ resource.resource_author }}</em>&nbsp;&nbsp;({{ resource.resource_rating }})
+                            {% if resource.is_done == "on" %}
+                                &nbsp;<i class="fas fa-check-circle white-text tooltipped" data-position="right"
+                                    data-tooltip="DONE!"></i>
+                            {% endif %}
+                        </div>
+                    </div>
+                    <!-- Resource Collapsible Body -->
+                    <div class="collapsible-body">
+                        <p><strong><i class="fas fa-th"></i>&nbsp; Category:</strong> {{ resource.category_name }}</p>
+                        <p><strong><i class="fas fa-comment-dots"></i>&nbsp; Topic:</strong> {{ resource.resource_topic }}</p>
+                        <p><strong><i class="fas fa-globe"></i>&nbsp; Source:</strong> {{ resource.source_name }}</p>
+                        <p><strong><i class="fas fa-graduation-cap"></i>&nbsp; Takeaway:</strong>
+                            {{ resource.resource_takeaway }}</p>
+                        <p><strong><i class="fas fa-folder-open"></i>&nbsp; Format:</strong> {{ resource.resource_format }}</p>
+                        <p><strong><i class="fas fa-calendar-alt"></i>&nbsp; Created:</strong> {{ resource.creation_date }}</p>
+                        <p><strong><i class="fas fa-star"></i>&nbsp; Rated:</strong> {{ resource.resource_rating }}</p>
+                        <a href="{{ resource.resource_url }}" target="_blank"><i class="fas fa-link"></i>&nbsp; Direct
+                            Link</i></a>
+                        <p><em>by {{ resource.created_by }}</em></p>
+                    </div>
+                </li>
+            {% endfor %}
+        </ul>
+        {% else %}
+            <div class="col s12 center-align">
+                <h5 class="no-recipes-heading">Hey <span>{{ username }}!</span> <span>😎</span></h5>
+                <br>
+                <p class="no-recipes-text">Ready to create something delicious?</p>
+                <br>
+                <p class="no-recipes-text">Simply click the button above <span>☝</span></p>
+            </div>
+        {% endif %}
+    </div>
+    <br>
+    <br>
+
 {% endblock %}
