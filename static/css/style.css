@@ -10,10 +10,6 @@
     line-height: 2;
 }
 
-.btn-small {
-    margin: 5px;
-}
-
 .collapsible-header .col strong {
     margin: 5px;
     line-height: 42px;
@@ -67,6 +63,11 @@
 .searchbar-styling {
     border-radius: 10px;
     margin-bottom: 65px;
+}
+
+/* Delete & Edit Buttons */
+.btn-small {
+    margin: 5px 0;
 }
 
 /* ------------------------------------[ Add New Resources Page ]-------------------------------------- */
