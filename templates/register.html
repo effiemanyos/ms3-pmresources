@@ -2,11 +2,15 @@
 {% block content %}
 
     <div class="container">
+        <!-- Page Title -->
+        <br>
         <h3 class="center-align indigo-text text-accent-3">Register</h3>
         <br>
+        <br>
+        <!-- Container & Form -->
         <div class="row">
             <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('register') }}">
-                <div class="card-panel">
+                <div class="card-panel grey lighten-5 form-styling">
                     <!-- Username-->
                     <div class="row">
                         <div class="input-field col s12">
@@ -27,19 +31,19 @@
                     </div>
                     <!-- Register Button -->
                     <div class="row">
-                        <button type="submit" class="col s12 btn-large indigo accent-3 text-shadow">
-                            Register <i class="fas fa-sign-in-alt"></i>
+                        <button type="submit" class="col s12 btn-large indigo accent-3 text-shadow button-styling">
+                            Join Now
                         </button>
                     </div>
                 </div>
             </form>
         </div>
-
+        <!-- Log In Redirection -->
         <div class="row">
             <div class="col s12">
                 <p class="center-align">
                     Already Registered?
-                    <a href="{{ url_for('login') }}" class="indigo-text text-accent-3">Log In</a>
+                    <a href="{{ url_for('login') }}" class="indigo-text text-accent-3"><strong>Log In</strong></a>
                 </p>
             </div>
         </div>
