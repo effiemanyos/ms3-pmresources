@@ -7,10 +7,11 @@
         My Profile
     </h3>
     <br>
-    <!-- Message Card -->
+    <br>
+    <!-- Container & Welcome Message -->
     <div class="row">
         <div class="col s12 m8 offset-m2">
-            <div class="card-panel grey lighten-5">
+            <div class="card-panel grey lighten-5 form-styling">
                 <br>
                 <div class="center align">
                     <!-- Hi <username> -->
@@ -21,22 +22,22 @@
                     <h5 class="center-align"><br>Welcome to Selftod <i class="fas fa-cat"></i>
                         <br>Product Management Resources</h5>
                     <br>
-                    <h6>You can SAVE and SHARE your favorite product-related resources,
-                        <br> as well as DISCOVER new ones shared by like-minded professionals.</h6>
+                    <h6 class="container">You can SAVE and SHARE your favorite product-related resources, 
+                        as well as DISCOVER new ones shared by like-minded professionals.</h6>
                 </div>
                 <br>
                 <br>
                 <!-- CTA Buttons -->
                 <div class="center-align">
-                    <a href="{{ url_for('add_resource') }}" class="btn indigo accent-3 white-text text-shadow">
-                        Add New Resources<i class="fas fa-plus-square left"></i></a>
+                    <a href="{{ url_for('add_resource') }}" class="btn indigo accent-3 white-text text-shadow button-styling">
+                        Add New Resources<i class="fas fa-plus-circle left"></i></a>
                     <br>
                     <br>
-                    <a href="{{ url_for('get_resources') }}" class="btn cyan accent-4 white-text text-shadow">
+                    <a href="{{ url_for('get_resources') }}" class="btn cyan accent-4 white-text text-shadow button-styling">
                         View All Resources<i class="fas fa-book-reader left"></i></a>
                     <!-- Access: Admins Only -->
                     {% if session.user|lower == "admin"|lower %}
-                    <a href="{{ url_for('get_categories') }}" class="btn green accent-4 white-text text-shadow">
+                    <a href="{{ url_for('get_categories') }}" class="btn green accent-4 white-text text-shadow button-styling">
                         Manage Categories<i class="fas fa-th navbar-icon left"></i></a>
                     {% endif %}
                 </div>
