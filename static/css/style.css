@@ -19,6 +19,9 @@
     line-height: 42px;
 }
 
+/* ------------------------------------[ Home Page ]-------------------------------------- */
+
+/* Hero Image */
 .hero {
     /* Sizing */
     width: 100vw;
@@ -40,7 +43,6 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-
 
 /* ------------------------------------[ All Resources Page ]-------------------------------------- */
 
@@ -65,4 +67,11 @@
 .searchbar-styling {
     border-radius: 10px;
     margin-bottom: 65px;
+}
+
+/* ------------------------------------[ Add New Resources Page ]-------------------------------------- */
+
+/* Form Styling */
+.form-styling {
+    border-radius: 10px;
 }
