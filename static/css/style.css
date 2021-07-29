@@ -40,3 +40,29 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
+
+/* ------------------------------------[ All Resources Page ]-------------------------------------- */
+
+/* Filter Styling */
+.category-filters {
+    border-radius: 35px;
+    margin-bottom: 8px;
+}
+
+/* Button Styling */
+.button-styling {
+    border-radius: 35px;
+}
+
+/* Accordion Styling */
+.collapsible-styling {
+    border-radius: 10px;
+    margin-bottom: 8px;
+}
+
+/* Search Bar Styling */
+.searchbar-styling {
+    border-radius: 10px;
+    margin-bottom: 65px;
+}

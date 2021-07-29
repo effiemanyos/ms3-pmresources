@@ -6,7 +6,7 @@
         <h3 class="center-align indigo-text text-accent-3">Product Management<br>Resources</h3>
         <br>
         <!-- Search Bar -->
-        <div class="row card-panel grey lighten-5">
+        <div class="row card-panel grey lighten-5 searchbar-styling">
             <form action="{{ url_for('search') }}" method="POST" class="col s12">
                 <div class="row valign-wrapper center-align">
                     <!-- Search Input -->
@@ -17,31 +17,29 @@
                     </div>
                     <!-- Reset & Search Buttons -->
                     <div class="col s12 m4">
-                        <a href="{{ url_for('get_resources') }}" class="red btn text-shadow">Reset</a>
-                        <button type="submit" class="cyan accent-4 btn text-shadow">
-                            <i class="fas fa-search left"></i> Search
-                        </button>
+                        <a href="{{ url_for('get_resources') }}" class="red btn text-shadow button-styling">
+                            <i class="fas fa-redo left"></i> Reset</a>
+                        <button type="submit" class="cyan accent-4 btn text-shadow button-styling">
+                            <i class="fas fa-search left"></i> Search</button>
                     </div>
                 </div>
             </form>
         </div>
-        <br>
-        <br>
         <!-- Filters by Category -->
         <div class="category-menu center-align">
             <!-- "All Resources" Button -->
             {% if request.path == url_for('get_resources') %} 
-                {% set category_class = "btn green accent-4 white-text btn-margin" %} 
+                {% set category_class = "btn cyan accent-4 white-text btn-margin category-filters" %} 
             {% else %} 
-                {% set category_class = "btn cyan accent-4 white-text btn-margin" %} 
+                {% set category_class = "btn indigo accent-4 white-text btn-margin category-filters" %} 
             {% endif %}
             <a class="{{ category_class }}" href="{{ url_for('get_resources') }}">All Resources</a>
             <!-- All Categories -->
             {% for category in categories %} 
                 {% if request.path == url_for('resources_page_filtered', category=category.category_name) %} 
-                    {% set category_class = "btn green accent-4 white-text btn-margin" %} 
+                    {% set category_class = "btn cyan accent-4 white-text btn-margin category-filters" %} 
                 {% else %} 
-                    {% set category_class = "btn cyan accent-4 white-text btn-margin" %} 
+                    {% set category_class = "btn indigo accent-4 white-text btn-margin category-filters" %} 
                 {% endif %}
                 <a class="{{ category_class }}" href="{{url_for('resources_page_filtered', category=category.category_name)}}">{{ category.category_name }}</a>
             {% endfor %}
@@ -50,10 +48,10 @@
         <br>
         <!-- All Resources -->
         {% if resources|length > 0 %}
-        <ul class="collapsible">
+        <ul class="collapsible collapsible-styling">
             {% for resource in resources %}
             <li>
-                <div class="collapsible-header white-text indigo accent-3 text-shadow">
+                <div class="collapsible-header white-text indigo accent-3 text-shadow collapsible-styling">
                     <!-- Delete & Edit Buttons -->
                     <div class="col s3">
                         <i class="fas fa-caret-down"></i>
@@ -67,7 +65,7 @@
                     <!-- Resource Icon, Title, Author, Creation Date -->
                     <div class="col s9">
                         &nbsp;{{ resource.resource_icon }}&nbsp;&nbsp;<strong>{{ resource.resource_title }}</strong>&nbsp;by&nbsp;
-                        <em>{{ resource.resource_author }}</em>&nbsp;&nbsp;({{ resource.creation_date }})
+                        <em>{{ resource.resource_author }}</em>&nbsp;&nbsp;(Rated: {{ resource.resource_rating }})
                         {% if resource.is_done == "on" %}
                         &nbsp;<i class="fas fa-check-circle white-text tooltipped" data-position="right"
                             data-tooltip="DONE!"></i>
@@ -82,7 +80,8 @@
                     <p><strong><i class="fas fa-graduation-cap"></i>&nbsp; Takeaway:</strong>
                         {{ resource.resource_takeaway }}</p>
                     <p><strong><i class="fas fa-folder-open"></i>&nbsp; Format:</strong> {{ resource.resource_format }}</p>
-                    <p><strong><i class="fas fa-star"></i>&nbsp; Rating:</strong> {{ resource.resource_rating }}</p>
+                    <p><strong><i class="fas fa-calendar-alt"></i>&nbsp; Created:</strong> {{ resource.creation_date }}</p>
+                    <p><strong><i class="fas fa-star"></i>&nbsp; Rated:</strong> {{ resource.resource_rating }}</p>
                     <a href="{{ resource.resource_url }}" target="_blank"><i class="fas fa-link"></i>&nbsp; Direct
                         Link</i></a>
                     <p><em>by {{ resource.created_by }}</em></p>
@@ -94,5 +93,7 @@
         <h3 class="center-align red-text">No Results Found</h3>
         {% endif %}
     </div>
+    <br>
+    <br>
 
 {% endblock %}

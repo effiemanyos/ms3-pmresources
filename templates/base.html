@@ -13,45 +13,49 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
     {% block styles %}
     {% endblock %}
-    <title>Selftod</i></title>
+    <title>Selftod</title>
 </head>
 
 <body>
 
     <header>
         <!-- Top Navbar -->
-        <nav class="nav-extended text-shadow indigo accent-3">
-            <div class="nav-wrapper">
-                <a href="{{ url_for('home') }}" class="brand-logo">&nbsp;&nbsp;Selftod <i
-                        class="fas fa-cat right"></i></a>
-                <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars"></i></a>
-                <ul class="right hide-on-med-and-down">
-                    <!-- Access: All Users -->
-                    <li><a href="{{ url_for('home') }}"><i class="fas fa-cat navbar-icon"></i> &nbsp;Home</a></li>
-                    <li><a href="{{ url_for('get_resources') }}"><i class="fas fa-book-reader navbar-icon"></i>
+        <div class="navbar-fixed">
+            <nav class="nav-extended text-shadow indigo accent-3">
+                <div class="nav-wrapper">
+                    <a href="{{ url_for('home') }}" class="brand-logo">&nbsp;&nbsp;Selftod <i
+                            class="fas fa-cat right"></i></a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars"></i></a>
+                    <ul class="right hide-on-med-and-down">
+                        <!-- Access: All Users -->
+                        <li><a href="{{ url_for('home') }}"><i class="fas fa-cat navbar-icon"></i> 
+                            &nbsp;Home</a></li>
+                        <li><a href="{{ url_for('get_resources') }}"><i class="fas fa-book-reader navbar-icon"></i>
                             &nbsp;Resources</a></li>
-                    <!-- Access: Members Only -->
-                    {% if session.user %}
-                    <li><a href="{{ url_for('add_resource') }}"><i class="fas fa-plus-circle navbar-icon"></i> &nbsp;Add
-                            New</a></li>
-                    <!-- Access: Admins Only -->
-                    {% if session.user|lower == "admin"|lower %}
-                    <li><a href="{{ url_for('get_categories') }}"><i class="fas fa-th navbar-icon"></i>
-                            &nbsp;Categories</a></li>
-                    {% endif %}
-                    <li><a href="{{ url_for('profile', username=session['user']) }}"><i
+                        <!-- Access: Members Only -->
+                        {% if session.user %}
+                            <li><a href="{{ url_for('add_resource') }}"><i class="fas fa-plus-circle navbar-icon"></i>
+                                    &nbsp;Add New</a></li>
+                        <!-- Access: Admins Only -->
+                        {% if session.user|lower == "admin"|lower %}
+                            <li><a href="{{ url_for('get_categories') }}"><i class="fas fa-th navbar-icon"></i>
+                                    &nbsp;Categories</a></li>
+                        {% endif %}
+                        <li><a href="{{ url_for('profile', username=session['user']) }}"><i
                                 class="fas fa-user-circle navbar-icon"></i> &nbsp;My Profile</a></li>
-                    <li><a href="{{ url_for('logout') }}"><i class="fas fa-power-off navbar-icon"></i> &nbsp;Log Out</a>
-                    </li>
-                    <!-- Access: Register or Log In -->
-                    {% else %}
-                    <li><a href="{{ url_for('login') }}"><i class="fas fa-key navbar-icon"></i> &nbsp;Log In</a></li>
-                    <li><a href="{{ url_for('register') }}"><i class="fas fa-door-open navbar-icon"></i>
-                            &nbsp;Register</a></li>
-                    {% endif %}
-                </ul>
-            </div>
-        </nav>
+                        <li><a href="{{ url_for('logout') }}"><i class="fas fa-power-off navbar-icon"></i> &nbsp;Log
+                                Out</a></li>
+                        <!-- Access: Register or Log In -->
+                        {% else %}
+                            <li><a href="{{ url_for('login') }}"><i class="fas fa-key navbar-icon"></i> &nbsp;Log In</a>
+                            </li>
+                            <li><a href="{{ url_for('register') }}"><i class="fas fa-door-open navbar-icon"></i>
+                                    &nbsp;Register</a></li>
+                        {% endif %}
+                    </ul>
+                </div>
+            </nav>
+        </div>
 
         <!-- Mobile Sidenav -->
         <ul class="sidenav" id="mobile-demo">
@@ -82,9 +86,9 @@
         <!-- Flash Messages -->
         {% with messages = get_flashed_messages() %}
         {% for message in messages %}
-            <div class="row flashes">
-                <h4 class="cyan accent-4 center-align white-text">{{ message }}</h4>
-            </div>
+        <div class="row flashes">
+            <h4 class="cyan accent-4 center-align white-text">{{ message }}</h4>
+        </div>
         {% endfor %}
         {% endwith %}
     </section>
