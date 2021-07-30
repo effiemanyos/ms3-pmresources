@@ -60,16 +60,16 @@
                         <li class="{% block nav_profile %}{% endblock %}"><a href="{{ url_for('profile', username=session['user']) }}">
                             <i class="fas fa-user-circle navbar-icon"></i> &nbsp;My Profile</a></li>
                         <!-- Log Out -->
-                        <li><a href="{{ url_for('logout') }}"><i class="fas fa-power-off navbar-icon"></i> &nbsp;Log
-                                Out</a></li>
+                        <li><a href="{{ url_for('logout') }}"><i class="fas fa-power-off navbar-icon"></i> &nbsp;Log Out</a></li>
                         <!-- Access: Register or Log In -->
                         {% else %}
                         <!-- Log In -->
-                        <li><a href="{{ url_for('login') }}"><i class="fas fa-key navbar-icon"></i> &nbsp;Log In</a>
+                        <li class="{% block nav_login %}{% endblock %}"><a href="{{ url_for('login') }}">
+                            <i class="fas fa-key navbar-icon"></i> &nbsp;Log In</a>
                         </li>
                         <!-- Register -->
-                        <li><a href="{{ url_for('register') }}"><i class="fas fa-door-open navbar-icon"></i>
-                                &nbsp;Register</a></li>
+                        <li class="{% block nav_register %}{% endblock %}"><a href="{{ url_for('register') }}">
+                            <i class="fas fa-door-open navbar-icon"></i> &nbsp;Register</a></li>
                         {% endif %}
                     </ul>
                 </div>
