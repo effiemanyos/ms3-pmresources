@@ -2,124 +2,136 @@
 {% block nav_resources %}active{% endblock %}
 {% block content %}
 
-    <div class="container">
-        <!-- Page Title -->
-        <br>
-        <h3 class="center-align indigo-text text-accent-3">Product Management<br>Resources</h3>
-        <br>
-        <br>
-        <!-- Search Bar -->
-        <div class="row card-panel grey lighten-5 searchbar-styling">
-            <form action="{{ url_for('search') }}" method="POST" class="col s12">
-                <div class="row valign-wrapper center-align">
-                    <!-- Search Input -->
-                    <div class="input-field col s12 m8">
-                        <i class="fas fa-search prefix light-blue-text text-darken-4"></i>
-                        <input type="text" name="query" id="query" minlength="3" class="validate" required>
-                        <label for="query">Search</label>
-                    </div>
-                    <!-- Reset & Search Buttons -->
-                    <div class="col s12 m4">
-                        <a href="{{ url_for('get_resources') }}" class="red btn text-shadow button-styling">
-                            <i class="fas fa-redo left"></i> Reset</a>
-                        <button type="submit" class="cyan accent-4 btn text-shadow button-styling">
-                            <i class="fas fa-search left"></i> Search</button>
-                    </div>
+<div class="container">
+    <!-- Page Title -->
+    <br>
+    <h3 class="center-align indigo-text text-accent-3">Product Management<br>Resources</h3>
+    <br>
+    <br>
+    <!-- Search Bar -->
+    <div class="row card-panel grey lighten-5 searchbar-styling">
+        <form action="{{ url_for('search') }}" method="POST" class="col s12">
+            <div class="row valign-wrapper center-align">
+                <!-- Search Input -->
+                <div class="input-field col s12 m8">
+                    <i class="fas fa-search prefix light-blue-text text-darken-4"></i>
+                    <input type="text" name="query" id="query" minlength="3" class="validate" required>
+                    <label for="query">Search</label>
                 </div>
-            </form>
-        </div>
-        <br>
-        <!-- Filters by Category -->
-        <div class="category-menu center-align">
-            <!-- "All Resources" Button -->
-            {% if request.path == url_for('get_resources') %}
-            {% set category_class = "btn cyan accent-4 white-text btn-margin category-filters" %}
-            {% else %}
-            {% set category_class = "btn indigo accent-3 white-text btn-margin category-filters" %}
-            {% endif %}
-            <a class="{{ category_class }}" href="{{ url_for('get_resources') }}">All Resources</a>
-            <!-- All Categories -->
-            {% for category in categories %}
-            {% if request.path == url_for('resources_page_filtered', category=category.category_name) %}
-            {% set category_class = "btn cyan accent-4 white-text btn-margin category-filters" %}
-            {% else %}
-            {% set category_class = "btn indigo accent-3 white-text btn-margin category-filters" %}
-            {% endif %}
-            <a class="{{ category_class }}"
-                href="{{url_for('resources_page_filtered', category=category.category_name)}}">{{ category.category_name }}</a>
-            {% endfor %}
-        </div>
-        <br>
-        <br>
-        <br>
-        <!-- All Resources -->
-        {% if resources|length > 0 %}
-        <ul class="collapsible collapsible-styling">
-            {% for resource in resources %}
-            <li>
-                <div class="collapsible-header grey lighten-5 collapsible-styling">
-                    <!-- Dropdown Icon -->
-                    <div class="col s3 dropdown-icon">
-                        <i class="fas fa-caret-down right" style="font-size:30px"></i>
-                    </div>
-                    <!-- Resource Icon, Title, Author, Rating, Status -->
-                    <div class="col s9">
-                        <span class="resource-title"><strong>{{ resource.resource_title }}</strong></span>
-                        <span style="font-size:22px">{{ resource.resource_icon }}</span>
-                        <br>
-                        &nbsp;<span class="resource-subtitle">by<strong>{{ resource.resource_author }}</strong>[{{ resource.resource_rating }}]</span>
-                        {% if resource.is_done == "on" %}
-                        <i class="fas fa-check-circle tooltipped" style="font-size:15px" data-position="right"
-                            data-tooltip="DONE!"></i>
-                        {% endif %}
-                        <br>
-                        <br>
-                        <!-- Delete & Edit Buttons -->
-                        {% if session.user|lower == resource.created_by|lower %}
-                        <button data-target="modal1" class="btn-small red button-styling 
-                            text-shadow modal-trigger">Delete</button>
-                        <a href="{{ url_for('edit_resource', resource_id=resource._id) }}"
-                            class="btn-small cyan accent-4 button-styling">Edit</a>
-                        {% endif %}
-                    </div>
+                <!-- Reset & Search Buttons -->
+                <div class="col s12 m4">
+                    <a href="{{ url_for('get_resources') }}" class="red btn text-shadow button-styling">
+                        <i class="fas fa-redo left"></i> Reset</a>
+                    <button type="submit" class="cyan accent-4 btn text-shadow button-styling">
+                        <i class="fas fa-search left"></i> Search</button>
                 </div>
-                <!-- Resource Collapsible Body -->
-                <div class="collapsible-body">
-                    <p><strong><i class="fas fa-th"></i>&nbsp; Category:</strong> {{ resource.category_name }}</p>
-                    <p><strong><i class="fas fa-comment-dots"></i>&nbsp; Topic:</strong> {{ resource.resource_topic }}</p>
-                    <p><strong><i class="fas fa-globe"></i>&nbsp; Source:</strong> {{ resource.source_name }}</p>
-                    <p><strong><i class="fas fa-graduation-cap"></i>&nbsp; Takeaway:</strong>
-                        {{ resource.resource_takeaway }}</p>
-                    <p><strong><i class="fas fa-folder-open"></i>&nbsp; Format:</strong> {{ resource.resource_format }}</p>
-                    <p><strong><i class="fas fa-calendar-alt"></i>&nbsp; Created:</strong> {{ resource.creation_date }}</p>
-                    <p><strong><i class="fas fa-star"></i>&nbsp; Rated:</strong> {{ resource.resource_rating }}</p>
-                    <a href="{{ resource.resource_url }}" target="_blank"><i class="fas fa-link"></i>&nbsp; Direct
-                        Link</i></a>
-                    <p><em>by {{ resource.created_by }}</em></p>
-                </div>
-            </li>
-            {% endfor %}
-        </ul>
+            </div>
+        </form>
+    </div>
+    <br>
+    <!-- Filters by Category -->
+    <div class="category-menu center-align">
+        <!-- "All Resources" Button -->
+        {% if request.path == url_for('get_resources') %}
+        {% set category_class = "btn cyan accent-4 white-text btn-margin category-filters" %}
         {% else %}
-        <h3 class="center-align red-text">No Results Found</h3>
+        {% set category_class = "btn indigo accent-3 white-text btn-margin category-filters" %}
         {% endif %}
+        <a class="{{ category_class }}" href="{{ url_for('get_resources') }}">All Resources</a>
+        <!-- All Categories -->
+        {% for category in categories %}
+        {% if request.path == url_for('resources_page_filtered', category=category.category_name) %}
+        {% set category_class = "btn cyan accent-4 white-text btn-margin category-filters" %}
+        {% else %}
+        {% set category_class = "btn indigo accent-3 white-text btn-margin category-filters" %}
+        {% endif %}
+        <a class="{{ category_class }}"
+            href="{{url_for('resources_page_filtered', category=category.category_name)}}">{{ category.category_name }}</a>
+        {% endfor %}
     </div>
     <br>
     <br>
     <br>
-    <!-- Delete Resource Modal -->
-    {% for resource in resources %}
-    <div id="modal1" class="modal modal-styling">
-        <div class="modal-content">
-            <h4 class="center-align modal-heading">CONFIRM YOUR DECISION</h4>
-            <h5 class="center-align">Are you sure you want to delete this resource?</h5>
-            <h6 class="center-align">After you click on <em>delete</em>, you won't be able to recover it. This change is permanent!</h6>
-        </div>
-        <div class="modal-footer">
-            <a href="{{ url_for('get_resources') }}" class="btn indigo accent-3 button-styling">Cancel</a>
-            <a href="{{ url_for('delete_resource', resource_id=resource._id) }}" class="btn red accent-4 button-styling">Delete</a>
-        </div>
+    <!-- All Resources -->
+    {% if resources|length > 0 %}
+    <ul class="collapsible collapsible-styling">
+        {% for resource in resources %}
+        <li>
+            <div class="collapsible-header grey lighten-5 collapsible-styling">
+                <!-- Dropdown Icon -->
+                <div class="col s3 dropdown-icon">
+                    <i class="fas fa-caret-down right" style="font-size:30px"></i>
+                </div>
+                <!-- Resource Icon, Title, Author, Rating, Status -->
+                <div class="col s9">
+                    <span class="resource-title"><strong>{{ resource.resource_title }}</strong></span>
+                    <span style="font-size:22px">{{ resource.resource_icon }}</span>
+                    <br>
+                    &nbsp;<span
+                        class="resource-subtitle">by<strong>{{ resource.resource_author }}</strong>[{{ resource.resource_rating }}]</span>
+                    {% if resource.is_done == "on" %}
+                    <i class="fas fa-check-circle tooltipped" style="font-size:15px" data-position="right"
+                        data-tooltip="DONE!"></i>
+                    {% endif %}
+                    <br>
+                    <br>
+                    <!-- Delete & Edit Buttons -->
+                    {% if session.user|lower == resource.created_by|lower %}
+                    <button data-target="modal1" class="btn-small red button-styling 
+                            text-shadow modal-trigger">Delete</button>
+                    <a href="{{ url_for('edit_resource', resource_id=resource._id) }}"
+                        class="btn-small cyan accent-4 button-styling">Edit</a>
+                    {% endif %}
+                </div>
+            </div>
+            <!-- Resource Collapsible Body -->
+            <div class="collapsible-body">
+                <div class="row">
+                    <div class="col s5">
+                        <p><strong><i class="fas fa-th"></i>&nbsp; Category:</strong> {{ resource.category_name }}</p>
+                        <p><strong><i class="fas fa-comment-dots"></i>&nbsp; Topic:</strong>
+                            {{ resource.resource_topic }}</p>
+                        <p><strong><i class="fas fa-globe"></i>&nbsp; Source:</strong> {{ resource.source_name }}</p>
+                        <p><strong><i class="fas fa-folder-open"></i>&nbsp; Format:</strong>
+                            {{ resource.resource_format }}</p>
+                        <p><strong><i class="fas fa-calendar-alt"></i>&nbsp; Created:</strong>
+                            {{ resource.creation_date }}</p>
+                        <p><em>by {{ resource.created_by }}</em></p>
+                    </div>
+                    <div class="col s7">
+                        <p><strong><i class="fas fa-graduation-cap"></i>&nbsp; Takeaway:</strong>
+                            {{ resource.resource_takeaway }}</p>
+                        <p><strong><i class="fas fa-star"></i>&nbsp; Rated:</strong> {{ resource.resource_rating }}</p>
+                        <a href="{{ resource.resource_url }}" target="_blank"><i class="fas fa-link"></i>&nbsp; Direct
+                            Link</i></a>
+                    </div>
+                </div>
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
+    {% else %}
+    <h3 class="center-align red-text">No Results Found</h3>
+    {% endif %}
+</div>
+<br>
+<br>
+<br>
+<!-- Delete Resource Modal -->
+{% for resource in resources %}
+<div id="modal1" class="modal modal-styling">
+    <div class="modal-content">
+        <h4 class="center-align modal-heading">CONFIRM YOUR DECISION</h4>
+        <h5 class="center-align">Are you sure you want to delete this resource?</h5>
+        <h6 class="center-align">After you click on <em>delete</em>, you won't be able to recover it. This change is
+            permanent!</h6>
     </div>
-    {% endfor %}
+    <div class="modal-footer">
+        <a href="{{ url_for('get_resources') }}" class="btn indigo accent-3 button-styling">Cancel</a>
+        <a href="{{ url_for('delete_resource', resource_id=resource._id) }}"
+            class="btn red accent-4 button-styling">Delete</a>
+    </div>
+</div>
+{% endfor %}
 
 {% endblock %}
