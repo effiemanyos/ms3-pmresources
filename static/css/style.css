@@ -129,8 +129,8 @@
     font-size: 20px;
     line-height: 10px;
     text-align: center;
-    color: #fff;
-    background: #00c853;
+    color: #3d5afe;
+    background: #fff;
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.08);
     -webkit-transition: all 0.35s ease-in-out;
     -o-transition: all 0.35s ease-in-out;
@@ -138,8 +138,8 @@
 }
 
 .social-links li a i:hover {
-    background: #fff;
-    color: #3d5afe;
+    background: #00b8d4;
+    color: #fff;
 }
 .social-links li{
     display: inline;
@@ -151,11 +151,11 @@
 }
 
 .footer-icon {
-    font-size: 50px;
+    font-size: 45px;
     color: #fff;
 }
 
-.button-footer {
+.footer-button {
     border-radius: 30px;
 }
 

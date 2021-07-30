@@ -112,13 +112,19 @@
                     <h4 class="footer-heading"></h4>
                     <i class="fas fa-cat footer-icon"></i>
                     <br>
+                    {% if session.user %}
+                    <a href="{{ url_for('get_resources') }}"
+                    class="btn-small cyan accent-4 white-text footer-button">
+                    Contribute</a>
+                    {% else %}
                     <a href="{{ url_for('register') }}"
-                    class="btn-small green accent-4 white-text text-shadow button-footer">
-                    Register Now</a>
+                    class="btn-small cyan accent-4 white-text footer-button">
+                    Let's Grow Together!</a>
+                    {% endif %}
                 </div>
                 <!-- Social Media Channels -->
                 <div class="col l4 s12 center-align">
-                    <h4 class="footer-heading"><strong>Let's get in touch!</strong></h4>
+                    <h4 class="footer-heading"><strong>For bite-sized content:</strong></h4>
                     <ul class="list-inline social-links">
                         <li>
                             <a target="_blank" href="#"
@@ -130,8 +136,8 @@
                         <li>
                             <a target="_blank" href="#"
                                 rel="noopener noreferrer" aria-hidden="false">
-                                <i class="fab fa-instagram"></i>
-                                <span class="sr-only">Instagram</span>
+                                <i class="fab fa-youtube"></i>
+                                <span class="sr-only">YouTube</span>
                             </a>
                         </li>
                         <li>
@@ -144,8 +150,8 @@
                         <li>
                             <a target="_blank" href="#" rel="noopener noreferrer"
                                 aria-hidden="false">
-                                <i class="fab fa-facebook"></i>
-                                <span class="sr-only">Facebook</span>
+                                <i class="fab fa-medium"></i>
+                                <span class="sr-only">Medium</span>
                             </a>
                         </li>
                     </ul>
