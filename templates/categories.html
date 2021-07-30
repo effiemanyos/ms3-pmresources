@@ -22,13 +22,13 @@
             {% for category in categories %}
             <div class="col s12 m3">
                 <!-- Cards -->
-                <div class="card white-text indigo accent-3 text-shadow center-align form-styling">
+                <div class="card white-text indigo accent-3 text-shadow center-align card-styling">
                     <!-- Categories -->
                     <div class="card-content white-text">
                         <span class="card-title">{{ category.category_name }}</span>
                     </div>
                     <!-- Edit & Delete Buttons -->
-                    <div class="card-action">
+                    <div class="card-action grey lighten-5">
                         <a href="{{ url_for('edit_category', category_id=category._id) }}"
                             class="btn-small cyan accent-4 white-text text-shadow button-styling">Edit</a>
                         <button data-target="modal1"
@@ -38,9 +38,10 @@
             </div>
             {% endfor %}
         </div>
-        <br>
     </div>
-
+    <br>
+    <br>
+    <br>
     <!-- Delete Category Modal -->
     {% for category in categories %}
         <div id="modal1" class="modal modal-styling">

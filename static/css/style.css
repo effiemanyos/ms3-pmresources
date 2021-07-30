@@ -77,6 +77,13 @@
     border-radius: 10px;
 }
 
+/* ------------------------------------[ Categories Page ]-------------------------------------- */
+
+/* Card Styling */
+.card-styling {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
 
 /* ------------------------------------[ Confirm Deletion Modal ]-------------------------------------- */
 
