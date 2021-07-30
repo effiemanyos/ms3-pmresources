@@ -27,6 +27,7 @@
                 </div>
             </form>
         </div>
+        <br>
         <!-- Filters by Category -->
         <div class="category-menu center-align">
             <!-- "All Resources" Button -->
@@ -49,12 +50,13 @@
         </div>
         <br>
         <br>
+        <br>
         <!-- All Resources -->
         {% if resources|length > 0 %}
         <ul class="collapsible collapsible-styling">
             {% for resource in resources %}
             <li>
-                <div class="collapsible-header white-text indigo accent-3 text-shadow collapsible-styling">
+                <div class="collapsible-header grey lighten-5 collapsible-styling">
                     <!-- Delete & Edit Buttons -->
                     <div class="col s3">
                         <i class="fas fa-caret-down"></i>
@@ -71,7 +73,7 @@
                         <strong>{{ resource.resource_title }}</strong> by&nbsp;
                         <em>{{ resource.resource_author }}</em>&nbsp;&nbsp;({{ resource.resource_rating }})
                         {% if resource.is_done == "on" %}
-                        &nbsp;<i class="fas fa-check-circle white-text tooltipped" data-position="right"
+                        <i class="fas fa-check-circle tooltipped" style="font-size:15px" data-position="right"
                             data-tooltip="DONE!"></i>
                         {% endif %}
                     </div>
@@ -99,7 +101,7 @@
     </div>
     <br>
     <br>
-
+    <br>
     <!-- Delete Resource Modal -->
     {% for resource in resources %}
     <div id="modal1" class="modal modal-styling">
