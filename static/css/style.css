@@ -16,11 +16,6 @@
     line-height: 2;
 }
 
-.collapsible-header .col strong {
-    margin: 5px;
-    line-height: 42px;
-}
-
 /* ------------------------------------[ Home Page ]-------------------------------------- */
 
 /* Hero Image */
@@ -46,7 +41,7 @@
     background-attachment: fixed;
 }
 
-/* ------------------------------------[ All Resources Page ]-------------------------------------- */
+/* ------------------------------------[ Resources Page ]-------------------------------------- */
 
 /* Filter Styling */
 .category-filters {
@@ -65,6 +60,16 @@
     margin-bottom: 8px;
 }
 
+/* Accordion Title */
+.resource-title {
+    font-size: 21px;
+}
+
+/* Accordion Subtitle */
+.resource-subtitle {
+    font-size: 15px;
+}
+
 /* Search Bar Styling */
 .searchbar-styling {
     border-radius: 10px;
@@ -76,7 +81,17 @@
     margin: 5px 0;
 }
 
-/* ------------------------------------[ Add New Resources Page ]-------------------------------------- */
+.collapsible-header .col strong {
+    margin: 5px;
+    line-height: 42px;
+}
+
+/* Dropdown Triangle */
+.dropdown-icon {
+    margin: 5px;
+}
+
+/* ------------------------------------[ Add New Resource Page ]-------------------------------------- */
 
 /* Form Styling */
 .form-styling {
