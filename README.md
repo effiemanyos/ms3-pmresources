@@ -227,11 +227,45 @@ At the moment, no official Product Management studies are offered by universitie
 - XXX
 
 ### **Data Structure**
-- XXX
-- XXX
-- XXX
-- XXX
-- XXX
+
+|Database|
+|----|
+|myProduckDB|
+
+|Collections|
+|----|
+|categories|
+|resources|
+|users|
+
+|Collection|Key|Data Type|Collection From|
+|----|----|----|----|
+|users|_id|ObjectId|
+||username|string|
+||email|string|
+||password|string|
+
+|Collection|Key|Data Type|Collection From|
+|----|----|----|----|
+|resources|_id|ObjectId||
+||resource_title|string||
+||resource_icon|string||
+||resource_author|string||
+||resource_rating|string||
+||is_done|string||
+||category_name|ObjectId|Categories|
+||resource_topic|string||
+||source_name|string||
+||resource_format|string||
+||creation_date|string||
+||created_by|ObjectId|Users|
+||resource_takeaway|string||
+||resource_url|string||
+
+|Collection|Key|Data Type|Collection From|
+|----|----|----|----|
+|categories|_id|ObjectId|
+||category_name|string|
 
 ### **Planned Structure**
 - XXX
@@ -356,9 +390,36 @@ The following technologies were used during the development and testing of this 
 <br>
 
 # **CREDITS** 
+- Preinstalled  Tools (Development) → [Code Institute Gitpod Full Template](https://github.com/Code-Institute-Org/gitpod-full-template)
+
+### **Inspiration**
+- XXX
+- XXX
+- XXX
+- XXX
+- XXX
+
+### **Code Snippets**
+- XXX
+- XXX
+- XXX
+- XXX
+- XXX
 
 ### **Media**
 - Photography → [Unsplash](https://unsplash.com/)
 - Illustrations → [UnDraw](https://undraw.co/)
 
+*Hero Image Section:*
+- [KW: Studying](https://unsplash.com/photos/1LODZS5mRqs) by [Nicolò Canu](https://unsplash.com/@nick__) taken from [Unsplash](https://unsplash.com/)
+
+
 [Back to Table of Contents](#table-of-contents)
+
+<br>
+
+# **ACKNOWLEDGEMENTS** 
+
+I would like to thank the following people for their constant support and guidance during my learning process: 
+- [Code Institute Slack Community](https://code-institute-room.slack.com/)
+- [Adegbenga Adeye (Mentor)](https://www.linkedin.com/in/adegbenga-adeye-psm-i-14003635/)
