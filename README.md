@@ -49,6 +49,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
   - [Surface Plane](#surface-plane "Surface Plane")
     - [Typography](#typography "Typography")
     - [Color Scheme](#color-scheme "Color Scheme")
+    - [Logo Variants](#logo-variants "Logo Variants")
     - [Imagery](#imagery "Imagery")
 - [Technologies Used](#technologies-used "Technologies Used")
     - [Languages](#languages "Languages")
@@ -69,8 +70,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 # **UX DESIGN**  
 
 ## **Strategy Plane** 
-
-<br>
 
 ### **Target Audience**
 - Recent University/College Graduates (Tech & Non-Tech Backgrounds)
@@ -135,11 +134,11 @@ At the moment, no official Product Management studies are offered by universitie
 
 ### **Business Opportunity**
 
-- Growth demand for Product Managers ➡ More and more companies are looking to recruit product managers
-- Golden age of Product Management ➡ Companies have finally realized that the most successful companies are product-oriented
-- Tech gap in the Irish market ➡ 42% of Irish people describe themselves as being ‘below average’ for digital skills
-- Boom in the tech industry worldwide ➡  
-- Product economy is increasing ➡ 
+- Growth demand for Product Managers → More and more companies are looking to recruit product managers
+- Golden age of Product Management → Companies have finally realized that the most successful companies are product-oriented
+- Tech gap in the Irish market → 42% of Irish people describe themselves as being ‘below average’ for digital skills
+- Boom in the tech industry worldwide →
+- Product economy is increasing → 
 
 ### **Business Goals**
 - XXX
@@ -162,8 +161,6 @@ At the moment, no official Product Management studies are offered by universitie
 <br>
 
 ## **Scope Plane** 
-
-<br>
 
 ### **User Requirements**
 - XXX
@@ -222,8 +219,6 @@ At the moment, no official Product Management studies are offered by universitie
 
 ## **Structure Plane**
 
-<br>
-
 ### **App Structure**
 - XXX
 - XXX
@@ -258,6 +253,75 @@ At the moment, no official Product Management studies are offered by universitie
 
 ## **Surface Plane** 
 
+### **Typography**
+- XXX
+- XXX
+- XXX
+- XXX
+- XXX
+
+### **Color Scheme**
+- XXX
+- XXX
+- XXX
+- XXX
+- XXX
+
+### **Logo Variants**
+- Logotype
+- Isotype
+- Imagetype
+
+### **Imagery**
+- XXX
+- XXX
+- XXX
+- XXX
+- XXX
+
+[Back to Table of Contents](#table-of-contents)
+
 <br>
 
-### **Typography**
+# **TECHNOLOGIES USED** 
+
+The following technologies were used during the development and testing of this project:
+
+### **Languages**
+- HTML
+- CSS
+- JavaScript
+- Python
+
+### **Frameworks & Libraries**
+- Frameworks → [Materialize V1.0.0](URL)
+- Icons → [Font Awesome V5.15.3](URL)
+- Font → [Google Fonts](https://fonts.google.com/)
+- JavaScript Library → [jQuery V3.6.0](https://blog.jquery.com/2021/03/02/jquery-3-6-0-released/)
+- Connect Python & Flask to MongoDB → [Pymongo & Flask-PyMongo](URL)
+- Construct & Render Pages → [Flask](URL)
+- Non-Relational Database Hosting Service → [MongoDB Atlas](URL)
+- Passwords → [Werkzeug (WSGI)](URL)
+- Templating Engine for Python → [Jinja](URL)
+
+### **Tools**
+- Respository Hosting (Store Repositories) → [GitHub](https://github.com/)
+- Main Workspace → [Gitpod (IDE: Integrated Development Environment)](https://www.gitpod.io/)
+- Version Control → [Git](https://git-scm.com/)
+- Cloud PaaS Enabling Site Deployment → [Heroku](URL)
+- Chrome DevTools
+- XXX
+- XXX
+
+### **Code Consultations**
+- XXX
+- XXX
+- XXX
+- XXX
+- XXX
+
+### **Design**
+- Canva
+- Medium/High-Fidelity Mockups & Interactive Design (Prototype) → [Figma](URL)
+- Low-Fidelity Mockups & Wireframing → [Balsamiq](URL)
+- User-Centric Flows → [Miro](URL)
