@@ -16,6 +16,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 -------
 
+<br>
+
 # **TABLE OF CONTENTS** 
 
 - [Project Overview](#project-overview "Project Overview") ⬆
@@ -58,4 +60,48 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 - [Credits](#credits "Credits")
 - [Acknowledgements](#acknowledgements "Acknowledgements")
 
+<br>
+
 -------
+
+<br>
+
+# **UX DESIGN**  
+
+## **Strategy Plane** 
+
+<br>
+
+### **Target Audience**
+- Recent University/College Graduates (Tech & Non-Tech Backgrounds)
+- Aspiring Product Managers (Entry/Mid-Level Professionals [Other Backgrounds])
+- Product Enthusiasts (Curious & Interested Professionals)
+- Young Tech Startup Owners (Digital Products, SaaS, Apps, Web Apps)
+- Young Business Founders (Services, eCommerce, Agencies, Consultancy)
+- Entry/Mid-Level Product Managers (Interns, Associates, PMs)
+- Professionals Already Transitioning Into Product Management
+
+### **User Needs**
+
+These are some crucial **user pain points or struggles** worth mentioning:
+
+1. **Lack of Trust** <br>
+Entry level professionals, our main users, do not know how to differentiate between high-quality content and poor/fake Product Management content on the internet, as they do not have previus professional experience in the field; moreover, most of our users do not have a mentor guiding them in their journey.
+2. **Quantity Over Quality** <br>
+There is too much information on the internet, and most sources share very vague, superficial or inaccurate information about Product Management. The spread of misleading and erroneous information can lead newbies to start their Product Management careers with the wrong foot, causing horrible disasters in the launch of new products and/or features. 
+3. **Overwhelming & Exhausting** <br>
+It is overwhelming and exhausting for users to navigate through all those online resources (too many options to choose from), while also trying to find the right information from the right source without having to consult friends or colleagues (assuming they know some people in the field).
+4. **Lack of Time** <br>
+There is too much going on in the users' lives at the moment (esp. during the global pandemic) that they do not have the time to search for the information themselves because it is proven that it takes a lot of time to do the research every time they need to know about an specific topic. 
+5. **Fear of Missing Out (FOMO)** <br>
+During the user research, most users have also shared that they constantly feel that they are missing out on great tips and valuable content from high-quality resources (esp. from Fortune 100 companies, product-related book authors, mentors, subject matter experts, experienced PMs).
+6. **No Official PM Studies** <br>
+At the moment, no official Product Management studies are offered by universities or colleges, and if they are  Users are looking for cost-effective bootcamps, workshops, cohorts, mentors, and online courses to learn more about this relatively new field in the tech industry.
+
+### **Business Opportunity**
+
+- Growth demand for Product Managers ➡ More and more companies are looking to recruit product managers
+- Golden age of Product Management ➡ Companies have finally realized that the most successful companies are product-oriented
+- Tech gap in the Irish market ➡ 42% of Irish people describe themselves as being ‘below average’ for digital skills
+- Boom in the tech industry worldwide ➡  
+- Product economy is increasing ➡ 
