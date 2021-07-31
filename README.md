@@ -228,9 +228,13 @@ At the moment, no official Product Management studies are offered by universitie
 
 ### **Data Structure**
 
+**Database**
+
 |Database|
 |----|
 |myProduckDB|
+
+**Collections**
 
 |Collections|
 |----|
@@ -238,12 +242,16 @@ At the moment, no official Product Management studies are offered by universitie
 |resources|
 |users|
 
+**Users**
+
 |Collection|Key|Data Type|Collection From|
 |----|----|----|----|
 |users|_id|ObjectId|
 ||username|string|
 ||email|string|
 ||password|string|
+
+**Resources**
 
 |Collection|Key|Data Type|Collection From|
 |----|----|----|----|
@@ -261,6 +269,8 @@ At the moment, no official Product Management studies are offered by universitie
 ||created_by|ObjectId|Users|
 ||resource_takeaway|string||
 ||resource_url|string||
+
+**Categories**
 
 |Collection|Key|Data Type|Collection From|
 |----|----|----|----|
