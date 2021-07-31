@@ -33,17 +33,17 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
     - [Business Goals](#business-goals "Business Goals")
     - [Unique Selling Proposition](#unique-selling-proposition "Unique Selling Proposition")
   - [Scope plane](#scope-plane "Scope plane")
-    - [Requirements](#requirements "Requirements")
-    - [Expectations](#expectations "Expectations")
+    - [User Requirements](#user-requirements "Requirements")
+    - [User Expectations](#user-expectations "Expectations")
     - [Acceptance Criteria](#acceptance-criteria "Acceptance Criteria")  
     - [Existing Features](#existing-features "Existing Features")
     - [Future Iterations](#future-iterations "Future Iterations")
+    - [Product Roadmap](#product-roadmap "Product Roadmap")
   - [Structure Plane](#structure-plane "Structure plane")
-    - [Website Structure](#website-structure "Website Structure")
+    - [App Structure](#app-structure "App Structure")
     - [Data Structure](#data-structure "Data Structure")
     - [Planned Structure](#planned-structure "Planned Structure")
     - [Future Additions](#future-additions "Future Additions")
-    - [Product Roadmap](#product-roadmap "Product Roadmap")
   - [Skeleton Plane](#skeleton-plane "Skeleton Plane")
     - [Wireframes](#wireframes "Wireframes")
   - [Surface Plane](#surface-plane "Surface Plane")
@@ -81,6 +81,13 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 - Entry/Mid-Level Product Managers (Interns, Associates, PMs)
 - Professionals Already Transitioning Into Product Management
 
+### **User Personas**
+- XXX
+- XXX
+- XXX
+- XXX
+- XXX
+
 ### **User Needs**
 
 These are some crucial **user pain points or struggles** worth mentioning:
@@ -98,6 +105,34 @@ During the user research, most users have also shared that they constantly feel 
 6. **No Official PM Studies** <br>
 At the moment, no official Product Management studies are offered by universities or colleges, and if they are  Users are looking for cost-effective bootcamps, workshops, cohorts, mentors, and online courses to learn more about this relatively new field in the tech industry.
 
+### **User Goals**
+- XXX
+- XXX
+- XXX
+- XXX
+- XXX
+
+### **User Stories**
+- XXX
+- XXX
+- XXX
+- XXX
+- XXX
+
+### **Jobs To Be Done**
+- XXX
+- XXX
+- XXX
+- XXX
+- XXX
+
+### **User Flow**
+- XXX
+- XXX
+- XXX
+- XXX
+- XXX
+
 ### **Business Opportunity**
 
 - Growth demand for Product Managers ➡ More and more companies are looking to recruit product managers
@@ -105,3 +140,124 @@ At the moment, no official Product Management studies are offered by universitie
 - Tech gap in the Irish market ➡ 42% of Irish people describe themselves as being ‘below average’ for digital skills
 - Boom in the tech industry worldwide ➡  
 - Product economy is increasing ➡ 
+
+### **Business Goals**
+- XXX
+- XXX
+- XXX
+- XXX
+- XXX
+
+### **Unique Selling Proposition**
+- XXX
+- XXX
+- XXX
+- XXX
+- XXX
+
+<br>
+
+[Back to Table of Contents](#table-of-contents)
+
+<br>
+
+## **Scope Plane** 
+
+<br>
+
+### **User Requirements**
+- XXX
+- XXX
+- XXX
+- XXX
+- XXX
+
+### **User Expectations**
+- XXX
+- XXX
+- XXX
+- XXX
+- XXX
+
+### **Acceptance Criteria**
+- XXX
+- XXX
+- XXX
+- XXX
+- XXX
+
+### **Existing Features**
+- XXX
+- XXX
+- XXX
+- XXX
+- XXX
+- XXX
+- XXX
+- XXX
+- XXX
+- XXX
+
+### **Future Iterations**
+- XXX
+- XXX
+- XXX
+- XXX
+- XXX
+
+### **Product Roadmap**
+
+<br>
+
+|NOW|NEXT|LATER|
+|----|----|----|
+|XXXXX|XXXXX|XXXXX|
+|XXXXX|XXXXX|XXXXX|
+|XXXXX|XXXXX|XXXXX|
+|XXXXX|XXXXX|XXXXX|
+
+[Back to Table of Contents](#table-of-contents)
+
+<br>
+
+## **Structure Plane**
+
+<br>
+
+### **App Structure**
+- XXX
+- XXX
+- XXX
+- XXX
+- XXX
+
+### **Data Structure**
+- XXX
+- XXX
+- XXX
+- XXX
+- XXX
+
+### **Planned Structure**
+- XXX
+- XXX
+- XXX
+- XXX
+- XXX
+
+### **Future Additions**
+- XXX
+- XXX
+- XXX
+- XXX
+- XXX
+
+[Back to Table of Contents](#table-of-contents)
+
+<br>
+
+## **Surface Plane** 
+
+<br>
+
+### **Typography**
