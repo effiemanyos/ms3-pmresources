@@ -310,8 +310,9 @@ The following technologies were used during the development and testing of this 
 - Version Control → [Git](https://git-scm.com/)
 - Cloud PaaS Enabling Site Deployment → [Heroku](URL)
 - Chrome DevTools
-- XXX
-- XXX
+- Project Planning → [Trello](http://trello.com/)
+- Project Planning → [Notion](URL)
+- Project Planning → [Miro](https://miro.com/)
 
 ### **Code Consultations**
 - XXX
@@ -321,7 +322,43 @@ The following technologies were used during the development and testing of this 
 - XXX
 
 ### **Design**
-- Canva
+- Visuals & Logo → [Canva](URL)
 - Medium/High-Fidelity Mockups & Interactive Design (Prototype) → [Figma](URL)
 - Low-Fidelity Mockups & Wireframing → [Balsamiq](URL)
 - User-Centric Flows → [Miro](URL)
+- Colour Scheme → [Coolors](https://coolors.co/)
+- Hex Color Codes (Variants) → [Color Hex](https://www.color-hex.com/)
+
+[Back to Table of Contents](#table-of-contents)
+
+<br>
+
+# **TESTING** 
+- XXX
+- XXX
+- XXX
+- XXX
+- XXX
+
+[Back to Table of Contents](#table-of-contents)
+
+<br>
+
+# **DEPLOYMENT**
+- XXX
+- XXX
+- XXX
+- XXX
+- XXX
+
+[Back to Table of Contents](#table-of-contents)
+
+<br>
+
+# **CREDITS** 
+
+### **Media**
+- Photography → [Unsplash](https://unsplash.com/)
+- Illustrations → [UnDraw](https://undraw.co/)
+
+[Back to Table of Contents](#table-of-contents)
