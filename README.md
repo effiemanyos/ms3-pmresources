@@ -481,23 +481,39 @@ The following technologies were used during the development and testing of this 
 ### **Frameworks & Libraries**
 - Frameworks → [Materialize V1.0.0](URL)
 - Icons → [Font Awesome V5.15.3](URL)
-- Font → [Google Fonts](https://fonts.google.com/)
+- Main Font → [Google Fonts](https://fonts.google.com/)
 - JavaScript Library → [jQuery V3.6.0](https://blog.jquery.com/2021/03/02/jquery-3-6-0-released/)
-- Connect Python & Flask to MongoDB → [Pymongo & Flask-PyMongo](URL)
-- Construct & Render Pages → [Flask](URL)
-- Non-Relational Database Hosting Service → [MongoDB Atlas](URL)
-- Passwords → [Werkzeug (WSGI)](URL)
-- Templating Engine for Python → [Jinja](URL)
+- Connect Python & Flask to MongoDB → [Pymongo V3.11.4](https://pypi.org/project/pymongo/) & [Flask-PyMongo V2.3.0](https://flask-pymongo.readthedocs.io/en/latest/)
+- Construct & Render Pages → [Flask V2.0.1](https://flask.palletsprojects.com/en/2.0.x/)
+- Non-Relational Database Hosting Service → [MongoDB Atlas V4.4.6](https://www.mongodb.com/)
+- Passwords → [Werkzeug V2.0.1 (WSGI)](https://werkzeug.palletsprojects.com/en/2.0.x/)
+- Templating Engine for Python → [Jinja V3.0](https://jinja.palletsprojects.com/en/3.0.x/)
+- Hover Over Effects → [Hover.css V2.1.0](https://cdnjs.com/libraries/hover.css/2.1.0)
 
 ### **Tools**
 - Respository Hosting (Store Repositories) → [GitHub](https://github.com/)
-- Main Workspace → [Gitpod (IDE: Integrated Development Environment)](https://www.gitpod.io/)
+- Main Workspace (IDE: Integrated Development Environment) → [Gitpod](https://www.gitpod.io/)
 - Version Control → [Git](https://git-scm.com/)
-- Cloud PaaS Enabling Site Deployment → [Heroku](URL)
-- Chrome DevTools
-- Project Planning → [Trello](http://trello.com/)
-- Project Planning → [Notion](URL)
-- Project Planning → [Miro](https://miro.com/)
+- Cloud PaaS Enabling Site Deployment → [Heroku](https://heroku.com/)
+- Kanban Board → [Trello](http://trello.com/)
+- Project Planning → [Notion](https://www.notion.so)
+- User-Centric Flows → [Miro](https://miro.com/)
+- Check Grammar & Spelling → [Gammarly](https://app.grammarly.com/) 
+
+### **Testing**
+- Test/Fix Code → [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools)
+- Web App Responsiveness → [Responsive Viewer](https://www.producthunt.com/posts/responsive-viewer)
+- Web App Responsiveness → [Am I Responsive Design](http://ami.responsivedesign.is/#)
+- Web App Responsiveness → [Responsinator](http://www.responsinator.com/)
+- Mobile-Friendlyness → [Google Mobile-Friendly Test](https://search.google.com/test/mobile-friendly)
+- Web App Performance → [Google Lighthouse](https://developers.google.com/web/tools/lighthouse)
+- Validate HTML → [W3C HTML Validator](https://validator.w3.org/)
+- Validate CSS → [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
+- Validate JavaScript → [JS Hint V2.13.0](https://jshint.com/)
+- Web App Accessibility Evaluation → [WAVE](https://wave.webaim.org/)
+- Validates Tags Correctly Open & Close → [Closing Tag Checker for HTML5](https://www.aliciaramirez.com/closing-tags-checker/)
+- Python Code Syntax Checker → [Python Tester](https://extendsclass.com/python-tester.html)
+- Check Links → [W3C Link Checker](https://validator.w3.org/checklink)
 
 ### **Code Consultations**
 - XXX
