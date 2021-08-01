@@ -535,11 +535,14 @@ The following technologies were used during the development and testing of this 
 <br>
 
 # **TESTING** 
-- XXX
-- XXX
-- XXX
-- XXX
-- XXX
+
+The entire testing process, issues and bugs found during development, solutions, and final results can be found [here](URL).
+
+- Test User Stories
+- Testing & Validation
+- Manual Testing
+- Bugs & Fixes
+- Further Testing
 
 [Back to Table of Contents](#table-of-contents)
 
