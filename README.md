@@ -88,7 +88,7 @@ According to our user/market research:
 - They are mainly from English-speaking countries: Ireland, England, Scotland, United States, Australia.
 - They are very interested in digital products, user experience, customer behaviour, and optimization.
 - Within the tech adoption curve of Rogers, most of them are considered 'innovators' and 'early adopters'.
-- The vast majority finds themselves under the constraints of a tight/no budget to spend on expensive studies.
+- The vast majority finds themselves under the constraints of a tight/no budget to spend on studies.
 - They do not have time to invest in long courses or even to research what sources of info are the best.
 - Their favourite brands and tools are: Apple, Notion, Miro, Figma, Canva, Trello, Jira, Asana, Amazon.
 
@@ -164,8 +164,8 @@ The Admin User has the same access as the Registered User, plus the additional f
 - [*The Product Economy Is Increasing The Need For Product Managers by Carlos Gonzalez De Villaumbrosia*](https://www.forbes.com/sites/forbesbusinesscouncil/2020/12/10/the-product-economy-is-increasing-the-need-for-product-managers/?sh=30654bfa6253)
 
 > (^) With this business model, users will benefit from other people's free contributions (i.e. crowdsourced information - like Waze).             
-> (^) When Selftod already has enough amount of data entered by registered users/admin, we will start charging businesses to place ads.           
-> (^) The app will always be free for users (restricted to non-registered users) as they are the ones that contribute the most to its growth.      
+> (^) When Selftod already has enough data entered by registered users/admin, we will start charging businesses to place ads.           
+> (^) The app will always be free for users (restricted to guest users) as they are the ones that contribute the most to its growth.      
 
 ### **Business Goals**
 - XXX
@@ -195,7 +195,7 @@ The Admin User has the same access as the Registered User, plus the additional f
 - XXX
 - XXX
 
-### **Acceptave Criteria**
+### **Acceptace Criteria**
 - XXX
 - XXX
 - XXX
@@ -473,10 +473,10 @@ Additions to the current structure of the app:
 The following technologies were used during the development and testing of this project:
 
 ### **Languages**
-- HTML
-- CSS
-- JavaScript
-- Python
+- **HTML5** to structure each page and add content.
+- **CSS3** to style the elements within each page.
+- **JavaScript** to make the website interactive.
+- **Python3** to automate specific series of tasks. 
 
 ### **Frameworks & Libraries**
 - Frameworks → [Materialize V1.0.0](URL)
