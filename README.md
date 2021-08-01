@@ -549,18 +549,70 @@ The entire testing process, issues and bugs found during development, solutions,
 <br>
 
 # **DEPLOYMENT**
-- XXX
-- XXX
-- XXX
 
-## **Heroku**
+### **Flask Application**
 
+1. Install Flask - type in terminal: 
+    ```
+    pip3 install Flask
+    ```
+2. Now we need to create a few new files. First, our Python file that will be the foundation of our application. You can name it something else, in this case, I used app.py, so type in the terminal: 
+    ```
+    touch app.py
+    ```
+3. Next, we will be storing some sensitive data, and we need to hide them using environment variables. You can use the terminal or just create a new file. I used the terminal, so type in the terminal:
+    ```
+    touch env.py
+    ```
+4. That file should never be pushed to GitHub, so we need to be able to ignore it somehow, so type in the terminal:
+    ```
+   touch .gitignore
+    ```
+5. Double check in the gitignore file that you see "env.py" and "pycache/"
+6. Go to the env.py file and add the following:
+    ```
+    import os
+ 
+    os.environ["PORT"] = "5000"
+    os.environ["SECRET_KEY"] = "YOUR_SECRET_KEY"
+    os.environ["DEBUG"] = "True"
+    os.environ["MONGO_URI"] = "YOUR_MONGODB_URI"
+    os.environ["MONGO_DBNAME"]= "DATABASE_NAME"
+    ```
+7. Go to app.py file and import the following:
+    ```
+    import os
+    from flask import (
+    Flask, flash, render_template,
+    redirect, request, session, url_for)
+    from flask_pymongo import PyMongo
+    from bson.objectid import ObjectId
+    from werkzeug.security import generate_password_hash, check_password_hash
+    if os.path.exists("env.py"):
+        import env
+    ```
+8. Create an instance of Flask
+    ```
+    app = Flask(__name__)
+    ```
+9. To test your application, tell your app how and where to run your application. Set your IP and PORT environment variables in the hidden env.py file. Make sure to update this to debug=False before the actual deployment of your project.
+    ```
+    if __name__ == "__main__":
+    app.run(host=os.environ.get("IP"),
+    port=int(os.environ.get("PORT")),
+    debug=True)
+    ```
+10. You can now run your application, type in the terminal:
+    ```
+    python3 app.py
+    ```
+
+### **Heroku**
 
 *Workspace Terminal*.-
 
-1. Run **pip3 freeze --local > requirements.txt** to collect any applications and dependencies by creating a requirements.txt file
-2. Run **echo web: python app.py > Procfile** to create the Procfile (what Heroku looks for to know which file runs the app and how to run it)
-
+1. Run **pip3 freeze --local > requirements.txt** to collect any applications and dependencies by creating a requirements.txt file.
+2. Run **echo web: python app.py > Procfile** to create the Procfile (what Heroku looks for to know which file runs the app and how to run it).
 
 As you can see, these are the files that Heroku needs to run the app. 
 > - First, we need to tell Heroku which apps and dependencies are required to run our web app, via **requirements.txt**,         
@@ -569,25 +621,24 @@ As you can see, these are the files that Heroku needs to run the app.
 
 *Heroku Website*.-
 
-3. Go to [Heroku](https://dashboard.heroku.com/).
+3. Go to **[Heroku](https://dashboard.heroku.com/)**.
 4. Log in or create a new account (select Python as your Primary Development Language).
 5. You will receive a confirmation email with a magic link to activate your new account.
-6. From the dashboard, click on "Create new app".
+6. From the dashboard, click on **Create New App**.
 7. Type in your app name (choose something unique - don't use spaces, use hyphens instead).
-8. Select the right/closest region from the options available.
-9. Click on "Create App".     
-10. If you logged in instead, click on your preferred app.
-11. Navigate over to the “Deploy” tab.
-12. Go to the “Deployment method” section.
-13. Click on "GitHub".
-14. In the "App connected to GitHub" section, search for your preferred repository.
-15. Click on "Connect".
-16. Go to the "Settings" tab.
-17. Scroll down to “Config Vars” section.
-18. Click “Reveal Config Vars”.
-19. In “Config Vars” section, enter the key and value pairs as per your **env.py** file:
+8. Select the right or at least the closest region from the options available.
+9. Click on **Create App**.     
+10. If you logged in instead, click on your preferred app first.
+11. Navigate over to the **Deploy** tab.
+12. Go to the **Deployment Method** section.
+13. Click on **GitHub**.
+14. In the **App Connected to GitHub** section, search for your preferred repository.
+15. Click on **Connect**.
+16. Go to the **Settings** tab.
+17. Scroll down to **Config Vars** section.
+18. Click **Reveal Config Vars**.
+19. In **Config Vars** section, enter the key and value pairs as per your **env.py** file:
 
-Example:
 |Key|Value|
 |----|----|
 |IP|0.0.0.0|
@@ -599,15 +650,44 @@ Example:
 > (*) Generate your secret key on [randomkeygen.com](https://randomkeygen.com/).           
 > (**) Used to connect to your database.
 
-20. Then, click on "Hide Config Vars".
-21. Go back to the “Deploy” tab.
-22. Scroll down to “Automatic deploys”.
-23. Click on “Enable Automatic Deploys” (-).
-24. In "Manual deploy" section, click on “Deploy Branch”.
-
-> (-) Enable this option to automatically rebuild the app when a new *git commit* is pushed.
+20. Then, click on **Hide Config Vars**.
+21. Go back to the **Deploy** tab.
+22. Scroll down to **Automatic Deploys**.
+23. Select the branch you want to deploy from.
+24. Next, click on **Enable Automatic Deploys** (-).
+25. In **Manual Deploy** section, click on **Deploy Branch**.
 25. Upon completion, you will receive a confirmation message saying *“your app was successfully deployed”*.
-26. Finally, in the top right corner of the screen, click on "Open app" to view the application.
+26. Finally, in the top right corner of the screen, click on **Open App** to view the application.
+
+> (-) Activate this option to automatically rebuild the app when a new *git commit* is pushed.
+
+### **GitHub Pages**
+
+This project was deployed to **GitHub Pages** following these steps:
+
+1. Login to **[GitHub](https://github.com/)**
+2. Insert the following **GitHub Repository** name in the **Search Bar** to locate the project: **[effiemanyos/ms3-pmresources](https://github.com/effiemanyos/ms3-pmresources)**
+3. Click on that repository to view more details
+4. Click on **Settings**, which is located right above the **Gitpod** green button
+5. Scroll all the way down to the **GitHub Pages** section
+6. Under **Source**, select **Master** in the dropdown menu
+7. Select **/(root)** in the tab which is right next to **Branch**
+8. Click **Save** (*Note:* the page will automatically refresh)
+9. Scroll all the way down again to the **GitHub Pages** section
+10. Finally, you can see the link where the site is published highlited with a light green/blue background 
+
+### **Run Project Locally**
+
+1. Login to **[GitHub](https://github.com/)**
+2. Insert the following **GitHub Repository** name in the **Search Bar** to locate the project: **[effiemanyos/ms3-pmresources](https://github.com/effiemanyos/ms3-pmresources)**
+3. Select **Code** and click on **Download ZIP File**
+4. You can extract the file and use it in your local environment once it is downloaded
+
+### **Clone & Fork GitHub Repository**
+
+Additionally, you can either **Clone** or **Fork** this repository ([effiemanyos/ms3-pmresources](https://github.com/effiemanyos/ms3-pmresources)) into your [GitHub](https://github.com/) account by following these guides:
+- **[Cloning a Repository](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository)**
+- **[Fork a Repository](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo)**
 
 [Back to Table of Contents](#table-of-contents)
 
