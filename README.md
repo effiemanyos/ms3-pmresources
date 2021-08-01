@@ -110,6 +110,22 @@ At the moment, no official Product Management studies are offered by universitie
 - XXX
 
 ### **🔹 User Stories**
+
+👉🏼  **Guest User | Logged Out**
+- XXX
+- XXX
+- XXX
+- XXX
+- XXX
+
+👉🏼  **Registered User | Logged In**
+- XXX
+- XXX
+- XXX
+- XXX
+- XXX
+
+👉🏼  **Admin User | Logged In**
 - XXX
 - XXX
 - XXX
