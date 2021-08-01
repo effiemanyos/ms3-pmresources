@@ -65,13 +65,11 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 -------
 
-<br>
-
 # **UX DESIGN**  
 
 ## **Strategy Plane** 
 
-### **Target Audience**
+### **🔹 Target Audience**
 - Recent University/College Graduates (Tech & Non-Tech Backgrounds)
 - Aspiring Product Managers (Entry/Mid-Level Professionals [Other Backgrounds])
 - Product Enthusiasts (Curious & Interested Professionals)
@@ -80,14 +78,14 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 - Entry/Mid-Level Product Managers (Interns, Associates, PMs)
 - Professionals Already Transitioning Into Product Management
 
-### **User Personas**
+### **🔹 User Personas**
 - XXX
 - XXX
 - XXX
 - XXX
 - XXX
 
-### **User Needs**
+### **🔹 User Needs**
 
 These are some crucial **user pain points or struggles** worth mentioning:
 
@@ -104,35 +102,35 @@ During the user research, most users have also shared that they constantly feel 
 6. **No Official PM Studies** <br>
 At the moment, no official Product Management studies are offered by universities or colleges, and if they are  Users are looking for cost-effective bootcamps, workshops, cohorts, mentors, and online courses to learn more about this relatively new field in the tech industry.
 
-### **User Goals**
+### **🔹 User Goals**
 - XXX
 - XXX
 - XXX
 - XXX
 - XXX
 
-### **User Stories**
+### **🔹 User Stories**
 - XXX
 - XXX
 - XXX
 - XXX
 - XXX
 
-### **Jobs To Be Done**
+### **🔹 Jobs To Be Done**
 - XXX
 - XXX
 - XXX
 - XXX
 - XXX
 
-### **User Flow**
+### **🔹 User Flow**
 - XXX
 - XXX
 - XXX
 - XXX
 - XXX
 
-### **Business Opportunity**
+### **🔹 Business Opportunity**
 
 - Growth demand for Product Managers → More and more companies are looking to recruit product managers
 - Golden age of Product Management → Companies have finally realized that the most successful companies are product-oriented
@@ -140,14 +138,14 @@ At the moment, no official Product Management studies are offered by universitie
 - Boom in the tech industry worldwide →
 - Product economy is increasing → 
 
-### **Business Goals**
+### **🔹 Business Goals**
 - XXX
 - XXX
 - XXX
 - XXX
 - XXX
 
-### **Unique Selling Proposition**
+### **🔹 Unique Selling Proposition**
 - XXX
 - XXX
 - XXX
@@ -162,40 +160,89 @@ At the moment, no official Product Management studies are offered by universitie
 
 ## **Scope Plane** 
 
-### **User Requirements**
+### **🔹 User Requirements**
 - XXX
 - XXX
 - XXX
 - XXX
 - XXX
 
-### **User Expectations**
+### **🔹 User Expectations**
 - XXX
 - XXX
 - XXX
 - XXX
 - XXX
 
-### **Acceptance Criteria**
-- XXX
+### **🔹 Existing Features**
+
+**Home Page**
 - XXX
 - XXX
 - XXX
 - XXX
 
-### **Existing Features**
-- XXX
-- XXX
-- XXX
-- XXX
-- XXX
-- XXX
+**Resources Page**
 - XXX
 - XXX
 - XXX
 - XXX
 
-### **Future Iterations**
+**Add Resource Page**
+- XXX
+- XXX
+- XXX
+- XXX
+
+**Edit Resource Page**
+- XXX
+- XXX
+- XXX
+- XXX
+
+**Categories Page**
+- XXX
+- XXX
+- XXX
+- XXX
+
+**Add Category Page**
+- XXX
+- XXX
+- XXX
+- XXX
+
+**Edit Category Page**
+- XXX
+- XXX
+- XXX
+- XXX
+
+**My Profile Page**
+- XXX
+- XXX
+- XXX
+- XXX
+
+**Register Page**
+- XXX
+- XXX
+- XXX
+- XXX
+
+**Log In Page**
+- XXX
+- XXX
+- XXX
+- XXX
+
+**Log Out Function**
+- XXX
+- XXX
+- XXX
+- XXX
+
+### **🔹 Future Iterations**
 1. Users will be able to permanently delete their accounts if desired
 2. Users will be able to bookmark their favourite resources (theirs/others)
 3. Users will be able to see their favourite resources in a dedicated page
@@ -208,7 +255,7 @@ At the moment, no official Product Management studies are offered by universitie
 10. Admin will be able to update/delete other users' entries to mantain quality
 11. Users will be able to request the addition of a category through a form
 
-### **Product Roadmap**
+### **🔹 Product Roadmap**
 
 The estimated roadmap after the launch of the MVP is the following: 
 
@@ -228,9 +275,9 @@ These features have been chosen after we applied the Moscow method as a prioriti
 
 ## **Structure Plane**
 
-### **App Structure**
+### **🔹 App Structure**
 
-**Admin User | Logged In**
+👉🏼  **Admin User | Logged In**
 
 Admin User have access to the following menu:
 
@@ -255,7 +302,7 @@ Admin User can perfom the following actions within the app:
 > The Admin User is the only one that can actually manage categories (C, ~~R~~, U, D).     
 > (*) Since the # of categories is less than 12, there is no need for 'Search' functionality
 
-**Registered User | Logged In**
+👉🏼  **Registered User | Logged In**
 
 Registered User have access to the following menu:
 
@@ -275,7 +322,7 @@ Registered User can perfom the following actions within the app:
 - Registered User is not able to CRUD categories at the moment.
 - Registered User does not have access to Categories/Add Category/Edit Category.    
 
-**Guest User | Logged Out**
+👉🏼  **Guest User | Logged Out**
 
 Guest User have access to the following menu:
 
@@ -296,7 +343,17 @@ Guest User can perfom the following actions within the app:
 *My Profile*.-
 - Guest User does not have access to My Profile/Log Out, just Home/Log In.
 
-### **Data Structure**
+### **🔹 Future Additions**
+
+Additions to the current structure of the app:
+
+|Home|Resources|Add New|Favourites|Categories|My Profile|Log Out|
+|----|----|----|----|----|----|----|
+|√|√|√|√|(admin only)|√|√|
+
+> These additions will only be available for Admin User and Registered Users.
+
+### **🔹 Data Structure**
 
 **Database** ↓
 
@@ -346,13 +403,6 @@ Guest User can perfom the following actions within the app:
 |----|----|----|----|
 |categories|_id|ObjectId|
 ||category_name|string|
-
-### **Future Additions**
-- XXX
-- XXX
-- XXX
-- XXX
-- XXX
 
 [Back to Table of Contents](#table-of-contents)
 
