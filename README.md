@@ -87,7 +87,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 ### **🔹 User Needs**
 
-These are some crucial **user pain points or struggles** worth mentioning:
+These are some crucial **user pain points and struggles** worth mentioning:
 
 1. **Lack of Trust** <br>
 Entry level professionals, our main users, do not know how to differentiate between high-quality content and poor/fake Product Management content on the internet, as they do not have previus professional experience in the field; moreover, most of our users do not have a mentor guiding them in their journey.
@@ -112,25 +112,27 @@ At the moment, no official Product Management studies are offered by universitie
 ### **🔹 User Stories**
 
 👉🏼  **Guest User | Logged Out**
-- XXX
-- XXX
-- XXX
-- XXX
-- XXX
+- As a guest user, I want to easily understand what is the purpose of the app and for who was it built, so that I can decide if I should start using it or not.
+- As a guest user, I want to see examples of resources posted by others, so that I can get a sense of how it works and what kind of resources users share.
+- As a guest user, I want to be able to quickly register/sign up, so that I can start saving/sharing (my own) and discovering (others) top-rated PM resources.
+- As a guest user, I want to be able to get in touch with the founders through their social media channels, so that I can send my suggestions about the app. 
+- As a guest user, I want to be able to follow/add Selftod on social media channels, so that I can consume their bite-sized product-related content daily.
 
 👉🏼  **Registered User | Logged In**
-- XXX
-- XXX
-- XXX
-- XXX
-- XXX
+- As a registered user, I want to easily understand how to perfom all actions I am able to do, so that I can start contributing to the community of aspiring PMs.
+- As a registered user, I want to be able to log in and log out whenever I please, so that I can control when and from where I want to interact with the app.
+- As a registered user, I want to be able search/view resources posted by other registered users/members of the community, so that I can discover new resources.
+- As a registered user, I want to be able filter resources (my own/others) by categories, so that I can view only the ones I am interested in, category-wise.
+- As a registered user, I want to be able to add, search, edit, and delete the resources I previously entered, so that I can manage my contribution to the app.
+- As a registered user, I want to be able to get in touch with the founders through their social media channels, so that I can send my suggestions about the app. 
+- As a registered user, I want to be able to follow/add Selftod on social media channels, so that I can consume their bite-sized product-related content daily.
 
 👉🏼  **Admin User | Logged In**
-- XXX
-- XXX
-- XXX
-- XXX
-- XXX
+
+The Admin User has the same access as the Registered User, plus the additional features listed below: 
+
+- As an admin user, I want to add, edit, and delete the categories I previously entered, so that I can manage how registered users can classified their resources.
+- As an admin user, I want to be able to add, edit, and delete featured resources, so that I can manage what guest users can view on the home page on monthly basis.
 
 ### **🔹 Jobs To Be Done**
 - XXX
@@ -261,7 +263,7 @@ At the moment, no official Product Management studies are offered by universitie
 ### **🔹 Future Iterations**
 1. Users will be able to permanently delete their accounts if desired
 2. Users will be able to bookmark their favourite resources (theirs/others)
-3. Users will be able to see their favourite resources in a dedicated page
+3. Users will be able to view their favourite resources in a dedicated page
 4. Users will be able to share their favourite resources on social channels
 5. Users will be able to change their own password if they have forgotten it
 6. Users will be able to change their registered email address if desired
@@ -283,7 +285,7 @@ The estimated roadmap after the launch of the MVP is the following:
 |10|||
 |11|||
 
-These features have been chosen after we applied the Moscow method as a prioritization technique to decide on what to build next.
+These features have been chosen after we applied the Moscow method as a prioritization technique to decide on what to build next, which is influenced by what users need. 
 
 [Back to Table of Contents](#table-of-contents)
 
