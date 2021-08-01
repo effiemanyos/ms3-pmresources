@@ -196,22 +196,31 @@ At the moment, no official Product Management studies are offered by universitie
 - XXX
 
 ### **Future Iterations**
-- XXX
-- XXX
-- XXX
-- XXX
-- XXX
+1. Users will be able to permanently delete their accounts if desired
+2. Users will be able to bookmark their favourite resources (theirs/others)
+3. Users will be able to see their favourite resources in a dedicated page
+4. Users will be able to share their favourite resources on social channels
+5. Users will be able to change their own password if they have forgotten it
+6. Users will be able to change their registered email address if desired
+7. Users will be able to hide the preferred resources for themselves only
+8. Users will be able to add/update/delete a profile picture to their accounts
+9. Users will be able to subscribe to a weekly notification w/popular resources
+10. Admin will be able to update/delete other users' entries to mantain quality
+11. Users will be able to request the addition of a category through a form
 
 ### **Product Roadmap**
 
-<br>
+The estimated roadmap after the launch of the MVP is the following: 
 
 |NOW|NEXT|LATER|
 |----|----|----|
-|XXXXX|XXXXX|XXXXX|
-|XXXXX|XXXXX|XXXXX|
-|XXXXX|XXXXX|XXXXX|
-|XXXXX|XXXXX|XXXXX|
+|1|4|6|
+|2|5|7|
+|3|8|9|
+|10|||
+|11|||
+
+These features have been chosen after we applied the Moscow method as a prioritization technique to decide on what to build next.
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -220,21 +229,82 @@ At the moment, no official Product Management studies are offered by universitie
 ## **Structure Plane**
 
 ### **App Structure**
-- XXX
-- XXX
-- XXX
-- XXX
-- XXX
+
+**Admin User | Logged In**
+
+Admin User have access to the following menu:
+
+|Home|Resources|Add New|Categories|My Profile|Log Out|
+|----|----|----|----|----|----|
+|√|√|√|√|√|√|
+
+Admin User can perfom the following actions within the app:
+
+*Resources*.-
+- C > Create or add new product-related resources
+- R > Read or search for product-related resources
+- U > Update or edit *their own* product-related resources
+- D > Permanently delete *their own* product-related resources
+
+*Categories*.-
+- C > Create or add new product-related categories (won't be a common action, though)
+- R > (*)
+- U > Update or edit product-related categories they have previously entered
+- D > Permanently delete product-related categories they have previously entered
+
+> The Admin User is the only one that can actually manage categories (C, ~~R~~, U, D).     
+> (*) Since the # of categories is less than 12, there is no need for 'Search' functionality
+
+**Registered User | Logged In**
+
+Registered User have access to the following menu:
+
+|Home|Resources|Add New|My Profile|Log Out|
+|----|----|----|----|----|
+|√|√|√|√|√|
+
+Registered User can perfom the following actions within the app:
+
+*Resources*.-
+- C > Create or add new product-related resources
+- R > Read or search for product-related resources
+- U > Update or edit *their own* product-related resources
+- D > Permanently delete *their own* product-related resources
+
+*Categories*.-
+- Registered User is not able to CRUD categories at the moment.
+- Registered User does not have access to Categories/Add Category/Edit Category.    
+
+**Guest User | Logged Out**
+
+Guest User have access to the following menu:
+
+|Home|Log In|Register|
+|----|----|----|
+|√|√|√|
+
+Guest User can perfom the following actions within the app:
+
+*Resources*.-
+- Guest User is not able to CRUD resources at the moment.
+- Guest User do not have access to Resources/Add Resource/Edit Resource.  
+
+*Categories*.-
+- Guest User is not able to CRUD categories at the moment.
+- Guest User does not have access to Categories/Add Category/Edit Category.
+
+*My Profile*.-
+- Guest User does not have access to My Profile/Log Out, just Home/Log In.
 
 ### **Data Structure**
 
-**Database**
+**Database** ↓
 
 |Database|
 |----|
 |myProduckDB|
 
-**Collections**
+**Collections** ↓
 
 |Collections|
 |----|
@@ -242,7 +312,7 @@ At the moment, no official Product Management studies are offered by universitie
 |resources|
 |users|
 
-**Users**
+**Users** ↓
 
 |Collection|Key|Data Type|Collection From|
 |----|----|----|----|
@@ -251,7 +321,7 @@ At the moment, no official Product Management studies are offered by universitie
 ||email|string|
 ||password|string|
 
-**Resources**
+**Resources** ↓
 
 |Collection|Key|Data Type|Collection From|
 |----|----|----|----|
@@ -270,19 +340,12 @@ At the moment, no official Product Management studies are offered by universitie
 ||resource_takeaway|string||
 ||resource_url|string||
 
-**Categories**
+**Categories** ↓
 
 |Collection|Key|Data Type|Collection From|
 |----|----|----|----|
 |categories|_id|ObjectId|
 ||category_name|string|
-
-### **Planned Structure**
-- XXX
-- XXX
-- XXX
-- XXX
-- XXX
 
 ### **Future Additions**
 - XXX
