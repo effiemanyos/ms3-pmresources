@@ -552,8 +552,62 @@ The entire testing process, issues and bugs found during development, solutions,
 - XXX
 - XXX
 - XXX
-- XXX
-- XXX
+
+## **Heroku**
+
+
+*Workspace Terminal*.-
+
+1. Run **pip3 freeze --local > requirements.txt** to collect any applications and dependencies by creating a requirements.txt file
+2. Run **echo web: python app.py > Procfile** to create the Procfile (what Heroku looks for to know which file runs the app and how to run it)
+
+
+As you can see, these are the files that Heroku needs to run the app. 
+> - First, we need to tell Heroku which apps and dependencies are required to run our web app, via **requirements.txt**,         
+> - Next, the **Procfile** is what Heroku looks for to know which file runs the app, and how to run it, so we use the **echo command**.        
+> - (^) Remember to delete the second line in Procfile because sometimes it can cause problems when running the app on Heroku.
+
+*Heroku Website*.-
+
+3. Go to [Heroku](https://dashboard.heroku.com/).
+4. Log in or create a new account (select Python as your Primary Development Language).
+5. You will receive a confirmation email with a magic link to activate your new account.
+6. From the dashboard, click on "Create new app".
+7. Type in your app name (choose something unique - don't use spaces, use hyphens instead).
+8. Select the right/closest region from the options available.
+9. Click on "Create App".     
+10. If you logged in instead, click on your preferred app.
+11. Navigate over to the “Deploy” tab.
+12. Go to the “Deployment method” section.
+13. Click on "GitHub".
+14. In the "App connected to GitHub" section, search for your preferred repository.
+15. Click on "Connect".
+16. Go to the "Settings" tab.
+17. Scroll down to “Config Vars” section.
+18. Click “Reveal Config Vars”.
+19. In “Config Vars” section, enter the key and value pairs as per your **env.py** file:
+
+Example:
+|Key|Value|
+|----|----|
+|IP|0.0.0.0|
+|PORT|5000|
+|SECRET_KEY|YOUR_SECRET_KEY (*)|
+|MONGO_URI|"mongodb+srv://..." (**)|
+|MONGO_DBNAME|YOUR_DB_NAME|
+
+> (*) Generate your secret key on [randomkeygen.com](https://randomkeygen.com/).           
+> (**) Used to connect to your database.
+
+20. Then, click on "Hide Config Vars".
+21. Go back to the “Deploy” tab.
+22. Scroll down to “Automatic deploys”.
+23. Click on “Enable Automatic Deploys” (-).
+24. In "Manual deploy" section, click on “Deploy Branch”.
+
+> (-) Enable this option to automatically rebuild the app when a new *git commit* is pushed.
+25. Upon completion, you will receive a confirmation message saying *“your app was successfully deployed”*.
+26. Finally, in the top right corner of the screen, click on "Open app" to view the application.
 
 [Back to Table of Contents](#table-of-contents)
 
