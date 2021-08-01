@@ -24,7 +24,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 - [UX Design](#ux-design "UX Design")
   - [Strategy Plane](#strategy-plane "Strategy Plane")
     - [Target Audience](#target-audience "Target Audience")
-    - [User Personas](#user-personas "User Personas")
+    - [User Persona](#user-persona "User Persona")
     - [User Needs](#user-needs "User Needs")
     - [User Goals](#user-goals "User Goals")
     - [User Stories](#user-stories "User Stories")
@@ -69,7 +69,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 ## **Strategy Plane** 
 
-### **🔹 Target Audience**
+### **Target Audience**
 - Recent University/College Graduates (Tech & Non-Tech Backgrounds)
 - Aspiring Product Managers (Entry/Mid-Level Professionals [Other Backgrounds])
 - Product Enthusiasts (Curious & Interested Professionals)
@@ -78,14 +78,21 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 - Entry/Mid-Level Product Managers (Interns, Associates, PMs)
 - Professionals Already Transitioning Into Product Management
 
-### **🔹 User Personas**
-- XXX
-- XXX
-- XXX
-- XXX
-- XXX
+### **User Persona**
 
-### **🔹 User Needs**
+According to our user/market research:
+- Most of them utilize the web-based app on their desktops and/or laptops during work and/or study time.
+- The vast majority of them are between 22-32 years old, which indicates they are mostly entry/mid-level.
+- Most of them have at least a bachelor's degree; however, some have masters in business or related fields.
+- They feel passionate about tech and innovation, they are customer-obssesed and love solving problems.
+- They are mainly from English-speaking countries: Ireland, England, Scotland, United States, Australia.
+- They are very interested in digital products, user experience, customer behaviour, and optimization.
+- Within the tech adoption curve of Rogers, most of them are considered 'innovators' and 'early adopters'.
+- The vast majority finds themselves under the constraints of a tight/no budget to spend on expensive studies.
+- They do not have time to invest in long courses or even to research what sources of info are the best.
+- Their favourite brands and tools are: Apple, Notion, Miro, Figma, Canva, Trello, Jira, Asana, Amazon.
+
+### **User Needs**
 
 These are some crucial **user pain points and struggles** worth mentioning:
 
@@ -102,68 +109,71 @@ During the user research, most users have also shared that they constantly feel 
 6. **No Official PM Studies** <br>
 At the moment, no official Product Management studies are offered by universities or colleges, and if they are  Users are looking for cost-effective bootcamps, workshops, cohorts, mentors, and online courses to learn more about this relatively new field in the tech industry.
 
-### **🔹 User Goals**
+### **User Goals**
 - XXX
 - XXX
 - XXX
 - XXX
 - XXX
 
-### **🔹 User Stories**
+### **User Stories**
 
-👉🏼  **Guest User | Logged Out**
+🔹 **Guest User | Logged Out**
 - As a guest user, I want to easily understand what is the purpose of the app and for who was it built, so that I can decide if I should start using it or not.
 - As a guest user, I want to see examples of resources posted by others, so that I can get a sense of how it works and what kind of resources users share.
 - As a guest user, I want to be able to quickly register/sign up, so that I can start saving/sharing (my own) and discovering (others) top-rated PM resources.
 - As a guest user, I want to be able to get in touch with the founders through their social media channels, so that I can send my suggestions about the app. 
 - As a guest user, I want to be able to follow/add Selftod on social media channels, so that I can consume their bite-sized product-related content daily.
 
-👉🏼  **Registered User | Logged In**
+🔹 **Registered User | Logged In**
 - As a registered user, I want to easily understand how to perfom all actions I am able to do, so that I can start contributing to the community of aspiring PMs.
 - As a registered user, I want to be able to log in and log out whenever I please, so that I can control when and from where I want to interact with the app.
-- As a registered user, I want to be able search/view resources posted by other registered users/members of the community, so that I can discover new resources.
+- As a registered user, I want to be able search/view resources posted by other registered users/members of the community, so that I can discover resources.
 - As a registered user, I want to be able filter resources (my own/others) by categories, so that I can view only the ones I am interested in, category-wise.
 - As a registered user, I want to be able to add, search, edit, and delete the resources I previously entered, so that I can manage my contribution to the app.
 - As a registered user, I want to be able to get in touch with the founders through their social media channels, so that I can send my suggestions about the app. 
 - As a registered user, I want to be able to follow/add Selftod on social media channels, so that I can consume their bite-sized product-related content daily.
 
-👉🏼  **Admin User | Logged In**
+🔹 **Admin User | Logged In**
 
 The Admin User has the same access as the Registered User, plus the additional features listed below: 
 
 - As an admin user, I want to add, edit, and delete the categories I previously entered, so that I can manage how registered users can classified their resources.
 - As an admin user, I want to be able to add, edit, and delete featured resources, so that I can manage what guest users can view on the home page on monthly basis.
 
-### **🔹 Jobs To Be Done**
+### **Jobs To Be Done**
 - XXX
 - XXX
 - XXX
 - XXX
 - XXX
 
-### **🔹 User Flow**
+### **User Flow**
 - XXX
 - XXX
 - XXX
 - XXX
 - XXX
 
-### **🔹 Business Opportunity**
+### **Business Opportunity**
 
-- Growth demand for Product Managers → More and more companies are looking to recruit product managers
-- Golden age of Product Management → Companies have finally realized that the most successful companies are product-oriented
-- Tech gap in the Irish market → 42% of Irish people describe themselves as being ‘below average’ for digital skills
-- Boom in the tech industry worldwide →
-- Product economy is increasing → 
+- Growth demand for Product Managers → More and more companies are looking to recruit product managers.
+- Golden age of PM → Companies have realized that the most successful businesses are product-oriented.
+- Tech gap in Irish market → 42% of Irish people describe themselves as being ‘below avg.' for digital skills.
+- Boom in tech industry worldwide → Specially after COVID-19, most businesses were forced to go online.
+- [*The Product Economy Is Increasing The Need For Product Managers by Carlos Gonzalez De Villaumbrosia*](https://www.forbes.com/sites/forbesbusinesscouncil/2020/12/10/the-product-economy-is-increasing-the-need-for-product-managers/?sh=30654bfa6253)
 
-### **🔹 Business Goals**
-- XXX
+> (^) With this business model, users will benefit from other people's free contributions (i.e. crowdsourced information - like Waze).             
+> (^) When Selftod already has enough amount of data entered by registered users/admin, we will start charging businesses to place ads.           
+> (^) The app will always be free for users (restricted to non-registered users) as they are the ones that contribute the most to its growth.      
+
+### **Business Goals**
 - XXX
 - XXX
 - XXX
 - XXX
 
-### **🔹 Unique Selling Proposition**
+### **Unique Selling Proposition**
 - XXX
 - XXX
 - XXX
@@ -178,89 +188,89 @@ The Admin User has the same access as the Registered User, plus the additional f
 
 ## **Scope Plane** 
 
-### **🔹 User Requirements**
+### **User Requirements**
 - XXX
 - XXX
 - XXX
 - XXX
 - XXX
 
-### **🔹 User Expectations**
+### **Acceptave Criteria**
 - XXX
 - XXX
 - XXX
 - XXX
 - XXX
 
-### **🔹 Existing Features**
+### **Existing Features**
 
-**Home Page**
-- XXX
-- XXX
-- XXX
-- XXX
-
-**Resources Page**
+🔹 **Home Page**
 - XXX
 - XXX
 - XXX
 - XXX
 
-**Add Resource Page**
+🔹 **Resources Page**
 - XXX
 - XXX
 - XXX
 - XXX
 
-**Edit Resource Page**
+🔹 **Add Resource Page**
 - XXX
 - XXX
 - XXX
 - XXX
 
-**Categories Page**
+🔹 **Edit Resource Page**
 - XXX
 - XXX
 - XXX
 - XXX
 
-**Add Category Page**
+🔹 **Categories Page**
 - XXX
 - XXX
 - XXX
 - XXX
 
-**Edit Category Page**
+🔹 **Add Category Page**
 - XXX
 - XXX
 - XXX
 - XXX
 
-**My Profile Page**
+🔹 **Edit Category Page**
 - XXX
 - XXX
 - XXX
 - XXX
 
-**Register Page**
+🔹 **My Profile Page**
 - XXX
 - XXX
 - XXX
 - XXX
 
-**Log In Page**
+🔹 **Register Page**
 - XXX
 - XXX
 - XXX
 - XXX
 
-**Log Out Function**
+🔹 **Log In Page**
 - XXX
 - XXX
 - XXX
 - XXX
 
-### **🔹 Future Iterations**
+🔹 **Log Out Function**
+- XXX
+- XXX
+- XXX
+- XXX
+
+### **Future Iterations**
 1. Users will be able to permanently delete their accounts if desired
 2. Users will be able to bookmark their favourite resources (theirs/others)
 3. Users will be able to view their favourite resources in a dedicated page
@@ -273,7 +283,7 @@ The Admin User has the same access as the Registered User, plus the additional f
 10. Admin will be able to update/delete other users' entries to mantain quality
 11. Users will be able to request the addition of a category through a form
 
-### **🔹 Product Roadmap**
+### **Product Roadmap**
 
 The estimated roadmap after the launch of the MVP is the following: 
 
@@ -293,7 +303,7 @@ These features have been chosen after we applied the Moscow method as a prioriti
 
 ## **Structure Plane**
 
-### **🔹 App Structure**
+### **App Structure**
 
 👉🏼  **Admin User | Logged In**
 
@@ -361,7 +371,7 @@ Guest User can perfom the following actions within the app:
 *My Profile*.-
 - Guest User does not have access to My Profile/Log Out, just Home/Log In.
 
-### **🔹 Future Additions**
+### **Future Additions**
 
 Additions to the current structure of the app:
 
@@ -371,7 +381,7 @@ Additions to the current structure of the app:
 
 > These additions will only be available for Admin User and Registered Users.
 
-### **🔹 Data Structure**
+### **Data Structure**
 
 **Database** ↓
 
