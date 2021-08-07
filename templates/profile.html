@@ -137,7 +137,7 @@
             permanent!</h6>
     </div>
     <div class="modal-footer">
-        <a href="{{ url_for('get_resources') }}" class="btn indigo accent-3 button-styling">Cancel</a>
+        <a href="{{ url_for('profile', username=session['user']) }}" class="btn indigo accent-3 button-styling">Cancel</a>
         <a href="{{ url_for('delete_resource', resource_id=resource._id) }}"
             class="btn red accent-4 button-styling">Delete</a>
     </div>

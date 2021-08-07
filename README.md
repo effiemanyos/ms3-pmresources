@@ -288,11 +288,10 @@ From the POV of the Admin User, since it is the only one that has full access to
 - If user clicks on 'view all resources', they will be redirected to the All Resources page.
 - If user clicks on 'manage categories', they will be redirected to the Categories page.
 - If user clicks on a particular resource, detailed info about the resource will be displayed.
-
 - If user clicks on 'edit' on their own resource, they will be redirected to the Edit Resource page.
 - If user clicks on 'delete' on their own resource, a pop-up with confirmation message will be shown.
 - If user clicks on 'delete' on the confirmation message, the resource will be permanently deleted.
-- If user clicks on 'cancel' on the confirmation message, they will be redirected to Resources page.
+- If user clicks on 'cancel' on the confirmation message, they will be redirected to My Profile page.
 
 **Register Page**
 - XXX
