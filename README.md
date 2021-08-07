@@ -95,14 +95,19 @@ These are some crucial **user pain points and struggles** worth mentioning:
 
 1. **Lack of Trust** <br>
 Entry level professionals, our main users, do not know how to differentiate between high-quality content and poor/fake Product Management content on the internet, as they do not have previus professional experience in the field; moreover, most of our users do not have a mentor guiding them in their journey.
+
 2. **Quantity Over Quality** <br>
 There is too much information on the internet, and most sources share very vague, superficial or inaccurate information about Product Management. The spread of misleading and erroneous information can lead newbies to start their Product Management careers with the wrong foot, causing horrible disasters in the launch of new products and/or features. 
+
 3. **Overwhelming & Exhausting** <br>
 It is overwhelming and exhausting for users to navigate through all those online resources (too many options to choose from), while also trying to find the right information from the right source without having to consult friends or colleagues (assuming they know some people in the field).
+
 4. **Lack of Time** <br>
 There is too much going on in the users' lives at the moment (esp. during the global pandemic) that they do not have the time to search for the information themselves because it is proven that it takes a lot of time to do the research every time they need to know about an specific topic. 
+
 5. **Fear of Missing Out (FOMO)** <br>
 During the user research, most users have also shared that they constantly feel that they are missing out on great tips and valuable content from high-quality resources (esp. from Fortune 100 companies, product-related book authors, mentors, subject matter experts, experienced PMs).
+
 6. **No Official PM Studies** <br>
 At the moment, no official Product Management studies are offered by universities or colleges, and if they are  Users are looking for cost-effective bootcamps, workshops, cohorts, mentors, and online courses to learn more about this relatively new field in the tech industry.
 
@@ -482,21 +487,89 @@ Additions to the current structure of the app:
 
 <br>
 
+## **Skeleton Plane** 
+
+### **Wireframes**
+
+- **Dektop**
+- **Tablet**
+- **Mobile**
+
+![web app on different devices](/static/images/placeholder.jpg "web app on different devices")
+
+<br>
+
 ## **Surface Plane** 
 
 ### **Typography**
-- XXX
-- XXX
-- XXX
-- XXX
-- XXX
+
+Only one font was used for this project (for titles and paragraphs):
+ 
+- **[Poppins](https://fonts.google.com/specimen/Poppins?query=Poppins&preview.text_type=custom)**, designed by **Indian Type Foundry** and **Jonny Pinhorn**.
+
+**About Poppins**
+
+"Geometric sans serif typefaces have been a popular design tool ever since these actors took to the world’s stage. Poppins is one of the new comers to this long tradition. With support for the Devanagari and Latin writing systems, it is an internationalist take on the genre.
+
+Many of the Latin glyphs (such as the ampersand) are more constructed and rationalist than is typical. The Devanagari design is particularly new, and is the first ever Devanagari typeface with a range of weights in this genre. Just like the Latin, the Devanagari is based on pure geometry, particularly circles.
+
+Each letterform is nearly monolinear, with optical corrections applied to stroke joints where necessary to maintain an even typographic color. The Devanagari base character height and the Latin ascender height are equal; Latin capital letters are shorter than the Devanagari characters, and the Latin x-height is set rather high."
+
+The Devanagari is designed by **Ninad Kale**. The Latin is by **Jonny Pinhorn**.
+
+### **Consistent Styling**
+
+```HTML
+<!-- Main Titles Styling -->
+
+<h3 class="center-align indigo-text text-accent-3">Add Category</h3>
+```
+
+```HTML
+<!-- Buttons Styling-->
+
+<a href="#" class="btn cyan accent-4 white-text text-shadow button-styling">
+    View All Resources<i class="fas fa-book-reader left"></i></a>
+
+<button type="submit" class="btn white-text indigo accent-3 text-shadow button-styling">
+    Save Category <i class="fas fa-check-circle left"></i>
+</button>
+```
+
+```CSS
+/* Class text-shadow */
+
+.text-shadow {
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+```
+
+```CSS
+/* Class button-styling */
+
+.button-styling {
+    border-radius: 35px;
+}
+```
+
+The simple styling for titles and buttons was intentionally chosen for this project because the data was the main focus. To make this possible, we used [Materialize](https://materializecss.com/), a bit of CSS, and [Font Awesome](https://fontawesome.com/) for the icons.
 
 ### **Color Scheme**
-- XXX
-- XXX
-- XXX
-- XXX
-- XXX
+
+According to an article on **[The Science of Colour Persuasion](https://idealogicbrandlab.com/color-persuasion/)** by **IDealogic® Brand Lab**:
+
+Color establishes **brand recognition** amongst users, therefore it is crucial that the same colors are always used across all channels, such as website, social media, advertising, product packaging, merchandising, among others.
+
+The following are the color palette used for this project:
+
+![web app on different devices](/static/images/color-palette.png "web app on different devices")
+
+**Primary Colours:**
+> - **Purple** → Associated with **wisdom, wealth, spirituality, imaginative, and sophistication**.
+> - **Black** → Associated with **sophistication, luxury, security, power, elegance, authority, and substance**.
+> - **Green** → Associated with **health, tranquility, growth, freshness, prosperity, hope, balance, harmony, and nature**.
+> - **Pink** → Associated with femininity. **Imaginative, passionate, caring, creativity, innovative, quirky**. 
+
 
 ### **Logo Variants**
 - Logotype
