@@ -640,19 +640,27 @@ The following technologies were used during the development and testing of this 
 - Check Links → [W3C Link Checker](https://validator.w3.org/checklink)
 
 ### **Code Consultations**
-- XXX
-- XXX
-- XXX
-- XXX
-- XXX
+- Git Commit Messages → [Chris Beams | How to Write a Git Commit Message](https://chris.beams.io/posts/git-commit/)
+- CSS → [CSS Tricks](https://css-tricks.com/)
+- HTML/CSS/JavaScript/Python → [W3Schools](www.w3schools.com)
+- HTML/CSS/JavaScript/Python → [Stack Overflow](https://stackoverflow.com/)
+- Beautify HTML/JavaScript/CSS → [Web Formatter](https://webformatter.com/html)
+- Validate, Beautify, Format CSS/JavaScript → [Free Formatter](https://www.freeformatter.com/minifiers.html)
+- Hex to RGB → [RapidTables](https://www.rapidtables.com/convert/color/hex-to-rgb.html)
+- Rem to PX → [nekoCalc](https://nekocalc.com/rem-to-px-converter)
+- Hover Effects → [Hover.css V2.0](https://ianlunn.github.io/Hover/)
 
-### **Design**
+### **Design & Media**
 - Visuals & Logo → [Canva](URL)
 - Medium/High-Fidelity Mockups & Interactive Design (Prototype) → [Figma](URL)
-- Low-Fidelity Mockups & Wireframing → [Balsamiq](URL)
+- Low-Fidelity Wireframing → [Balsamiq](URL)
+- Photography → [Unsplash](https://unsplash.com/)
 - User-Centric Flows → [Miro](URL)
 - Colour Scheme → [Coolors](https://coolors.co/)
 - Hex Color Codes (Variants) → [Color Hex](https://www.color-hex.com/)
+- Mockup → [Techsini Mockup Generator](http://techsini.com/multi-mockup/)
+- Illustrations → [UnDraw](https://undraw.co/)
+- Image Compression → [TinyJPG](https://tinyjpg.com/)
 
 <br>
 
@@ -834,7 +842,8 @@ Additionally, you can either **Clone** or **Fork** this repository ([effiemanyos
 - XXX
 
 ### **Code Snippets**
-- XXX
+- Favicon → [W3C](https://www.w3.org/2005/10/howto-favicon) 
+- Website Icon → [Geeks For Geeks](https://www.geeksforgeeks.org/how-to-add-icon-logo-in-title-bar-using-html/) 
 - XXX
 - XXX
 - XXX
