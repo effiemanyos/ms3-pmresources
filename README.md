@@ -686,6 +686,21 @@ The entire testing process, issues and bugs found during development, solutions,
 
 # **DEPLOYMENT**
 
+### **MongoDB Atlas Database Creation**
+
+1. Create an account with MongoDB
+2. Log in or sign up to MongoDB
+3. Create a new cluster
+4. Go to the **Collections** tab
+5. Click on **+ Create Database**
+6. Enter **Database name**
+7. Enter **Collection name**
+8. Click on **Create**
+9. Add all the desired collections
+10. Click on **INSERT DOCUMENT**
+11. Add key and value
+12. Click on **Insert**
+
 ### **Flask Application**
 
 1. Install Flask - type in terminal: 
@@ -743,36 +758,53 @@ The entire testing process, issues and bugs found during development, solutions,
     python3 app.py
     ```
 
+### **Flask & MongoDB**
+
+1. To get Flask to communicate with MongoDB, we first need to install a third-party library called [Flask-PyMongo V2.3.0](https://flask-pymongo.readthedocs.io/en/latest/):
+    ```
+    pip3 install flask-pymongo
+    ```
+
+2. We would also need to install a pack called [dnspython V2.1.0](https://pypi.org/project/dnspython/) to use the Mongo SRV connection string:
+    ```
+    pip3 install dnspython
+    ```
+
+3. It is important to remember that when you install new packages, you must update the requirements.txt, so that Heroku knows we require more to run the app:
+    ```
+    pip3 freeze --local > requirements.txt
+    ```
+
 ### **Heroku**
 
-*Workspace Terminal*.-
+**Workspace Terminal**
 
-1. Run **pip3 freeze --local > requirements.txt** to collect any applications and dependencies by creating a requirements.txt file.
-2. Run **echo web: python app.py > Procfile** to create the Procfile (what Heroku looks for to know which file runs the app and how to run it).
+1. Run **pip3 freeze --local > requirements.txt** to collect any applications and dependencies by creating a requirements.txt file
+2. Run **echo web: python app.py > Procfile** to create the Procfile (what Heroku looks for to know which file runs the app and how to run it)
 
-As you can see, these are the files that Heroku needs to run the app. 
+As you can see, these are the files that Heroku needs to run the app.
 > - First, we need to tell Heroku which apps and dependencies are required to run our web app, via **requirements.txt**,         
 > - Next, the **Procfile** is what Heroku looks for to know which file runs the app, and how to run it, so we use the **echo command**.        
 > - (^) Remember to delete the second line in Procfile because sometimes it can cause problems when running the app on Heroku.
 
-*Heroku Website*.-
+**Heroku Website**
 
-3. Go to **[Heroku](https://dashboard.heroku.com/)**.
-4. Log in or create a new account (select Python as your Primary Development Language).
-5. You will receive a confirmation email with a magic link to activate your new account.
-6. From the dashboard, click on **Create New App**.
-7. Type in your app name (choose something unique - don't use spaces, use hyphens instead).
-8. Select the right or at least the closest region from the options available.
-9. Click on **Create App**.     
-10. If you logged in instead, click on your preferred app first.
-11. Navigate over to the **Deploy** tab.
-12. Go to the **Deployment Method** section.
-13. Click on **GitHub**.
-14. In the **App Connected to GitHub** section, search for your preferred repository.
-15. Click on **Connect**.
-16. Go to the **Settings** tab.
-17. Scroll down to **Config Vars** section.
-18. Click **Reveal Config Vars**.
+3. Go to **[Heroku](https://dashboard.heroku.com/)**
+4. Log in or create a new account (select Python as your Primary Development Language)
+5. You will receive a confirmation email with a magic link to activate your new account
+6. From the dashboard, click on **Create New App**
+7. Type in your app name (choose something unique - don't use spaces, use hyphens instead)
+8. Select the right or at least the closest region from the options available
+9. Click on **Create App**
+10. If you logged in instead, click on your preferred app first
+11. Navigate over to the **Deploy** tab
+12. Go to the **Deployment Method** section
+13. Click on **GitHub**
+14. In the **App Connected to GitHub** section, search for your preferred repository
+15. Click on **Connect**
+16. Go to the **Settings** tab
+17. Scroll down to **Config Vars** section
+18. Click **Reveal Config Vars**
 19. In **Config Vars** section, enter the key and value pairs as per your **env.py** file:
 
 |Key|Value|
@@ -786,23 +818,24 @@ As you can see, these are the files that Heroku needs to run the app.
 > (*) Generate your secret key on [randomkeygen.com](https://randomkeygen.com/).           
 > (**) Used to connect to your database.
 
-20. Then, click on **Hide Config Vars**.
-21. Go back to the **Deploy** tab.
-22. Scroll down to **Automatic Deploys**.
-23. Select the branch you want to deploy from.
-24. Next, click on **Enable Automatic Deploys** (-).
-25. In **Manual Deploy** section, click on **Deploy Branch**.
-25. Upon completion, you will receive a confirmation message saying *“your app was successfully deployed”*.
-26. Finally, in the top right corner of the screen, click on **Open App** to view the application.
+20. Then, click on **Hide Config Vars**
+21. Go back to the **Deploy** tab
+22. Scroll down to **Automatic Deploys**
+23. Select the branch you want to deploy from
+24. Next, click on **Enable Automatic Deploys** (#)
+25. In **Manual Deploy** section, click on **Deploy Branch**
+25. Upon completion, you will receive a confirmation message saying *“your app was successfully deployed”*
+26. Finally, in the top right corner of the screen, click on **Open App** to view the application
 
-> (-) Activate this option to automatically rebuild the app when a new *git commit* is pushed.
+> (#) Activate this option to automatically rebuild the app when a new *git commit* is pushed.
 
 ### **GitHub Pages**
 
 This project was deployed to **GitHub Pages** following these steps:
 
 1. Login to **[GitHub](https://github.com/)**
-2. Insert the following **GitHub Repository** name in the **Search Bar** to locate the project: **[effiemanyos/ms3-pmresources](https://github.com/effiemanyos/ms3-pmresources)**
+2. Insert the following **GitHub Repository** name in the **Search Bar** to locate the project: 
+> **[effiemanyos/ms3-pmresources](https://github.com/effiemanyos/ms3-pmresources)**           
 3. Click on that repository to view more details
 4. Click on **Settings**, which is located right above the **Gitpod** green button
 5. Scroll all the way down to the **GitHub Pages** section
@@ -815,13 +848,14 @@ This project was deployed to **GitHub Pages** following these steps:
 ### **Run Project Locally**
 
 1. Login to **[GitHub](https://github.com/)**
-2. Insert the following **GitHub Repository** name in the **Search Bar** to locate the project: **[effiemanyos/ms3-pmresources](https://github.com/effiemanyos/ms3-pmresources)**
+2. Insert the following **GitHub Repository** name in the **Search Bar** to locate the project: 
+> **[effiemanyos/ms3-pmresources](https://github.com/effiemanyos/ms3-pmresources)**
 3. Select **Code** and click on **Download ZIP File**
 4. You can extract the file and use it in your local environment once it is downloaded
 
 ### **Clone & Fork GitHub Repository**
 
-Additionally, you can either **Clone** or **Fork** this repository ([effiemanyos/ms3-pmresources](https://github.com/effiemanyos/ms3-pmresources)) into your [GitHub](https://github.com/) account by following these guides:
+Additionally, you can either **Clone** or **Fork** [this repository](https://github.com/effiemanyos/ms3-pmresources) into your [GitHub](https://github.com/) account by following these guides:
 - **[Cloning a Repository](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository)**
 - **[Fork a Repository](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo)**
 
