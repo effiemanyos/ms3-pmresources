@@ -6,7 +6,7 @@
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 
-**Main Technologies Required:** HTML, CSS, JavaScript, Python+Flask, MongoDB, Libraries, External APIs
+**Main Technologies Required:** HTML, CSS, JavaScript, Python+Flask, MongoDB, Libraries
 
 **[View Website Live (Heroku)](https://effiemanyos.github.io/milestone-project-one/)**
 
@@ -30,9 +30,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
     - [User Stories](#user-stories "User Stories")
     - [Business Goals](#business-goals "Business Goals")
   - [Scope plane](#scope-plane "Scope plane")
-    - [User Requirements](#user-requirements "Requirements")
-    - [User Expectations](#user-expectations "Expectations")
-    - [Acceptance Criteria](#acceptance-criteria "Acceptance Criteria")  
     - [Existing Features](#existing-features "Existing Features")
     - [Future Iterations](#future-iterations "Future Iterations")
     - [Product Roadmap](#product-roadmap "Product Roadmap")
@@ -213,26 +210,12 @@ The Admin User has the same access as the Registered User, plus the additional f
 
 ## **Scope Plane** 
 
-### **User Requirements**
-- XXX
-- XXX
-- XXX
-- XXX
-- XXX
-
-### **Acceptace Criteria**
-- XXX
-- XXX
-- XXX
-- XXX
-- XXX
-
 ### **Existing Features**
 
 From the POV of the Admin User, since it is the only one that has full access to the web-app features:
 
 **Home Page**
-- If user clicks on the logo, they will be redirected to the homepage.
+- If user clicks on the logo, they will be redirected to the homepage or landing page.
 - If user clicks on 'view resources', they will be redirected to the Resources page.
 - If (logged out) user clicks on 'register now', they will be redirected to the Register page.
 - If (logged in) user clicks on 'add resources', they will be redirected to the Add New page.
@@ -286,7 +269,7 @@ From the POV of the Admin User, since it is the only one that has full access to
 **My Profile Page**
 - If user clicks on 'add new resources', they will be redirected to the Add New Resource page.
 - If user clicks on 'view all resources', they will be redirected to the All Resources page.
-- If user clicks on 'manage categories', they will be redirected to the Categories page.
+- If user clicks on 'manage categories', they will be redirected to the All Categories page.
 - If user clicks on a particular resource, detailed info about the resource will be displayed.
 - If user clicks on 'edit' on their own resource, they will be redirected to the Edit Resource page.
 - If user clicks on 'delete' on their own resource, a pop-up with confirmation message will be shown.
@@ -294,14 +277,16 @@ From the POV of the Admin User, since it is the only one that has full access to
 - If user clicks on 'cancel' on the confirmation message, they will be redirected to My Profile page.
 
 **Register Page**
-- XXX
-- XXX
-- XXX
-- XXX
+- If user clicks on 'log in', they will be redirected to the Log In page where they can sign in.
+- If user fills in the input fields with the right data (format), it will be successfully validated.
+- If user does not, the input fields will turn red until they fill in the form with the right data.
+- If user clicks on 'join now', their Selftod account will be created and saved in the database. 
 
 **Log In Page**
-- XXX
-- XXX
+- If user clicks on 'register account', they will be redirected to the Register page to create account.
+- If user fills in the input fields with the right login credentials, it will be successfully validated.
+- If user does not, the input fields will turn red until they fill in the form with an existing login.
+- If user clicks on 'get in', they will be redirected to their Profile page displaying their resources. 
 
 **Log Out Function**
 - If user clicks on 'log out', the session will close and they will simply become a guest user.
