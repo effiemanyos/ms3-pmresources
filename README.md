@@ -241,46 +241,58 @@ From the POV of the Admin User, since it is the only one that has full access to
 - If user clicks on the social media icons, they will be redirected to Selftod's social channels.
 
 **Resources Page**
-- XXX
-- XXX
-- XXX
-- XXX
+- If user enters a keyword(s) in the search bar and clicks 'search', results will be displayed.
+- If user clicks on 'reset' right after the search, the list of all resources will be displayed.
+- If user clicks on the category filters, only resources under that category will be displayed.
+- If user clicks on a particular resource, detailed info about the resource will be displayed.
+- If user (logged in) clicks on 'edit' on their own resource, the Edit Resource page will open.
+- If user (logged in) clicks on 'delete' on their own resource, confirmation message will be shown.
+- If user (logged in) clicks on 'delete' on the confirmation message, the resource will be deleted.
+- If user (logged in) clicks on 'cancel' on the confirmation message, the Resources page will open.
 
 **Add Resource Page**
-- XXX
-- XXX
-- XXX
-- XXX
+- If user fills in all input fields with accurate information, it will be successfully validated.
+- If user does not, the input fields will turn red until they fill in the accurate information.
+- If user clicks on 'cancel', all entered data will get deleted and the Resources page will open.
+- If user clicks on 'save resource', the resource will be added successfully to the Resources page.
+- If user saves a new resource successfully, they will be redirected to the Resources page afterward.
 
 **Edit Resource Page**
-- XXX
-- XXX
-- XXX
-- XXX
+- If user clicks on 'cancel', they will be redirected back to the Resources page without any changes.
+- If user clicks on 'save edits', the changes will be saved and they will be redirected to Resources.
+- If user fills in all input fields with accurate information, it will be successfully validated.
+- If user does not, the input fields will turn red until they fill in the accurate information.
 
 **Categories Page**
-- XXX
-- XXX
-- XXX
-- XXX
+- If user clicks on 'add category', they will be redirected to the Add Category page.
+- If user clicks on 'edit', they will be redirected to the Edit Category page.
+- If user clicks on 'delete', a pop-up with a confirmation message will be shown. 
+- If user clicks on 'delete' on the confirmation message, category will be deleted.
+- If user clicks on 'cancel' on the confirmation message, the Categories page will open.
 
 **Add Category Page**
-- XXX
-- XXX
-- XXX
-- XXX
+- If user fills in the input field with accurate information, it will be successfully validated.
+- If user does not, the input field will turn red until they fill in the accurate information.
+- If user clicks on 'cancel', all entered data will get deleted and the Categories page will open.
+- If user clicks on 'save category', the category will be added successfully to the Categories page.
+- If user saves a new category successfully, they will be redirected to the Categories page afterward.
 
 **Edit Category Page**
-- XXX
-- XXX
-- XXX
-- XXX
+- If user clicks on 'cancel', they will be redirected back to the Categories page without any changes.
+- If user clicks on 'save edits', the changes will be saved and they will be redirected to Categories.
+- If user fills in the input field with the accurate information, it will be successfully validated.
+- If user does not, the input field will turn red until they fill in the accurate information.
 
 **My Profile Page**
-- XXX
-- XXX
-- XXX
-- XXX
+- If user clicks on 'add new resources', they will be redirected to the Add New Resource page.
+- If user clicks on 'view all resources', they will be redirected to the All Resources page.
+- If user clicks on 'manage categories', they will be redirected to the Categories page.
+- If user clicks on a particular resource, detailed info about the resource will be displayed.
+
+- If user clicks on 'edit' on their own resource, they will be redirected to the Edit Resource page.
+- If user clicks on 'delete' on their own resource, a pop-up with confirmation message will be shown.
+- If user clicks on 'delete' on the confirmation message, the resource will be permanently deleted.
+- If user clicks on 'cancel' on the confirmation message, they will be redirected to Resources page.
 
 **Register Page**
 - XXX
@@ -291,14 +303,9 @@ From the POV of the Admin User, since it is the only one that has full access to
 **Log In Page**
 - XXX
 - XXX
-- XXX
-- XXX
 
 **Log Out Function**
-- XXX
-- XXX
-- XXX
-- XXX
+- If user clicks on 'log out', the session will close and they will simply become a guest user.
 
 ### **Future Iterations**
 
