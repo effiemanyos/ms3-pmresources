@@ -28,7 +28,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
     - [User Needs](#user-needs "User Needs")
     - [User Goals](#user-goals "User Goals")
     - [User Stories](#user-stories "User Stories")
-    - [Jobs To Be Done](#jobs-to-be-done "Jobs To Be Done")
     - [Business Goals](#business-goals "Business Goals")
   - [Scope plane](#scope-plane "Scope plane")
     - [User Requirements](#user-requirements "Requirements")
@@ -45,6 +44,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
     - [Wireframes](#wireframes "Wireframes")
   - [Surface Plane](#surface-plane "Surface Plane")
     - [Typography](#typography "Typography")
+    - [Consistent Styling](#consistent-styling "Consistent Styling")
     - [Color Scheme](#color-scheme "Color Scheme")
     - [Logo Variants](#logo-variants "Logo Variants")
     - [Imagery](#imagery "Imagery")
@@ -188,13 +188,6 @@ The Admin User has the same access as the Registered User, plus the additional f
 **I want** to be able to create, update, and delete featured resources,             
 **so that** I can manage what guest users can view on the homepage on monthly basis.
 
-### **Jobs To Be Done**
-- XXX
-- XXX
-- XXX
-- XXX
-- XXX
-
 ### **Business Opportunity**
 
 - Growth demand for Product Managers → More and more companies are looking to recruit product managers.
@@ -307,27 +300,27 @@ The Admin User has the same access as the Registered User, plus the additional f
 Items that are currently sitting in the Product Backlog: 
 
 1. Users will be able to permanently delete their accounts if they want to
-2. **Users will be able to (un)bookmark their favourite resources (own/others)**
-3. **Users will be able to view their favourite resources in a dedicated page**
+2. Users will be able to (un)bookmark their favourite resources (own/others)
+3. Users will be able to view their favourite resources in a dedicated page
 4. Users will be able to easily share their favorite resources on social media
 5. Users will be able to change their own password if they have forgotten it
 6. Users will be able to change their registered email address if desired
 7. Users will be able to hide their preferred resources for themselves only
 8. Users will be able to add/update/delete a profile picture to their accounts
 9. Users will be able to subscribe to a weekly notification w/popular resources
-10. **Admin will be able to update/delete other users' entries to mantain quality**
+10. Admin will be able to update/delete other users' entries to mantain quality
 11. Users will be able to request the addition of a category through a form
-12. **Users will be able to jump to the top of the Resources page with one click**
-13. **Access to the Resources page will be restricted to registered users only**
+12. Users will be able to jump to the top of the Resources page with one click
+13. Access to the Resources page will be restricted to registered users only
 14. Users will be able to filter their resources by category on Resources page
-15. **Users will be able to filter resources by date of creation (from origin)**
-16. **Users will be able to filter resources by source (e.g., "Product School")**
-17. **Featured resources will be displayed on the homepage (incl. guest users)**
+15. Users will be able to filter resources by date of creation (from origin)
+16. Users will be able to filter resources by source (e.g., "Product School")
+17. Featured resources will be displayed on the homepage (incl. guest users)
 18. Users will need to enter an email address to be able to register/sign up
 19. Homepage will show screenshots of how the app looks for registered users 
 20. Users will need to repeat their new password on the registration process
-21. **System will validate that Rating entry is actually a number (e.g., 3/5)**
-22. **System will validate that Direct Link entry is actually an existing URL**
+21. System will validate that Rating entry is actually a number (e.g., 3/5)
+22. System will validate that Direct Link entry is actually an existing URL
 
 ### **Product Roadmap**
 
@@ -347,6 +340,8 @@ The estimated roadmap after the launch of the MVP v1 is the following:
 |22|||
 
 These features have been selected after we applied the MoSCoW method as a prioritization technique to decide on what we need to build next, which is entirely influenced by what users really need to achieve their goals.
+
+<br>
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -483,6 +478,8 @@ Additions to the current structure of the app:
 |categories|_id|ObjectId|
 ||category_name|string|
 
+<br>
+
 [Back to Table of Contents](#table-of-contents)
 
 <br>
@@ -496,6 +493,10 @@ Additions to the current structure of the app:
 - **Mobile**
 
 ![web app on different devices](/static/images/placeholder.jpg "web app on different devices")
+
+<br>
+
+[Back to Table of Contents](#table-of-contents)
 
 <br>
 
@@ -583,6 +584,8 @@ The image used is the following:
 
 - Keyword: [Studying](https://unsplash.com/photos/1LODZS5mRqs) by [Nicolò Canu](https://unsplash.com/@nick__), taken from [Unsplash](https://unsplash.com/)
 
+<br>
+
 [Back to Table of Contents](#table-of-contents)
 
 <br>
@@ -649,6 +652,8 @@ The following technologies were used during the development and testing of this 
 - Colour Scheme → [Coolors](https://coolors.co/)
 - Hex Color Codes (Variants) → [Color Hex](https://www.color-hex.com/)
 
+<br>
+
 [Back to Table of Contents](#table-of-contents)
 
 <br>
@@ -662,6 +667,8 @@ The entire testing process, issues and bugs found during development, solutions,
 - Manual Testing
 - Bugs & Fixes
 - Further Testing
+
+<br>
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -808,6 +815,8 @@ Additionally, you can either **Clone** or **Fork** this repository ([effiemanyos
 - **[Cloning a Repository](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository)**
 - **[Fork a Repository](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo)**
 
+<br>
+
 [Back to Table of Contents](#table-of-contents)
 
 <br>
@@ -836,6 +845,8 @@ Additionally, you can either **Clone** or **Fork** this repository ([effiemanyos
 *Hero Image Section:*
 - Keyword: [Studying](https://unsplash.com/photos/1LODZS5mRqs) by [Nicolò Canu](https://unsplash.com/@nick__), taken from [Unsplash](https://unsplash.com/)
 
+<br>
+
 [Back to Table of Contents](#table-of-contents)
 
 <br>
@@ -844,3 +855,9 @@ Additionally, you can either **Clone** or **Fork** this repository ([effiemanyos
 
 I would like to thank the following people for their constant support and guidance during my learning process: 
 - [Code Institute Slack Community](https://code-institute-room.slack.com/)
+
+<br>
+
+[Back to Table of Contents](#table-of-contents)
+
+<br>
