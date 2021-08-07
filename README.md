@@ -203,9 +203,9 @@ The Admin User has the same access as the Registered User, plus the additional f
 > (^) The app will always be free for users (restricted to guest users) as they are the ones that contribute the most to its growth.      
 
 ### **Business Goals**
-- Be the go-to place for the target audience to learn PM from top product-related resources.
+- Be the go-to place for the target audience to learn about PM from top product-related resources.
 - Create a product management community where professionals recommend the best PM resources.
-- Leverage the crowdsourcing model to develop a valuable source of information regarding PM.
+- Leverage the crowdsourcing model to develop a valuable source of quality information about PM.
 
 <br>
 
