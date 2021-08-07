@@ -121,7 +121,7 @@ At the moment, no official Product Management studies are offered by universitie
 
 ### **User Stories**
 
-→ **Guest User** (logged out)
+👉🏼  **Guest User** (logged out)
 
 **As a** *guest user*,               
 **I want** to easily understand what is the purpose of the app and for who was it built,          
@@ -143,7 +143,7 @@ At the moment, no official Product Management studies are offered by universitie
 **I want** to be able to follow/invite Selftod on social media channels,             
 **so that** I can consume their bite-sized product-related content daily.
 
-→ **Registered User** (logged in)
+👉🏼  **Registered User** (logged in)
 
 **As a** *registered user*,            
 **I want** to easily understand how to perfom all actions I am able to do,               
@@ -173,7 +173,7 @@ At the moment, no official Product Management studies are offered by universitie
 **I want** to be able to follow/invite Selftod on social media channels,             
 **so that** I can consume their bite-sized product-related content daily.
 
-→ **Admin User** (logged in)
+👉🏼  **Admin User** (logged in)
 
 The Admin User has the same access as the Registered User, plus the additional features listed below: 
 
@@ -241,67 +241,67 @@ The Admin User has the same access as the Registered User, plus the additional f
 
 ### **Existing Features**
 
-🔹 **Home Page**
+👉🏼  **Home Page**
 - XXX
 - XXX
 - XXX
 - XXX
 
-🔹 **Resources Page**
+👉🏼  **Resources Page**
 - XXX
 - XXX
 - XXX
 - XXX
 
-🔹 **Add Resource Page**
+👉🏼  **Add Resource Page**
 - XXX
 - XXX
 - XXX
 - XXX
 
-🔹 **Edit Resource Page**
+👉🏼  **Edit Resource Page**
 - XXX
 - XXX
 - XXX
 - XXX
 
-🔹 **Categories Page**
+👉🏼  **Categories Page**
 - XXX
 - XXX
 - XXX
 - XXX
 
-🔹 **Add Category Page**
+👉🏼  **Add Category Page**
 - XXX
 - XXX
 - XXX
 - XXX
 
-🔹 **Edit Category Page**
+👉🏼  **Edit Category Page**
 - XXX
 - XXX
 - XXX
 - XXX
 
-🔹 **My Profile Page**
+👉🏼  **My Profile Page**
 - XXX
 - XXX
 - XXX
 - XXX
 
-🔹 **Register Page**
+👉🏼  **Register Page**
 - XXX
 - XXX
 - XXX
 - XXX
 
-🔹 **Log In Page**
+👉🏼  **Log In Page**
 - XXX
 - XXX
 - XXX
 - XXX
 
-🔹 **Log Out Function**
+👉🏼  **Log Out Function**
 - XXX
 - XXX
 - XXX
