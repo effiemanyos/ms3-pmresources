@@ -124,7 +124,7 @@ At the moment, no official Product Management studies are offered by universitie
 
 ### **User Stories**
 
-👉🏼  **Guest User** (logged out)
+**Guest User** (logged out)
 
 **As a** *guest user*,               
 **I want** to easily understand what is the purpose of the app and for who was it built,          
@@ -146,7 +146,7 @@ At the moment, no official Product Management studies are offered by universitie
 **I want** to be able to follow/invite Selftod on social media channels,             
 **so that** I can consume their bite-sized product-related content daily.
 
-👉🏼  **Registered User** (logged in)
+**Registered User** (logged in)
 
 **As a** *registered user*,            
 **I want** to easily understand how to perfom all actions I am able to do,               
@@ -176,7 +176,7 @@ At the moment, no official Product Management studies are offered by universitie
 **I want** to be able to follow/invite Selftod on social media channels,             
 **so that** I can consume their bite-sized product-related content daily.
 
-👉🏼  **Admin User** (logged in)
+**Admin User** (logged in)
 
 The Admin User has the same access as the Registered User, plus the additional features listed below: 
 
@@ -229,67 +229,67 @@ The Admin User has the same access as the Registered User, plus the additional f
 
 ### **Existing Features**
 
-👉🏼  **Home Page**
+**Home Page**
 - XXX
 - XXX
 - XXX
 - XXX
 
-👉🏼  **Resources Page**
+**Resources Page**
 - XXX
 - XXX
 - XXX
 - XXX
 
-👉🏼  **Add Resource Page**
+**Add Resource Page**
 - XXX
 - XXX
 - XXX
 - XXX
 
-👉🏼  **Edit Resource Page**
+**Edit Resource Page**
 - XXX
 - XXX
 - XXX
 - XXX
 
-👉🏼  **Categories Page**
+**Categories Page**
 - XXX
 - XXX
 - XXX
 - XXX
 
-👉🏼  **Add Category Page**
+**Add Category Page**
 - XXX
 - XXX
 - XXX
 - XXX
 
-👉🏼  **Edit Category Page**
+**Edit Category Page**
 - XXX
 - XXX
 - XXX
 - XXX
 
-👉🏼  **My Profile Page**
+**My Profile Page**
 - XXX
 - XXX
 - XXX
 - XXX
 
-👉🏼  **Register Page**
+**Register Page**
 - XXX
 - XXX
 - XXX
 - XXX
 
-👉🏼  **Log In Page**
+**Log In Page**
 - XXX
 - XXX
 - XXX
 - XXX
 
-👉🏼  **Log Out Function**
+**Log Out Function**
 - XXX
 - XXX
 - XXX
@@ -351,9 +351,9 @@ These features have been selected after we applied the MoSCoW method as a priori
 
 ### **App Structure**
 
-👉🏼  **Admin User | Logged In**
+**Admin User** (logged in)
 
-Admin User have access to the following menu:
+Admin User has access to the following menu:
 
 |Home|Resources|Add New|Categories|My Profile|Log Out|
 |----|----|----|----|----|----|
@@ -374,11 +374,11 @@ Admin User can perfom the following actions within the app:
 - D > Permanently delete product-related categories they have previously entered
 
 > The Admin User is the only one that can actually manage categories (C, ~~R~~, U, D).     
-> (*) Since the # of categories is less than 12, there is no need for 'Search' functionality
+> (*) Since the # of categories is less than 12, there is no need for 'Search' functionality.
 
-👉🏼  **Registered User | Logged In**
+**Registered User** (logged in)
 
-Registered User have access to the following menu:
+Registered User has access to the following menu:
 
 |Home|Resources|Add New|My Profile|Log Out|
 |----|----|----|----|----|
@@ -394,34 +394,34 @@ Registered User can perfom the following actions within the app:
 
 *Categories*.-
 - Registered User is not able to CRUD categories at the moment.
-- Registered User does not have access to Categories/Add Category/Edit Category.    
+- Registered User doesn't have access to Categories/Add Category/Edit Category.    
 
-👉🏼  **Guest User | Logged Out**
+**Guest User** (logged out)
 
-Guest User have access to the following menu:
+Guest User has access to the following menu:
 
-|Home|Log In|Register|
-|----|----|----|
-|√|√|√|
+|Home|Resources|Log In|Register|
+|----|----|----|----|
+|√|√|√|√|
 
 Guest User can perfom the following actions within the app:
 
 *Resources*.-
 - Guest User is not able to CRUD resources at the moment.
-- Guest User do not have access to Resources/Add Resource/Edit Resource.  
+- Guest User doesn't have access to Resources/Add Resource/Edit Resource.  
 
 *Categories*.-
 - Guest User is not able to CRUD categories at the moment.
-- Guest User does not have access to Categories/Add Category/Edit Category.
+- Guest User doesn't have access to Categories/Add Category/Edit Category.
 
 *My Profile*.-
-- Guest User does not have access to My Profile/Log Out, just Home/Log In.
+- Guest User doesn't have access to My Profile/Log Out (doesn't have account).
 
 ### **Future Additions**
 
 Additions to the current structure of the app:
 
-|Home|Resources|Add New|Favourites|Categories|My Profile|Log Out|
+|Home|Resources|Add New|Bookmarks|Categories|My Profile|Log Out|
 |----|----|----|----|----|----|----|
 |√|√|√|√|(admin only)|√|√|
 
@@ -449,8 +449,10 @@ Additions to the current structure of the app:
 |----|----|----|----|
 |users|_id|ObjectId|
 ||username|string|
-||email|string|
+||~~email~~|~~string~~(*)|
 ||password|string|
+
+> (*) At the moment, this is included in the product backlog and will be implemented in the next iteration.
 
 **Resources** ↓
 
