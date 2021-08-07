@@ -43,14 +43,16 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
     - [Typography](#typography "Typography")
     - [Consistent Styling](#consistent-styling "Consistent Styling")
     - [Color Scheme](#color-scheme "Color Scheme")
-    - [Logo Variants](#logo-variants "Logo Variants")
+    - [Logo Variantions](#logo-variantions "Logo Variantions")
     - [Imagery](#imagery "Imagery")
 - [Technologies Used](#technologies-used "Technologies Used")
     - [Languages](#languages "Languages")
-    - [Libraries](#libraries "Libraries")
+    - [Frameworks & Libraries](#frameworks-&-libraries "Frameworks & Libraries")
     - [Tools](#tools "Tools")
-    - [Design](#design "Design")
-- [Testing](#testing "Testing")
+    - [Testing](#testing "Testing")
+    - [Code Consultations](#code-consultations "Code Consultations")
+    - [Design & Media](#design-&-media "Design & Media")
+- [Testing Phase](#testing-phase "Testing Phase")
 - [Deployment](#deployment "Deployment")
 - [Credits](#credits "Credits")
 - [Acknowledgements](#acknowledgements "Acknowledgements")
@@ -672,7 +674,7 @@ The following technologies were used during the development and testing of this 
 
 <br>
 
-# **TESTING** 
+# **TESTING PHASE** 
 
 The entire testing process, issues and bugs found during development, solutions, and final results can be found [here](URL).
 
@@ -870,7 +872,6 @@ Additionally, you can either **Clone** or **Fork** [this repository](https://git
 <br>
 
 # **CREDITS** 
-- Preinstalled  Tools (Development) → [Code Institute Gitpod Full Template](https://github.com/Code-Institute-Org/gitpod-full-template)
 
 ### **Inspiration**
 - [The PM Library](https://thepmlibrary.com/)
@@ -883,9 +884,10 @@ Additionally, you can either **Clone** or **Fork** [this repository](https://git
 ### **Code Snippets**
 - Favicon → [W3C](https://www.w3.org/2005/10/howto-favicon) 
 - App Icon → [Geeks For Geeks](https://www.geeksforgeeks.org/how-to-add-icon-logo-in-title-bar-using-html/) 
-- App Structure → Data Centric Design Mini Project by [Code Institute](https://codeinstitute.net/)
+- App Structure → [Data Centric Design Mini Project](https://bit.ly/3fJkdbb) by [Code Institute](https://codeinstitute.net/)
 - Hero Image → [Code the Web](https://codetheweb.blog/fullscreen-image-hero/)
 - Flask Error Handling → [Flask](https://flask.palletsprojects.com/en/1.1.x/errorhandling/)
+- Preinstalled  Tools → [Code Institute Gitpod Full Template](https://github.com/Code-Institute-Org/gitpod-full-template)
 
 ### **Media**
 - Photography → [Unsplash](https://unsplash.com/)
@@ -893,6 +895,8 @@ Additionally, you can either **Clone** or **Fork** [this repository](https://git
 
 *Hero Image Section:*
 - Keyword: [Studying](https://unsplash.com/photos/1LODZS5mRqs) by [Nicolò Canu](https://unsplash.com/@nick__), taken from [Unsplash](https://unsplash.com/)
+
+And all tools in the [Technologies Used](#technologies-used "Technologies Used") section that made this project (MVP version of the web app) possible. 
 
 <br>
 
