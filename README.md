@@ -229,11 +229,16 @@ The Admin User has the same access as the Registered User, plus the additional f
 
 ### **Existing Features**
 
+From the POV of the Admin User, since it is the only one that has full access to the web-app features:
+
 **Home Page**
-- XXX
-- XXX
-- XXX
-- XXX
+- If user clicks on the logo, they will be redirected to the homepage.
+- If user clicks on 'view resources', they will be redirected to the Resources page.
+- If (logged out) user clicks on 'register now', they will be redirected to the Register page.
+- If (logged in) user clicks on 'add resources', they will be redirected to the Add New page.
+- If user (logged out) clicks on 'let's grow together', they will be redirected to the Register page.
+- If user (logged in) clicks on 'discover more', they will be redirected to the Resources page.
+- If user clicks on the social media icons, they will be redirected to Selftod's social channels.
 
 **Resources Page**
 - XXX
@@ -879,6 +884,7 @@ Additionally, you can either **Clone** or **Fork** [this repository](https://git
 ### **Code Snippets**
 - Favicon → [W3C](https://www.w3.org/2005/10/howto-favicon) 
 - Website Icon → [Geeks For Geeks](https://www.geeksforgeeks.org/how-to-add-icon-logo-in-title-bar-using-html/) 
+- XXX
 - XXX
 - XXX
 - XXX
