@@ -47,11 +47,11 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
     - [Imagery](#imagery "Imagery")
 - [Technologies Used](#technologies-used "Technologies Used")
     - [Languages](#languages "Languages")
-    - [Frameworks Libraries](#frameworks-libraries "Frameworks Libraries")
+    - [Frameworks and Libraries](#frameworks-and-libraries "Frameworks and Libraries")
     - [Tools](#tools "Tools")
     - [Testing](#testing "Testing")
     - [Code Consultations](#code-consultations "Code Consultations")
-    - [Design Media](#design-media "Design Media")
+    - [Design and Media](#design-and-media "Design and Media")
 - [Testing Phase](#testing-phase "Testing Phase")
 - [Deployment](#deployment "Deployment")
 - [Credits](#credits "Credits")
@@ -600,7 +600,7 @@ The following technologies were used during the development and testing of this 
 - **JavaScript** to make the website interactive.
 - **Python3** to automate specific series of tasks. 
 
-### **Frameworks Libraries**
+### **Frameworks and Libraries**
 - Frameworks → [Materialize V1.0.0](URL)
 - Icons → [Font Awesome V5.15.3](URL)
 - Main Font → [Google Fonts](https://fonts.google.com/)
@@ -653,7 +653,7 @@ The following technologies were used during the development and testing of this 
 - Modals → [Materialize](https://materializecss.com/modals.html)
 - Markdown → [Traversy Media by Brad Traversy](https://www.youtube.com/watch?v=HUBNt18RFbo)
 
-### **Design Media**
+### **Design and Media**
 - Visuals & Logo → [Canva](URL)
 - Medium/High-Fidelity Mockups & Interactive Design (Prototype) → [Figma](URL)
 - Low-Fidelity Wireframing → [Balsamiq](URL)
