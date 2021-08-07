@@ -31,7 +31,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
     - [Jobs To Be Done](#jobs-to-be-done "Jobs To Be Done")
     - [User Flow](#user-flow "User Flow")
     - [Business Goals](#business-goals "Business Goals")
-    - [Unique Selling Proposition](#unique-selling-proposition "Unique Selling Proposition")
   - [Scope plane](#scope-plane "Scope plane")
     - [User Requirements](#user-requirements "Requirements")
     - [User Expectations](#user-expectations "Expectations")
@@ -118,28 +117,69 @@ At the moment, no official Product Management studies are offered by universitie
 
 ### **User Stories**
 
-🔹 **Guest User | Logged Out**
-- As a guest user, I want to easily understand what is the purpose of the app and for who was it built, so that I can decide if I should start using it or not.
-- As a guest user, I want to see examples of resources posted by others, so that I can get a sense of how it works and what kind of resources users share.
-- As a guest user, I want to be able to quickly register/sign up, so that I can start saving/sharing (my own) and discovering (others) top-rated PM resources.
-- As a guest user, I want to be able to get in touch with the founders through their social media channels, so that I can send my suggestions about the app. 
-- As a guest user, I want to be able to follow/add Selftod on social media channels, so that I can consume their bite-sized product-related content daily.
+**Guest User** (logged out)
 
-🔹 **Registered User | Logged In**
-- As a registered user, I want to easily understand how to perfom all actions I am able to do, so that I can start contributing to the community of aspiring PMs.
-- As a registered user, I want to be able to log in and log out whenever I please, so that I can control when and from where I want to interact with the app.
-- As a registered user, I want to be able search/view resources posted by other registered users/members of the community, so that I can discover resources.
-- As a registered user, I want to be able filter resources (my own/others) by categories, so that I can view only the ones I am interested in, category-wise.
-- As a registered user, I want to be able to add, search, edit, and delete the resources I previously entered, so that I can manage my contribution to the app.
-- As a registered user, I want to be able to get in touch with the founders through their social media channels, so that I can send my suggestions about the app. 
-- As a registered user, I want to be able to follow/add Selftod on social media channels, so that I can consume their bite-sized product-related content daily.
+**As a** *guest user*,               
+**I want** to easily understand what is the purpose of the app and for who was it built,          
+**so that** I can decide if I should register and start using it or not.
 
-🔹 **Admin User | Logged In**
+**As a** *guest user*,             
+**I want** to see examples of resources posted by others,                 
+**so that** I can get a sense of how it works and what kind of resources users share.
+
+**As a** *guest user*,               
+**I want** to be able to quickly register/sign up,                 
+**so that** I can start saving/sharing (my own) and discovering (others) PM resources.
+
+**As a** *guest user*,                   
+**I want** to be able to get in touch with the founders through Selftod's social media,                  
+**so that** I can send my suggestions to improve the UX of the app. 
+
+**As a** *guest user*,            
+**I want** to be able to follow/invite Selftod on social media channels,             
+**so that** I can consume their bite-sized product-related content daily.
+
+**Registered User** (logged in)
+
+**As a** *registered user*,            
+**I want** to easily understand how to perfom all actions I am able to do,               
+**so that** I can start contributing to the community of aspiring PMs.
+
+**As a** *registered user*,               
+**I want** to be able to log in and log out whenever I please,              
+**so that** I can control when and from where I want to interact with the app.
+
+**As a** *registered user*,             
+**I want** to be able search/view resources posted by other registered users/members,               
+**so that** I can discover resources.
+
+**As a** *registered user*,            
+**I want** to be able filter resources by product-related categories,            
+**so that** I can view only the ones I am interested in (category-wise).
+
+**As a** *registered user*,                    
+**I want** to be able to add/search/edit/delete resources (new and already shared),                    
+**so that** I can have control of my contribution to the app.
+
+**As a** *registered user*,         
+**I want** to be able to get in touch with the founders through Selftod's social media,              
+**so that** I can send my suggestions to improve the UX of the app. 
+
+**As a** *registered user*,          
+**I want** to be able to follow/invite Selftod on social media channels,             
+**so that** I can consume their bite-sized product-related content daily.
+
+**Admin User** (logged in)
 
 The Admin User has the same access as the Registered User, plus the additional features listed below: 
 
-- As an admin user, I want to add, edit, and delete the categories I previously entered, so that I can manage how registered users can classified their resources.
-- As an admin user, I want to be able to add, edit, and delete featured resources, so that I can manage what guest users can view on the home page on monthly basis.
+**As an** *admin user*,                            
+**I want** to create, update, and delete categories (new and already entered),              
+**so that** I can manage how registered users can classified their resources.
+
+**As an** *admin user*,                                
+**I want** to be able to create, update, and delete featured resources,             
+**so that** I can manage what guest users can view on the homepage on monthly basis.
 
 ### **Jobs To Be Done**
 - XXX
@@ -168,13 +208,6 @@ The Admin User has the same access as the Registered User, plus the additional f
 > (^) The app will always be free for users (restricted to guest users) as they are the ones that contribute the most to its growth.      
 
 ### **Business Goals**
-- XXX
-- XXX
-- XXX
-- XXX
-
-### **Unique Selling Proposition**
-- XXX
 - XXX
 - XXX
 - XXX
