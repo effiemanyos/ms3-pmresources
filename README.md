@@ -619,6 +619,7 @@ The following technologies were used during the development and testing of this 
 - Project Planning → [Notion](https://www.notion.so)
 - User-Centric Flows → [Miro](https://miro.com/)
 - Check Grammar & Spelling → [Gammarly](https://app.grammarly.com/) 
+- Secure Password & Keygen Generator ([RandomKeygen](https://randomkeygen.com/)
 
 ### **Testing**
 - Test/Fix Code → [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools)
@@ -645,6 +646,10 @@ The following technologies were used during the development and testing of this 
 - Hex to RGB → [RapidTables](https://www.rapidtables.com/convert/color/hex-to-rgb.html)
 - Rem to PX → [nekoCalc](https://nekocalc.com/rem-to-px-converter)
 - Hover Effects → [Hover.css V2.0](https://ianlunn.github.io/Hover/)
+- Styling in HTML → [Flask](https://www.w3schools.com/tags/tag_font.asp)
+- CSS Margin Property → [W3Schools](https://www.w3schools.com/cssref/pr_margin.asp)
+- Modals → [Materialize](https://materializecss.com/modals.html)
+- Markdown → [Traversy Media by Brad Traversy](https://www.youtube.com/watch?v=HUBNt18RFbo)
 
 ### **Design & Media**
 - Visuals & Logo → [Canva](URL)
@@ -657,6 +662,9 @@ The following technologies were used during the development and testing of this 
 - Mockup → [Techsini Mockup Generator](http://techsini.com/multi-mockup/)
 - Illustrations → [UnDraw](https://undraw.co/)
 - Image Compression → [TinyJPG](https://tinyjpg.com/)
+- Emoji Unicode Reference → [W3Schools](https://www.w3schools.com/charsets/ref_emoji.asp)
+- Emoji Skin Tones → [W3Schools](https://www.w3schools.com/charsets/ref_emoji_skin_tones.asp)
+- Visual Design → [Haikei](https://app.haikei.app/)
 
 <br>
 
@@ -874,12 +882,10 @@ Additionally, you can either **Clone** or **Fork** [this repository](https://git
 
 ### **Code Snippets**
 - Favicon → [W3C](https://www.w3.org/2005/10/howto-favicon) 
-- Website Icon → [Geeks For Geeks](https://www.geeksforgeeks.org/how-to-add-icon-logo-in-title-bar-using-html/) 
-- XXX
-- XXX
-- XXX
-- XXX
-- XXX
+- App Icon → [Geeks For Geeks](https://www.geeksforgeeks.org/how-to-add-icon-logo-in-title-bar-using-html/) 
+- App Structure → Data Centric Design Mini Project by [Code Institute](https://codeinstitute.net/)
+- Hero Image → [Code the Web](https://codetheweb.blog/fullscreen-image-hero/)
+- Flask Error Handling → [Flask](https://flask.palletsprojects.com/en/1.1.x/errorhandling/)
 
 ### **Media**
 - Photography → [Unsplash](https://unsplash.com/)
