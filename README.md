@@ -785,7 +785,7 @@ The entire testing process, issues and bugs found during development, solutions,
 As you can see, these are the files that Heroku needs to run the app.
 > - First, we need to tell Heroku which apps and dependencies are required to run our web app, via **requirements.txt**,         
 > - Next, the **Procfile** is what Heroku looks for to know which file runs the app, and how to run it, so we use the **echo command**.        
-> - (^) Remember to delete the second line in Procfile because sometimes it can cause problems when running the app on Heroku.
+> - Remember to delete the second line in Procfile because sometimes it can cause problems when running the app on Heroku.
 
 **Heroku Website**
 
@@ -869,11 +869,12 @@ Additionally, you can either **Clone** or **Fork** [this repository](https://git
 - Preinstalled  Tools (Development) → [Code Institute Gitpod Full Template](https://github.com/Code-Institute-Org/gitpod-full-template)
 
 ### **Inspiration**
-- XXX
-- XXX
-- XXX
-- XXX
-- XXX
+- [The PM Library](https://thepmlibrary.com/)
+- [Curio](https://curiolearning.com/product/)
+- [Wakelet](https://wakelet.com/)
+- [Symbaloo](https://www.symbaloo.com/welcome)
+- [Feedly](https://feedly.com/i/welcome)
+- [Pocket](https://getpocket.com/)
 
 ### **Code Snippets**
 - Favicon → [W3C](https://www.w3.org/2005/10/howto-favicon) 
