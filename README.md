@@ -29,7 +29,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
     - [User Goals](#user-goals "User Goals")
     - [User Stories](#user-stories "User Stories")
     - [Jobs To Be Done](#jobs-to-be-done "Jobs To Be Done")
-    - [User Flow](#user-flow "User Flow")
     - [Business Goals](#business-goals "Business Goals")
   - [Scope plane](#scope-plane "Scope plane")
     - [User Requirements](#user-requirements "Requirements")
@@ -41,7 +40,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
   - [Structure Plane](#structure-plane "Structure plane")
     - [App Structure](#app-structure "App Structure")
     - [Data Structure](#data-structure "Data Structure")
-    - [Planned Structure](#planned-structure "Planned Structure")
     - [Future Additions](#future-additions "Future Additions")
   - [Skeleton Plane](#skeleton-plane "Skeleton Plane")
     - [Wireframes](#wireframes "Wireframes")
@@ -192,13 +190,6 @@ The Admin User has the same access as the Registered User, plus the additional f
 - XXX
 - XXX
 
-### **User Flow**
-- XXX
-- XXX
-- XXX
-- XXX
-- XXX
-
 ### **Business Opportunity**
 
 - Growth demand for Product Managers → More and more companies are looking to recruit product managers.
@@ -212,10 +203,9 @@ The Admin User has the same access as the Registered User, plus the additional f
 > (^) The app will always be free for users (restricted to guest users) as they are the ones that contribute the most to its growth.      
 
 ### **Business Goals**
-- XXX
-- XXX
-- XXX
-- XXX
+- Be the go-to place for the target audience to learn PM from top product-related resources.
+- Create a product management community where professionals recommend the best PM resources.
+- Leverage the crowdsourcing model to develop a valuable source of information regarding PM.
 
 <br>
 
@@ -351,7 +341,7 @@ The estimated roadmap after the launch of the MVP v1 is the following:
 |21|||
 |22|||
 
-These features have been chosen after we applied the Moscow method as a prioritization technique to decide on what to build next, which is influenced by what users need. 
+These features have been selected after we applied the MoSCoW method as a prioritization technique to decide on what we need to build next, which is entirely influenced by what users really need to achieve their goals.
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -782,4 +772,3 @@ Additionally, you can either **Clone** or **Fork** this repository ([effiemanyos
 
 I would like to thank the following people for their constant support and guidance during my learning process: 
 - [Code Institute Slack Community](https://code-institute-room.slack.com/)
-- [Adegbenga Adeye (Mentor)](https://www.linkedin.com/in/adegbenga-adeye-psm-i-14003635/)
