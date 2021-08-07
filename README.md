@@ -112,9 +112,12 @@ At the moment, no official Product Management studies are offered by universitie
 - View product-related resources shared by like-minded professionals in Selftod community. 
 - View, search, filter, discover, share, edit, delete resources created by them and others.
 - Perform the actions right above from anywhere, via any type of digital device or browser.
-- View featured resources on a monthly basis shared by the admin of Selftod community.
+- View featured resources on a monthly basis shared by the admin of Selftod's community.
 - Learn about PM at their own pace (in their own time/schedule), customized to their needs.
 - Discover new valuable sources of information about the field which are highly recommended.
+- Save time by going straight to the app to look for specific information urgently needed.
+- Find the right sources of information to learn PM by themselves with the required guidance.
+- Be up-to-date with the latest frameworks, tools, and techniques that people are applying.
 
 ### **User Stories**
 
