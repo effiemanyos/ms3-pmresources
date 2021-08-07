@@ -565,11 +565,8 @@ The following are the color palette used for this project:
 ![web app on different devices](/static/images/color-palette.png "web app on different devices")
 
 **Primary Colours:**
-> - **Purple** → Associated with **wisdom, wealth, spirituality, imaginative, and sophistication**.
-> - **Black** → Associated with **sophistication, luxury, security, power, elegance, authority, and substance**.
-> - **Green** → Associated with **health, tranquility, growth, freshness, prosperity, hope, balance, harmony, and nature**.
-> - **Pink** → Associated with femininity. **Imaginative, passionate, caring, creativity, innovative, quirky**. 
-
+> - **Blue** → Associated with **trust, loyalty, dependability, logic, security, serenity,** and also **stimulates productivity**.
+> - **White/Grey** → Associated with **innocence, purity, cleanliness, simplistic, pristine,** and also **provides a modern feel**.
 
 ### **Logo Variants**
 - Logotype
@@ -577,11 +574,12 @@ The following are the color palette used for this project:
 - Imagetype
 
 ### **Imagery**
-- XXX
-- XXX
-- XXX
-- XXX
-- XXX
+
+A professional photography from **[Unsplash](https://unsplash.com/)** has been used for the hero image located on the homepage.
+
+The image used is the following: 
+
+- Keyword: [Studying](https://unsplash.com/photos/1LODZS5mRqs) by [Nicolò Canu](https://unsplash.com/@nick__), taken from [Unsplash](https://unsplash.com/)
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -834,8 +832,7 @@ Additionally, you can either **Clone** or **Fork** this repository ([effiemanyos
 - Illustrations → [UnDraw](https://undraw.co/)
 
 *Hero Image Section:*
-- [KW: Studying](https://unsplash.com/photos/1LODZS5mRqs) by [Nicolò Canu](https://unsplash.com/@nick__) taken from [Unsplash](https://unsplash.com/)
-
+- Keyword: [Studying](https://unsplash.com/photos/1LODZS5mRqs) by [Nicolò Canu](https://unsplash.com/@nick__), taken from [Unsplash](https://unsplash.com/)
 
 [Back to Table of Contents](#table-of-contents)
 
