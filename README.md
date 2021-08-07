@@ -109,22 +109,23 @@ During the user research, most users have also shared that they constantly feel 
 At the moment, no official Product Management studies are offered by universities or colleges, and if they are  Users are looking for cost-effective bootcamps, workshops, cohorts, mentors, and online courses to learn more about this relatively new field in the tech industry.
 
 ### **User Goals**
-- XXX
-- XXX
-- XXX
-- XXX
-- XXX
+- View product-related resources shared by like-minded professionals in Selftod community. 
+- View, search, filter, discover, share, edit, delete resources created by them and others.
+- Perform the actions right above from anywhere, via any type of digital device or browser.
+- View featured resources on a monthly basis shared by the admin of Selftod community.
+- Learn about PM at their own pace (in their own time/schedule), customized to their needs.
+- Discover new valuable sources of information about the field which are highly recommended.
 
 ### **User Stories**
 
-**Guest User** (logged out)
+→ **Guest User** (logged out)
 
 **As a** *guest user*,               
 **I want** to easily understand what is the purpose of the app and for who was it built,          
 **so that** I can decide if I should register and start using it or not.
 
 **As a** *guest user*,             
-**I want** to see examples of resources posted by others,                 
+**I want** to be able to see examples of resources posted by others,                 
 **so that** I can get a sense of how it works and what kind of resources users share.
 
 **As a** *guest user*,               
@@ -139,7 +140,7 @@ At the moment, no official Product Management studies are offered by universitie
 **I want** to be able to follow/invite Selftod on social media channels,             
 **so that** I can consume their bite-sized product-related content daily.
 
-**Registered User** (logged in)
+→ **Registered User** (logged in)
 
 **As a** *registered user*,            
 **I want** to easily understand how to perfom all actions I am able to do,               
@@ -169,7 +170,7 @@ At the moment, no official Product Management studies are offered by universitie
 **I want** to be able to follow/invite Selftod on social media channels,             
 **so that** I can consume their bite-sized product-related content daily.
 
-**Admin User** (logged in)
+→ **Admin User** (logged in)
 
 The Admin User has the same access as the Registered User, plus the additional features listed below: 
 
