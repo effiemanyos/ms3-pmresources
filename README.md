@@ -568,10 +568,12 @@ The following are the color palette used for this project:
 > - **Blue** → Associated with **trust, loyalty, dependability, logic, security, serenity,** and also **stimulates productivity**.
 > - **White/Grey** → Associated with **innocence, purity, cleanliness, simplistic, pristine,** and also **provides a modern feel**.
 
-### **Logo Variants**
+### **Logo Variations**
 - Logotype
 - Isotype
 - Imagetype
+
+![logo variations of the brand](/static/images/logo-variations.png "logo variations of the brand") 
 
 ### **Imagery**
 
