@@ -20,7 +20,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 # **TABLE OF CONTENTS** 
 
-- [Project Overview](#project-overview "Project Overview") ⬆
+- [Project Overview](#project-overview "Project Overview")
 - [UX Design](#ux-design "UX Design")
   - [Strategy Plane](#strategy-plane "Strategy Plane")
     - [Target Audience](#target-audience "Target Audience")
@@ -308,29 +308,48 @@ The Admin User has the same access as the Registered User, plus the additional f
 - XXX
 
 ### **Future Iterations**
-1. Users will be able to permanently delete their accounts if desired
-2. Users will be able to bookmark their favourite resources (theirs/others)
-3. Users will be able to view their favourite resources in a dedicated page
-4. Users will be able to share their favourite resources on social channels
+
+Items that are currently sitting in the Product Backlog: 
+
+1. Users will be able to permanently delete their accounts if they want to
+2. **Users will be able to (un)bookmark their favourite resources (own/others)**
+3. **Users will be able to view their favourite resources in a dedicated page**
+4. Users will be able to easily share their favorite resources on social media
 5. Users will be able to change their own password if they have forgotten it
 6. Users will be able to change their registered email address if desired
-7. Users will be able to hide the preferred resources for themselves only
+7. Users will be able to hide their preferred resources for themselves only
 8. Users will be able to add/update/delete a profile picture to their accounts
 9. Users will be able to subscribe to a weekly notification w/popular resources
-10. Admin will be able to update/delete other users' entries to mantain quality
+10. **Admin will be able to update/delete other users' entries to mantain quality**
 11. Users will be able to request the addition of a category through a form
+12. **Users will be able to jump to the top of the Resources page with one click**
+13. **Access to the Resources page will be restricted to registered users only**
+14. Users will be able to filter their resources by category on Resources page
+15. **Users will be able to filter resources by date of creation (from origin)**
+16. **Users will be able to filter resources by source (e.g., "Product School")**
+17. **Featured resources will be displayed on the homepage (incl. guest users)**
+18. Users will need to enter an email address to be able to register/sign up
+19. Homepage will show screenshots of how the app looks for registered users 
+20. Users will need to repeat their new password on the registration process
+21. **System will validate that Rating entry is actually a number (e.g., 3/5)**
+22. **System will validate that Direct Link entry is actually an existing URL**
 
 ### **Product Roadmap**
 
-The estimated roadmap after the launch of the MVP is the following: 
+The estimated roadmap after the launch of the MVP v1 is the following: 
 
 |NOW|NEXT|LATER|
 |----|----|----|
-|1|4|6|
-|2|5|7|
-|3|8|9|
-|10|||
-|11|||
+|2|1|6|
+|3|4|7|
+|10|5|9|
+|12|8|11|
+|13|14||
+|15|18||
+|16|19||
+|17|20||
+|21|||
+|22|||
 
 These features have been chosen after we applied the Moscow method as a prioritization technique to decide on what to build next, which is influenced by what users need. 
 
