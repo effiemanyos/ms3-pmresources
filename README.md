@@ -600,7 +600,7 @@ The following technologies were used during the development and testing of this 
 - **JavaScript** to make the website interactive.
 - **Python3** to automate specific series of tasks. 
 
-### **Frameworks & Libraries**
+### **Frameworks Libraries**
 - Frameworks → [Materialize V1.0.0](URL)
 - Icons → [Font Awesome V5.15.3](URL)
 - Main Font → [Google Fonts](https://fonts.google.com/)
@@ -653,7 +653,7 @@ The following technologies were used during the development and testing of this 
 - Modals → [Materialize](https://materializecss.com/modals.html)
 - Markdown → [Traversy Media by Brad Traversy](https://www.youtube.com/watch?v=HUBNt18RFbo)
 
-### **Design & Media**
+### **Design Media**
 - Visuals & Logo → [Canva](URL)
 - Medium/High-Fidelity Mockups & Interactive Design (Prototype) → [Figma](URL)
 - Low-Fidelity Wireframing → [Balsamiq](URL)
