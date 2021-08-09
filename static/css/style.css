@@ -1,17 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+/* Font Family */
 * {
     font-family: 'Poppins', sans-serif;
 }
 
+/* Text Shadow Effect */
 .text-shadow {
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
+/* NavBar Icon */
 .navbar-icon {
     font-size: 15px;
 }
 
+/* Flash Messages */
 .flashes h4 {
     line-height: 2;
 }
@@ -23,18 +27,18 @@
     /* Sizing */
     width: 100vw;
     height: 100vh;
-    
+
     /* Flexbox stuff */
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
     /* Text styles */
     text-align: center;
     color: white;
-    
+
     /* Background styles */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1620381897127-e6a3a6e03eb3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1360&q=80');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1620381897127-e6a3a6e03eb3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1360&q=80');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -80,7 +84,7 @@
     .resp-title {
         font-size: 50px;
     }
-    
+
     .resp-cat {
         display: none;
     }
@@ -95,7 +99,7 @@
 }
 
 @media (max-width: 360px) {
-   .resp-title {
+    .resp-title {
         font-size: 40px;
     }
 
@@ -175,12 +179,14 @@
 
 /* ------------------------------------[ Confirm Deletion Modal ]-------------------------------------- */
 
+/* Modal Styling */
 .modal-styling {
     border-radius: 10px;
     padding: 25px;
     justify-content: center;
 }
 
+/* Modal Heading */
 .modal-heading {
     color: #3d5afe;
 }
@@ -188,27 +194,32 @@
 
 /* ------------------------------------[ Footer Section ]-------------------------------------- */
 
+/* Background */
 .footer-bg {
     padding-top: 40px;
     background-color: #3d5afe;
-    
+
 }
 
+/* Container */
 .footer-container {
     width: 100%;
     padding-bottom: 50px;
 }
 
+/* Row */
 .footer-row {
     margin-bottom: 0px;
 }
 
+/* Heading */
 .footer-heading {
     font-size: 20px;
     text-align: center;
     color: #fff;
 }
 
+/* Paragraph */
 .footer-paragraph {
     font-size: 16px;
     text-align: center;
@@ -216,6 +227,7 @@
     font-weight: 200;
 }
 
+/* Social Media */
 .social-links li a i {
     width: 40px;
     height: 40px;
@@ -232,48 +244,49 @@
     transition: all 0.35s ease-in-out;
 }
 
+/* Hover Over Effect */
 .social-links li a i:hover {
     background: #00b8d4;
     color: #fff;
 }
-.social-links li{
+
+.social-links li {
     display: inline;
 }
 
-.copyright-styling{
+/* Copyright */
+.copyright-styling {
     padding-bottom: 20px;
     color: #fff;
 }
 
+/* Brand Logo Icon */
 .footer-icon1 {
     font-size: 45px;
     color: #fff;
 }
 
-.footer-icon2 {
-    font-size: 30px;
-    color: #fff;
-}
-
+/* CTA Button */
 .footer-button {
     border-radius: 30px;
 }
 
-/* ----------[ Responsiveness ]---------- */
+/* ----------[ Section Responsiveness ]---------- */
 
-/* Tablet */
-@media only screen and (min-width: 768px) {
+/* 4K */
+@media only screen and (min-width: 2560px) {
     .footer-heading {
-        font-size: 20px;
+        font-size: 24px;
     }
 
     .footer-paragraph {
+        text-align: left;
         font-size: 16px;
     }
 }
 
-@media only screen and (min-width: 1000px) {
 /* Laptop */
+@media only screen and (min-width: 1000px) {
     .footer-heading {
         text-align: center;
         font-size: 18px;
@@ -285,14 +298,13 @@
     }
 }
 
-/* 4K */
-@media only screen and (min-width: 2560px) {
+/* Tablet */
+@media only screen and (min-width: 768px) {
     .footer-heading {
-        font-size: 24px;
+        font-size: 20px;
     }
 
     .footer-paragraph {
-        text-align: left;
         font-size: 16px;
     }
 }
