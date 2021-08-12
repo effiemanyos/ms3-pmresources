@@ -8,7 +8,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 **Main Technologies Required:** HTML, CSS, JavaScript, Python+Flask, MongoDB, Libraries
 
-**[View Website Live (Heroku)](https://effiemanyos.github.io/milestone-project-one/)**
+**[View Website Live (Heroku)](https://produck-flask-app.herokuapp.com/)**
 
 ![web app on different devices](/static/images/placeholder.jpg "web app on different devices")
 

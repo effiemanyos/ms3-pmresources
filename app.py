@@ -281,6 +281,4 @@ def server_error(e):
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
-            debug=True) # During development, we want to see the actual 
-                        # errors that may appear, instead of a generic server warning
-                        # Update to debug=False prior to actual deployment or project submission!
+            debug=False)
