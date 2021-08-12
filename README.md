@@ -4,7 +4,9 @@
 
 ### **Project Overview**
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+This project consists of an interactive web application built to help aspiring product managers break into Product Management by using the crowdsourcing model Waze utilizes. Users will be able to create a free account to start saving, sharing, and discovering the best product-related resources on the internet, and they will benefit from other members' posts.
+
+This is the **third milestone project** in obtaining a **[Full-Stack Web Development](https://codeinstitute.net/full-stack-software-development-diploma/) University-Rated Professional Diploma** from **[Code Institute](https://codeinstitute.net/)**.
 
 **Main Technologies Required:** HTML, CSS, JavaScript, Python+Flask, MongoDB, Libraries
 
