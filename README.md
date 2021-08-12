@@ -678,12 +678,6 @@ The following technologies were used during the development and testing of this 
 
 The entire testing process, issues and bugs found during development, solutions, and final results can be found [here](URL).
 
-- Test User Stories
-- Testing & Validation
-- Manual Testing
-- Bugs & Fixes
-- Further Testing
-
 <br>
 
 [Back to Table of Contents](#table-of-contents)

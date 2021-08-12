@@ -11,8 +11,6 @@
 # **TABLE OF CONTENTS** 
 * [User Stories](#user-stories)
 * [Testing & Validation](#testing-&-validation) 
-* [Bugs & Fixes](#bugs-&-fixes)
-* [Further Testing](#further-testing)
 
 -------
 
@@ -132,75 +130,56 @@ The Admin User has the same access as the Registered User, plus the additional f
 
 # **TESTING & VALIDATION**
 
-### **Guest User** (logged out)
-
-##  **Testing and Validation**
 ### [Link Checker](https://validator.w3.org/checklink)
-- To check that all links are working and not broken. 
-- [Link Validation Test](/documentation/images/validator_screenshots/linkchecker.png)
-   - Issue with https://fonts.googleapis.com/ in the header of the base template but this directly copied and pasted from the Google Fonts website to use a font. Therefore this can be safely ignored.
-   - Issue with Linkedin link was manually checked and resolved.
-   - Issue with Instagram link was manually checked and resolved.
-- Final version has no other link errors or warnings.
-
-### Lighthouse (Google dev tool)
-- To test the accessibility and performance of the website. 
-- Final versions: 
-   - [Lighthouse report desktop ](/documentation/images/validator_screenshots/lighthouse_desktop.png)
-   - [Lighthouse report mobile ](/documentation/images/validator_screenshots/lighthouse_mobile.png)
-
-### [Responsinator](http://www.responsinator.com/)
-- To test the responsiveness of the live website and functionalities on different size mobile devices.
-- Final version: 
-   - [Mobile view ](/documentation/images/validator_screenshots/responsinator_mobile.png)
-   - [Tablet view ](/documentation/images/validator_screenshots/responsinator_tablet.png)
-
-### [Am I Responsive](http://ami.responsivedesign.is/)
-- To view images of the website on different devices.
-- Final version: [Am I Responsive ](/documentation/images/validator_screenshots/am_i_responsive_design.png)
-
-### JavaScript
-- [JSHint](https://jshint.com/)
-   - [Test JavaScript Validation](/documentation/images/validator_screenshots/jshint_test.png)
-   - [Final JavaScript Validation](/documentation/images/validator_screenshots/jshint_final.png)
-   - Final version - addressing errors and warnings: 
-      - Warning for ''let' is available in ES6 (use 'esversion: 6'). Can be safely ignored. If add /*jshint esversion: 6 */ at top of code so that JSHint does not raise unnecessary warnings for ECMAScript 6 features.
-      - JSHint flags Jquery $ symbol as an undefined variable - safely ignored. 
-- [JSEsprima](https://esprima.org/)
-   - [Final JavaScript Validated](/documentation/images/validator_screenshots/js_esprima_final.png)
-
-### [CSS: W3C CSS validation](https://jigsaw.w3.org/css-validator/)
-- To validate the CCS code of the project pasting code in by direct input method.
-- Final version - addressing errors and warnings: 
-   - The Validator states there is an error with regards to the "text-decoration-thickness" but this is acceptable according to [w3.org](https://www.w3.org/TR/css-text-decor-4/#propdef-text-decoration-thickness) and [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration-thickness). This property, sets the stroke thickness of underlines, overlines, and line-throughs specified on the element with text-decoration-line, and affects all decorations originating from this element even if descendant boxes specify a different thickness. Therefore, it can be safely ignored.
-   - 8 warnings relating to custom colour variables. The W3C CSS validator cannot parse :root variables. Therefore it can be safely ignored.
-   - Warnings for vendor extensions suggested by AutoPrefixer is valid to ensure CSS styles can work across multiple browsers, can be safely ignored.
-- [Final CSS Validation](/documentation/images/validator_screenshots/css_validator_final.png)
-
-### [HTML: W3C Markup Validation](https://validator.w3.org/)
-- The HTML code of this project was validated by copying/pasting each screen's code to the "Validate by Direct Input" tab. Please note that the W3C Validator for HTML cannot understand the Jinja templating syntax, so if there is any error or warning related to this, it can be ignored.
+- To check that all the links within the web application are not broken and working perfectly.
 
 **Testing & Final Results:**
 
-- **Resources:** No error or warnings
-- **Register:** No error or warnings
-- **Profile:** No error or warnings
+- There are no link errors or warnings
 
+### [Chrome DevTools: Lighthouse](https://developers.google.com/web/tools/lighthouse)
 
-### Python
-- [Extendsclass](https://extendsclass.com/python-tester.html) - No syntax errors
-   - [Final Python Validated](/documentation/images/validator_screenshots/python_extendsclass_final.png)
-- [PEP8 Online](http://pep8online.com/) - Pythoon file is PEP8 compliant
-   - [Final Python Validated](/documentation/images/validator_screenshots/python_pep8online_final.png)
+- To test the web application's accesibility and performance on desktop and mobile, Google Lighthouse was used for both cases.
 
-### Google Dev Tool 
-- To check for errors in JavaScript code
-- Final version: no errors or warnings 
+**Testing & Final Results:**
 
-### Browser Compatibility
-To ensure a broad range of users can successfully use this site, I tested it across the 6 major browsers in both desktop and mobile configuration. See the [Browser Compatibility Table](/documentation/images/validator_screenshots/browser_compatibility_table.png) for more detail. The following browsers were tested:
-- Chrome
-- Firefox 
-- Safari
-- Opera
-- Edge
+- **Desktop**: Not the desired outcome, there is still room for improvement
+
+- **Mobile**: Not the desired outcome, there is still for improvement
+
+### [JavaScript: JSHint](https://jshint.com/)
+
+**Testing & Final Results:**
+
+- **script.js**: No errors or warnings found
+
+### [CSS: W3C CSS Validation](https://jigsaw.w3.org/css-validator/)
+- The CSS code of this project was validated by copying/pasting the code from the styles.css file to the "Validate by Direct Input" tab.
+
+**Testing & Final Results:**
+
+- **style.css**: No errors or warnings found
+
+### [HTML: W3C Markup Validation](https://validator.w3.org/)
+- The HTML code of this project was validated by copying/pasting each screen's code to the "Validate by Direct Input" tab. Keep in mind that the W3C Validator cannot understand the Jinja templating syntax, so if there is any error or warning related to this, please ignore.
+
+**Testing & Final Results:**
+
+- **base:** No errors or warnings found
+- **home:** No errors or warnings found
+- **resources:** No errors or warnings found
+- **login:** No errors or warnings found
+- **register:** No errors or warnings found
+- **profile:** No errors or warnings found
+- **add resource:** No errors or warnings found
+- **edit resource:** No errors or warnings found
+- **categories:** No errors or warnings found
+- **add category:** No errors or warnings found
+- **edit category:** No errors or warnings found
+- **404 & 500:** No errors or warnings found
+
+### [Python: Extendsclass](https://extendsclass.com/python-tester.html)
+
+**Testing & Final Results:**
+
+- No syntax errors were detected
