@@ -1,19 +1,28 @@
-# Selftod Web App - Testing Details
+# **[Selftod | Product Management Resources](https://github.com/effiemanyos/ms3-pmresources)**
 
-[Main README.md file](/README.md)
+**[View Website Live (Heroku)](https://produck-flask-app.herokuapp.com/)**
 
-[View live version of the web app via Heroku](https://produck-flask-app.herokuapp.com/)
-___
+![web app on different devices](/static/images/mockup.png "web app on different devices")
+
+[Return to README.md Document](/README.md)
+
 <br>
 
-<a></a>
-## Table of Contents 
+-------
+
+<br>
+
+# **TABLE OF CONTENTS** 
 * [User Stories](#user-stories)
 * [Testing & Validation](#testing-&-validation) 
 * [Manual Testing](#manual-testing)
 * [Bugs & Fixes](#bugs-&-fixes)
 * [Further Testing](#further-testing)
-___
+
 <br>
 
-## **Test User Stories**
+-------
+
+<br>
+
+# **USER STORIES**

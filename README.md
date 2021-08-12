@@ -10,7 +10,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 **[View Website Live (Heroku)](https://produck-flask-app.herokuapp.com/)**
 
-![web app on different devices](/static/images/placeholder.jpg "web app on different devices")
+![web app on different devices](/static/images/mockup.png "web app on different devices")
 
 <br>
 
